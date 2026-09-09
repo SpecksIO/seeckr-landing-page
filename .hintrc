@@ -1,0 +1,26 @@
+{
+  "extends": ["web-recommended"],
+  "connector": {
+    "name": "puppeteer",
+    "options": {
+      "puppeteerOptions": {
+        "args": ["--no-sandbox"]
+      }
+    }
+  },
+  "formatters": ["html"],
+  "hints": {
+    "compat-api/css": ["default", { "ignore": ["-webkit-text-size-adjust"] }],
+    "compat-api/html": [
+      "default",
+      { "ignore": ["link[fetchpriority]", "meta[name=theme-color]"] }
+    ],
+    "content-type": [
+      "default",
+      {
+        ".*\\.svg": "image/svg+xml",
+        ".*\\?_rsc=.*": "text/x-component"
+      }
+    ]
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Write|Edit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // empty' | grep -E '\\.(js|jsx|ts|tsx|mjs|cjs)$' | xargs -I{} npx eslint --fix {}"
+          },
+          {
+            "type": "command",
+            "command": "jq -r '.tool_input.file_path // empty' | grep -E '\\.(css|scss|json|yaml|yml|md)$' | xargs -I{} npx prettier --write {}"
+          }
+        ]
+      }
+    ]
+  }
+}

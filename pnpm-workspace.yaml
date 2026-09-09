@@ -1,0 +1,7 @@
+allowBuilds:
+  sharp: false
+  unrs-resolver: false
+  # Audit tools drive system Chrome via CHROME_PATH / PUPPETEER_EXECUTABLE_PATH,
+  # so there is no need to download a bundled browser or build canvas.
+  puppeteer: false
+  canvas: false

@@ -1,0 +1,15 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "DavidAnson.vscode-markdownlint",
+    "bradlc.vscode-tailwindcss",
+    "stivo.tailwind-fold",
+    "PKief.material-icon-theme",
+    "mhutchie.git-graph",
+    "anthropic.claude-code",
+    "vitest.explorer",
+    "ms-playwright.playwright",
+    "bierner.markdown-mermaid"
+  ]
+}
