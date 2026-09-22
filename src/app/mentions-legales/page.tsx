@@ -14,21 +14,35 @@ export default function MentionsLegalesPage() {
       <section>
         <h2>Éditeur du site</h2>
         <ul>
-          <li>Raison sociale : [À COMPLÉTER : raison sociale]</li>
-          <li>Forme juridique et capital : [À COMPLÉTER : forme et capital]</li>
-          <li>Siège social : [À COMPLÉTER : adresse du siège]</li>
-          <li>Immatriculation : [À COMPLÉTER : RCS et numéro SIREN]</li>
-          <li>TVA intracommunautaire : [À COMPLÉTER : numéro de TVA]</li>
-          <li>Contact : [À COMPLÉTER : e-mail et téléphone de contact]</li>
           <li>
-            Directeur de la publication : [À COMPLÉTER : nom du directeur de la
-            publication]
+            SPECKS, société par actions simplifiée au capital de [À COMPLÉTER :
+            montant du capital social]
           </li>
+          <li>Siège social : 1 rue Pauline Roland, 44200 Nantes</li>
+          <li>SIREN 980 269 062, RCS Nantes</li>
+          <li>TVA intracommunautaire : [À COMPLÉTER : numéro de TVA]</li>
+          <li>
+            Contact :{' '}
+            <a
+              href="mailto:contact@seeckr.fr"
+              className="underline underline-offset-4"
+            >
+              contact@seeckr.fr
+            </a>
+            , [À COMPLÉTER : numéro de téléphone]
+          </li>
+          <li>Directeur de la publication : SPECKS</li>
         </ul>
       </section>
       <section>
         <h2>Hébergeur</h2>
-        <p>Vercel Inc. [À COMPLÉTER : adresse et téléphone de l'hébergeur]</p>
+        <p>
+          Vercel Inc., 440 N Barranca Ave #4133, Covina, CA 91723, États-Unis,{' '}
+          <a href="https://vercel.com" className="underline underline-offset-4">
+            vercel.com
+          </a>
+          .
+        </p>
       </section>
       <section>
         <h2>Propriété intellectuelle</h2>

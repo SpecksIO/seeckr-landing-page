@@ -16,7 +16,14 @@ export default function ConfidentialitePage() {
       <section>
         <h2>Responsable du traitement</h2>
         <p>
-          [À COMPLÉTER : raison sociale et adresse du responsable du traitement]
+          SPECKS, 1 rue Pauline Roland, 44200 Nantes. Pour toute question sur
+          vos données :{' '}
+          <a
+            href="mailto:contact@seeckr.fr"
+            className="underline underline-offset-4"
+          >
+            contact@seeckr.fr
+          </a>
         </p>
       </section>
       <section>
@@ -24,7 +31,7 @@ export default function ConfidentialitePage() {
         <p>
           Le site ne collecte des données personnelles que par le formulaire{' '}
           <Link href="/mon-seeckr" className="underline underline-offset-4">
-            Mon Seeckr gratuit
+            Tester sur mon catalogue
           </Link>
           {'\u00a0'}: l'adresse de votre site internet, votre e-mail
           professionnel et votre téléphone professionnel.
@@ -43,7 +50,11 @@ export default function ConfidentialitePage() {
       </section>
       <section>
         <h2>Base légale</h2>
-        <p>[À COMPLÉTER : base légale du traitement]</p>
+        <p>
+          L'exécution de mesures précontractuelles prises à votre demande : vous
+          demandez un Seeckr construit sur votre catalogue, vos coordonnées nous
+          servent à le fabriquer et à vous le présenter.
+        </p>
       </section>
       <section>
         <h2>Destinataires</h2>
@@ -54,20 +65,31 @@ export default function ConfidentialitePage() {
           pour l'hébergement du site.
         </p>
         <p>
-          [À COMPLÉTER : transferts hors de l'Union européenne et garanties
-          associées]
+          Ces trois prestataires sont établis aux États-Unis : vos données
+          peuvent donc être traitées hors de l'Union européenne, dans le cadre
+          des engagements contractuels pris avec chacun d'eux.
         </p>
       </section>
       <section>
         <h2>Durée de conservation</h2>
-        <p>[À COMPLÉTER : durée de conservation des demandes]</p>
+        <p>
+          Trois ans à compter de notre dernier contact avec vous. Passé ce
+          délai, vos coordonnées sont supprimées.
+        </p>
       </section>
       <section>
         <h2>Vos droits</h2>
         <p>
           Vous pouvez accéder à vos données, les faire rectifier ou effacer,
           vous opposer à leur traitement, en demander la limitation ou la
-          portabilité. Écrivez à [À COMPLÉTER : contact RGPD].
+          portabilité. Écrivez à{' '}
+          <a
+            href="mailto:contact@seeckr.fr"
+            className="underline underline-offset-4"
+          >
+            contact@seeckr.fr
+          </a>
+          .
         </p>
         <p>
           Vous pouvez aussi adresser une réclamation à la CNIL, sur{' '}
