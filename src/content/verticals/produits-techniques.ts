@@ -3,8 +3,7 @@ import type { Vertical } from '@/content/types'
 export const produitsTechniques: Vertical = {
   slug: 'produits-techniques',
   name: 'Produits techniques',
-  teaser:
-    "Il voit des traces noires. Il ne sait pas que ça s'appelle un hydrofuge.",
+  teaser: 'Du symptôme au bon produit.',
   meta: {
     title: 'Seeckr pour les produits techniques',
     description:

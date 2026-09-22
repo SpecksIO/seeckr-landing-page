@@ -4,7 +4,7 @@ import type { Vertical } from '@/content/types'
 export const formation: Vertical = {
   slug: 'formation',
   name: 'Formation',
-  teaser: "Il sait ce qui le bloque. Pas comment ça s'appelle.",
+  teaser: 'Son blocage, pas votre intitulé.',
   meta: {
     title: 'Seeckr pour les organismes de formation',
     description:
