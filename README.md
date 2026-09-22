@@ -1,113 +1,97 @@
-# Seeckr landing page
+# Site vitrine Seeckr
 
-Next.js 16 landing page scaffolded with `/scaffold-nextjs` in **landing-page** mode, single repo. Tuned for SEO, GEO
-(discoverability by AI assistants), accessibility and Core Web Vitals, with the audit tooling wired in as npm scripts.
+Le site public de Seeckr, servi sur `seeckr.fr`. Next.js 16 (App Router), Tailwind CSS 4, TypeScript, Biome.
+Toutes les pages sont statiques, régénérées toutes les 10 minutes. Seule la route du formulaire s'exécute à la demande.
+
+Le site poursuit trois buts, dans cet ordre : faire demander un Seeckr personnalisé gratuit, faire s'inscrire au prochain
+webinar, et vendre Seeckr aux e-commerçants. Chaque page se termine sur ces actions.
 
 ## Stack
 
-| Concern            | Tool                                                   |
-| ------------------ | ------------------------------------------------------ |
-| Framework          | Next.js 16 (App Router, Turbopack, React 19)           |
-| Styling            | Tailwind CSS 4                                         |
-| Language           | TypeScript 5 (strict)                                  |
-| Linting            | ESLint 9 flat config + `eslint-config-next` + Prettier |
-| Formatting         | Prettier 3 (organize-imports, tailwindcss plugins)     |
-| Markdown linting   | markdownlint-cli2                                      |
-| Unit tests         | Vitest 5 + React Testing Library (jsdom)               |
-| E2E tests          | Playwright (Chrome, Firefox, Pixel 5, iPhone 12)       |
-| Performance audits | Lighthouse CI (desktop + mobile profiles)              |
-| A11y audits        | Pa11y (WCAG 2 AA)                                      |
-| Best practices     | webhint (puppeteer connector)                          |
-| Structured data    | JSON-LD typed with `schema-dts`                        |
+| Besoin                | Outil                                                    |
+| --------------------- | -------------------------------------------------------- |
+| Framework             | Next.js 16 (App Router, Turbopack, React 19)             |
+| Styles                | Tailwind CSS 4, charte Seeckr dans `src/app/globals.css` |
+| Langage               | TypeScript 5 (strict)                                    |
+| Lint et format        | Biome 2                                                  |
+| Lint markdown         | markdownlint-cli2                                        |
+| Tests unitaires       | Vitest 5 et Testing Library (jsdom)                      |
+| Tests de bout en bout | Playwright (Chrome, Firefox, Pixel 5, iPhone 12)         |
+| Performance           | Lighthouse CI (profils bureau et mobile)                 |
+| Accessibilité         | Pa11y (WCAG 2 AA)                                        |
+| Données structurées   | JSON-LD typé avec `schema-dts`                           |
 
-## Prerequisites
-
-- Node.js >= 22.12 (developed on 24)
-- pnpm 11 (`corepack enable pnpm`)
-- Google Chrome on `PATH` as `google-chrome`, used by Lighthouse, Pa11y and webhint
-- Playwright system libraries, installed once with `sudo npx playwright install-deps`
-
-## Getting started
+## Démarrer
 
 ```bash
 pnpm install
-cp .env.example .env.local   # already present after scaffolding
+cp .env.example .env.local
 pnpm dev
 ```
 
-The app runs on <http://localhost:3000>.
+Le site tourne sur <http://localhost:3000>.
 
-## Environment
+## Variables d'environnement
 
-| Variable               | Required | Purpose                                                                             |
-| ---------------------- | -------- | ----------------------------------------------------------------------------------- |
-| `NEXT_PUBLIC_SITE_URL` | Yes      | Canonical origin. Feeds metadata, JSON-LD, `sitemap.xml`, `robots.txt`, `llms.txt`. |
+| Variable               | Nécessaire         | Rôle                                                                         |
+| ---------------------- | ------------------ | ---------------------------------------------------------------------------- |
+| `NEXT_PUBLIC_SITE_URL` | En production      | Adresse canonique. Alimente métadonnées, JSON-LD, sitemap, robots, llms.txt. |
+| `RESEND_API_KEY`       | Pour le formulaire | Envoi de l'e-mail de demande, expéditeur `noreply@seeckr.fr`.                |
+| `LEAD_EMAIL_TO`        | Pour le formulaire | Destinataire des demandes.                                                   |
+| `SLACK_WEBHOOK_URL`    | Pour le formulaire | Webhook entrant qui reçoit chaque demande.                                   |
 
-Unset, it falls back to `http://localhost:3000`.
+Sans `NEXT_PUBLIC_SITE_URL`, le site suppose `https://seeckr.fr`. Aucune base de données.
 
-## Content model
+## Contenu
 
-The copy lives in exactly two modules, and everything else derives from them:
+Le contenu vit dans `src/content/`, jamais dans les composants :
 
-- `src/lib/site.ts`: identity, navigation, the list of public pages
-- `src/lib/content.ts`: hero, features, FAQ
+- `home.ts` : accueil, la conversation du hero, la FAQ
+- `verticals/*.ts` : un fichier par verticale, alimentant le gabarit `src/app/[vertical]/page.tsx`
+- `algimouss.ts` : les chiffres du seul client citable, avec leur période et leur source
+- `webinar.ts` : titre, date et lien d'inscription du prochain webinar
+- `doctrine.ts` : ce qui distingue le conseil Seeckr d'un chatbot
+- `src/lib/site.ts` : identité du site, appel à l'action, liste des pages publiques
 
-Editing those files updates the rendered page, the FAQ structured data, the sitemap, and both `llms` endpoints at once.
+### Changer de webinar
 
-## Project structure
+Modifier les trois champs de `src/content/webinar.ts`. L'en-tête, le hero et les blocs webinar lisent cette constante.
+Une date passée ou vide fait disparaître tout ce qui concerne le webinar, y compris le lien du menu.
 
-```text
-src/
-├── app/            # Routes, metadata, sitemap.ts, robots.ts, llms(.full).txt
-├── components/     # Presentational sections, colocated tests
-└── lib/            # Site config, copy, Schema.org graph
-e2e/                # Playwright specs
-reports/            # Audit output (gitignored)
-```
+### Ajouter des chiffres
+
+Seul Algimouss peut être nommé, et ses chiffres mesurent le conseil, jamais des ventes. Tout chiffre affiché vient de
+`src/content/algimouss.ts` et s'accompagne du nom du client et de la période. Les scores de compatibilité des
+conversations d'exemple sont des illustrations, attribuées à « Votre marque ».
+
+## Formulaire du Seeckr personnalisé
+
+`/mon-seeckr` poste vers une action serveur (`src/app/mon-seeckr/actions.ts`) qui valide les trois champs
+(`src/lib/lead.ts`), écarte les robots par un champ piège, puis envoie un e-mail via Resend et un message Slack.
+Un seul des deux canaux suffit pour que la demande soit considérée comme reçue. Le formulaire fonctionne sans
+JavaScript côté client.
 
 ## Scripts
 
-### Development
+- `pnpm dev`, `pnpm build`, `pnpm start`, `pnpm preview`
+- `pnpm lint` et `pnpm format` : Biome ; `pnpm lint:md` : markdownlint
+- `pnpm test:run` : tests unitaires ; `pnpm test:e2e` : Playwright
+- `pnpm lighthouse`, `pnpm lighthouse:mobile`, `pnpm pa11y`, `pnpm webhint` : audits, rapports dans `reports/`
 
-- `pnpm dev`: dev server
-- `pnpm preview`: production build, then serve it
+Sur un poste sans les bibliothèques système de Chromium, `CHROME_PATH` pointe vers le Chrome utilisé par les audits,
+et Playwright s'en sert aussi : `CHROME_PATH=$(which google-chrome) pnpm test:e2e`.
 
-### Build
+## SEO et assistants
 
-- `pnpm build`, `pnpm start`
+- `/sitemap.xml` et `/robots.txt` sont générés depuis `pages` dans `src/lib/site.ts`
+- `robots.txt` autorise explicitement les principaux robots d'assistants
+- `/llms.txt` suit la spécification [llmstxt.org](https://llmstxt.org)
+- L'accueil publie un graphe JSON-LD Organization, WebSite, WebPage et FAQPage
+- Chaque page porte son titre, sa description, son URL canonique et ses balises Open Graph
 
-### Quality
+## Marque
 
-- `pnpm lint`: ESLint, cached
-- `pnpm lint:md`: markdownlint
-- `pnpm format` / `pnpm format:check`: Prettier
-
-### Unit tests
-
-- `pnpm test`: watch mode
-- `pnpm test:run`: single run
-- `pnpm test:coverage`: coverage into `reports/coverage/`
-
-### E2E tests
-
-- `pnpm test:e2e`: all four browser targets, dev server started automatically
-- `pnpm test:e2e:ui`: Playwright UI mode
-
-### Audits
-
-Lighthouse starts its own production server. Pa11y and webhint expect one already running (`pnpm start`).
-
-- `pnpm lighthouse`: desktop profile, 3 runs, report in `reports/lighthouse/`
-- `pnpm lighthouse:mobile`: mobile profile, report in `reports/lighthouse-mobile/`
-- `pnpm pa11y`: WCAG 2 AA check
-- `pnpm webhint`: report in `reports/webhint/`
-
-Lighthouse fails the run below performance 90, accessibility 100, SEO 100, best practices 90.
-
-## SEO and GEO endpoints
-
-- `/sitemap.xml` and `/robots.txt` are generated from `pages` in `src/lib/site.ts`
-- `robots.txt` allows the major AI crawlers explicitly (GPTBot, ClaudeBot, PerplexityBot and friends)
-- `/llms.txt` and `/llms-full.txt` follow the [llmstxt.org](https://llmstxt.org) spec
-- The home page emits an Organization + WebSite + WebPage + FAQPage JSON-LD graph, with `speakable` selectors on the
-  hero for voice and assistant surfaces
+La charte de référence est `brand/charte.png` (septembre 2026) : fond `#16113A`, violet actif `#534AB7`, sections
+claires `#EEEDFE`, Poppins pour les titres, Inter pour le texte, Pacifico réservé au wordmark. Aplats uniquement,
+aucun dégradé décoratif. Chaque animation montre le produit ou guide la lecture, et s'arrête sous
+`prefers-reduced-motion`.
