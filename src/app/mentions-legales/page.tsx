@@ -15,8 +15,7 @@ export default function MentionsLegalesPage() {
         <h2>Éditeur du site</h2>
         <ul>
           <li>
-            SPECKS, société par actions simplifiée au capital de [À COMPLÉTER :
-            montant du capital social]
+            SPECKS, société par actions simplifiée au capital de 1 000 euros
           </li>
           <li>Siège social : 1 rue Pauline Roland, 44200 Nantes</li>
           <li>SIREN 980 269 062, RCS Nantes</li>
@@ -29,9 +28,12 @@ export default function MentionsLegalesPage() {
             >
               contact@seeckr.fr
             </a>
-            , [À COMPLÉTER : numéro de téléphone]
+            ,{' '}
+            <a href="tel:+33658305185" className="underline underline-offset-4">
+              06 58 30 51 85
+            </a>
           </li>
-          <li>Directeur de la publication : SPECKS</li>
+          <li>Directrice de la publication : Amandine Musseau</li>
         </ul>
       </section>
       <section>
