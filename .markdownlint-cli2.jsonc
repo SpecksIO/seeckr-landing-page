@@ -5,7 +5,7 @@
     "MD003": { "style": "atx" },
     // 2-space indentation for nested lists
     "MD007": { "indent": 2 },
-    // No line length limit — Prettier owns wrapping
+    // No line length limit, the editor wraps at 120
     "MD013": false,
     // Duplicate headings allowed as long as they are not siblings
     "MD024": { "siblings_only": true },
@@ -14,7 +14,7 @@
     // Inline HTML limited to collapsible sections and line breaks
     "MD033": { "allowed_elements": ["details", "summary", "br"] },
     // Fenced code blocks, never indented
-    "MD046": { "style": "fenced" },
+    "MD046": { "style": "fenced" }
   },
   "globs": ["**/*.md"],
   "ignores": [
@@ -28,6 +28,6 @@
     "**/pnpm-lock.yaml",
     ".git/**",
     // Import directive for Claude Code, not prose
-    "CLAUDE.md",
-  ],
+    "CLAUDE.md"
+  ]
 }
