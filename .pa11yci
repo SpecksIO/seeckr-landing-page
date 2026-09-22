@@ -6,5 +6,13 @@
       "args": ["--no-sandbox"]
     }
   },
-  "urls": ["http://localhost:3000/"]
+  "urls": [
+    "http://localhost:3000/",
+    "http://localhost:3000/cosmetique-nutrition",
+    "http://localhost:3000/produits-techniques",
+    "http://localhost:3000/formation",
+    "http://localhost:3000/mon-seeckr",
+    "http://localhost:3000/mentions-legales",
+    "http://localhost:3000/confidentialite"
+  ]
 }

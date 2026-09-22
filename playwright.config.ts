@@ -14,6 +14,9 @@ export default defineConfig({
   use: {
     baseURL,
     trace: 'on-first-retry',
+    // Sur un poste sans les bibliothèques système de Chromium, CHROME_PATH
+    // pointe vers le Chrome déjà utilisé par Lighthouse et Pa11y.
+    launchOptions: { executablePath: process.env.CHROME_PATH },
   },
   projects: [
     { name: 'Desktop Chrome', use: { ...devices['Desktop Chrome'] } },

@@ -1,8 +1,12 @@
-/** Lighthouse CI — desktop profile. Run with `pnpm lighthouse`. */
+/** Lighthouse CI, profil bureau. Run with `pnpm lighthouse`. */
 module.exports = {
   ci: {
     collect: {
-      url: ['http://localhost:3000/'],
+      url: [
+        'http://localhost:3000/',
+        'http://localhost:3000/produits-techniques',
+        'http://localhost:3000/mon-seeckr',
+      ],
       startServerCommand: 'pnpm start',
       startServerReadyPattern: 'Ready in',
       numberOfRuns: 3,

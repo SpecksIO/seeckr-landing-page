@@ -1,8 +1,12 @@
-/** Lighthouse CI — mobile profile (Lighthouse default emulation). */
+/** Lighthouse CI, profil mobile (émulation par défaut de Lighthouse). */
 module.exports = {
   ci: {
     collect: {
-      url: ['http://localhost:3000/'],
+      url: [
+        'http://localhost:3000/',
+        'http://localhost:3000/produits-techniques',
+        'http://localhost:3000/mon-seeckr',
+      ],
       startServerCommand: 'pnpm start',
       startServerReadyPattern: 'Ready in',
       numberOfRuns: 3,
