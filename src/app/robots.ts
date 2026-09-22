@@ -1,5 +1,5 @@
-import { absoluteUrl } from '@/lib/site'
 import type { MetadataRoute } from 'next'
+import { absoluteUrl } from '@/lib/site'
 
 /**
  * AI crawlers and control tokens allowed explicitly, so the site stays

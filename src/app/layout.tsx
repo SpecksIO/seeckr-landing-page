@@ -1,103 +1,62 @@
-import { nav, siteConfig } from '@/lib/site'
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
-import Link from 'next/link'
+import { Inter, Pacifico, Poppins } from 'next/font/google'
+import { SiteFooter } from '@/components/site-footer'
+import { SiteHeader } from '@/components/site-header'
+import { siteConfig } from '@/lib/site'
 import './globals.css'
 
-const geistSans = Geist({ variable: '--font-geist-sans', subsets: ['latin'] })
-const geistMono = Geist_Mono({
-  variable: '--font-geist-mono',
+const poppins = Poppins({
+  variable: '--font-poppins',
   subsets: ['latin'],
+  weight: ['300', '500', '600', '700'],
 })
+const inter = Inter({ variable: '--font-inter', subsets: ['latin'] })
+const pacifico = Pacifico({
+  variable: '--font-pacifico',
+  subsets: ['latin'],
+  weight: '400',
+})
+
+// Les pages restent statiques, régénérées toutes les 10 minutes : le bloc
+// webinar disparaît ainsi peu après le début de la session.
+export const revalidate = 600
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: {
-    default: `${siteConfig.name} — ${siteConfig.tagline}`,
-    template: `%s — ${siteConfig.name}`,
-  },
+  title: { default: siteConfig.name, template: `%s | ${siteConfig.name}` },
   description: siteConfig.description,
   applicationName: siteConfig.name,
-  alternates: { canonical: '/' },
   openGraph: {
     type: 'website',
     siteName: siteConfig.name,
     locale: siteConfig.locale,
-    url: '/',
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
-    description: siteConfig.description,
   },
-  twitter: {
-    card: 'summary_large_image',
-    site: siteConfig.twitter,
-    title: `${siteConfig.name} — ${siteConfig.tagline}`,
-    description: siteConfig.description,
-  },
-  robots: {
-    index: true,
-    follow: true,
-    googleBot: { index: true, follow: true, 'max-image-preview': 'large' },
-  },
+  twitter: { card: 'summary_large_image' },
 }
 
 export const viewport: Viewport = {
-  themeColor: [
-    { media: '(prefers-color-scheme: light)', color: '#ffffff' },
-    { media: '(prefers-color-scheme: dark)', color: '#0a0a0a' },
-  ],
+  themeColor: '#16113a',
 }
 
 export default function RootLayout({ children }: LayoutProps<'/'>) {
   return (
     <html
       lang={siteConfig.lang}
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      data-scroll-behavior="smooth"
+      className={`${poppins.variable} ${inter.variable} ${pacifico.variable} antialiased`}
     >
-      <body className="flex min-h-full flex-col">
+      <body className="flex min-h-dvh flex-col font-sans">
         <a
-          href="#main"
-          className="sr-only rounded-md bg-primary px-4 py-2 text-on-primary focus:not-sr-only focus:absolute focus:top-2 focus:left-2"
+          href="#contenu"
+          className="sr-only rounded-full bg-white px-4 py-2 text-ink focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-50"
         >
-          Skip to content
+          Aller au contenu
         </a>
-
-        <header className="border-b border-line">
-          <div className="mx-auto flex w-full max-w-3xl items-center justify-between px-6 py-4">
-            <Link
-              href="/"
-              className="text-base font-semibold focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-            >
-              {siteConfig.name}
-            </Link>
-            <nav aria-label="Main">
-              <ul className="flex gap-6 text-sm font-medium">
-                {nav.map((item) => (
-                  <li key={item.href}>
-                    <a
-                      href={item.href}
-                      className="hover:underline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
-                    >
-                      {item.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </nav>
-          </div>
-        </header>
-
-        <main id="main" className="flex-1">
+        <SiteHeader />
+        <main id="contenu" className="flex-1">
           {children}
         </main>
-
-        <footer className="border-t border-line">
-          <div className="mx-auto w-full max-w-3xl px-6 py-8 text-sm text-muted">
-            <p>
-              &copy; {new Date().getFullYear()} {siteConfig.name}. All rights
-              reserved.
-            </p>
-          </div>
-        </footer>
+        <SiteFooter />
       </body>
     </html>
   )

@@ -1,38 +1,88 @@
+import type { Metadata } from 'next'
+import { verticals } from '@/content/verticals'
+
 /**
- * Single source of truth for site identity.
- * Metadata, JSON-LD, sitemap, robots and llms.txt all read from here.
+ * Identité du site. Métadonnées, JSON-LD, sitemap, robots et llms.txt
+ * lisent tous ce fichier.
  */
 export const siteConfig = {
   name: 'Seeckr',
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'http://localhost:3000',
-  lang: 'en',
-  locale: 'en_US',
-  tagline: 'Find what matters, faster',
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://seeckr.fr',
+  lang: 'fr',
+  locale: 'fr_FR',
   description:
-    'Seeckr helps teams turn scattered information into answers they can act on.',
-  twitter: '@seeckr',
+    'Seeckr conseille chaque visiteur de votre site e-commerce comme un bon vendeur : des questions sur mesure, puis un top 3 classé de votre catalogue, avec le pourquoi.',
+  loginUrl: 'https://app.seeckr.fr/login',
 } as const
 
-export const nav = [
-  { href: '#features', label: 'Features' },
-  { href: '#faq', label: 'FAQ' },
-] as const
+export const cta = {
+  href: '/mon-seeckr',
+  label: 'Je veux recevoir gratuitement mon Seeckr personnalisé',
+  shortLabel: 'Mon Seeckr gratuit',
+} as const
 
-/**
- * Public, indexable routes. Feeds the sitemap and llms.txt.
- * Anything not listed here is never advertised to crawlers or assistants.
- */
+/** Routes publiques et indexables : alimentent le sitemap et llms.txt. */
 export const pages = [
   {
     path: '/',
-    title: 'Home',
-    summary: 'What Seeckr does, who it is for, and how to get access.',
-    changeFrequency: 'weekly',
+    title: 'Accueil',
+    summary:
+      "Ce que fait Seeckr, comment il s'installe, et la preuve Algimouss.",
     priority: 1,
   },
-] as const
+  ...verticals.map((vertical) => ({
+    path: `/${vertical.slug}`,
+    title: vertical.name,
+    summary: vertical.meta.description,
+    priority: 0.8,
+  })),
+  {
+    path: cta.href,
+    title: 'Mon Seeckr gratuit',
+    summary:
+      'Demander son assistant Seeckr, construit sur son propre catalogue.',
+    priority: 0.9,
+  },
+  {
+    path: '/mentions-legales',
+    title: 'Mentions légales',
+    summary: 'Éditeur et hébergeur du site.',
+    priority: 0.1,
+  },
+  {
+    path: '/confidentialite',
+    title: 'Confidentialité',
+    summary: 'Traitement des données envoyées par le formulaire.',
+    priority: 0.1,
+  },
+]
 
-/** Absolute URL for a site-relative path. */
+/** URL absolue d'un chemin du site. */
 export function absoluteUrl(path = '/') {
   return new URL(path, siteConfig.url).toString()
+}
+
+/** Titre, description, URL canonique et Open Graph d'une page. */
+export function pageMetadata({
+  title,
+  description,
+  path,
+}: {
+  title: string
+  description: string
+  path: string
+}): Metadata {
+  return {
+    title,
+    description,
+    alternates: { canonical: path },
+    openGraph: {
+      type: 'website',
+      siteName: siteConfig.name,
+      locale: siteConfig.locale,
+      url: path,
+      title,
+      description,
+    },
+  }
 }

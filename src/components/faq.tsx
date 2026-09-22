@@ -1,23 +1,27 @@
-import { faq } from '@/lib/content'
+import { Section } from '@/components/section'
+import { faq } from '@/content/home'
 
 export function Faq() {
   return (
-    <section
-      id="faq"
-      aria-labelledby="faq-title"
-      className="mx-auto w-full max-w-3xl scroll-mt-20 border-t border-line px-6 py-20"
-    >
-      <h2 id="faq-title" className="text-2xl font-bold tracking-tight">
-        Frequently asked questions
-      </h2>
-      <dl className="mt-10 space-y-6">
-        {faq.map((item) => (
-          <div key={item.id} className="border-b border-line pb-6">
-            <dt className="text-base font-semibold">{item.question}</dt>
-            <dd className="mt-2 text-sm leading-6 text-muted">{item.answer}</dd>
-          </div>
+    <Section id="faq" tone="light" eyebrow={faq.eyebrow} title={faq.title}>
+      <div className="max-w-3xl border-ink/15 border-b">
+        {faq.items.map((item) => (
+          <details key={item.id} className="group border-ink/15 border-t">
+            <summary className="flex min-h-16 cursor-pointer list-none items-center justify-between gap-6 py-4 font-display font-medium text-lg focus-visible:outline-2 focus-visible:outline-violet [&::-webkit-details-marker]:hidden">
+              {item.question}
+              <span
+                aria-hidden="true"
+                className="text-2xl text-violet transition-transform group-open:rotate-45"
+              >
+                +
+              </span>
+            </summary>
+            <p className="max-w-prose pb-6 text-ink/80 leading-relaxed">
+              {item.answer}
+            </p>
+          </details>
         ))}
-      </dl>
-    </section>
+      </div>
+    </Section>
   )
 }

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-label="Seeckr">
+  <rect width="256" height="256" rx="46" fill="#26215C"/>
+  <circle cx="128" cy="128" r="75" fill="none" stroke="#CECBF6" stroke-width="10"/>
+  <path transform="translate(90 104) scale(2.375 2.027)" fill="#CECBF6"
+        d="M23.6 0c-3.4 0-6.3 2.7-7.6 5.6C14.7 2.7 11.8 0 8.4 0 3.8 0 0 3.8 0 8.4
+           0 17.8 9.5 20.3 16 29.6 22.1 20.3 32 17.8 32 8.4 32 3.8 28.2 0 23.6 0Z"/>
+</svg>

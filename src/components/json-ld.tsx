@@ -8,6 +8,7 @@ export function JsonLd({ graph }: { graph: Graph }) {
   return (
     <script
       type="application/ld+json"
+      // biome-ignore lint/security/noDangerouslySetInnerHtml: JSON-LD sérialisé par nous, `<` échappé
       dangerouslySetInnerHTML={{
         __html: JSON.stringify(graph).replace(/</g, '\\u003c'),
       }}

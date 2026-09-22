@@ -1,39 +1,67 @@
-@import 'tailwindcss';
+@import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --muted: #52525b;
-  --line: #e4e4e7;
-  /* 8.6:1 on --background, clears WCAG AAA in both directions */
-  --primary: #1e40af;
-  --on-primary: #ffffff;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-    --muted: #a1a1aa;
-    --line: #27272a;
-    --primary: #93c5fd;
-    --on-primary: #0a0a0a;
-  }
+/* Palette de la charte Seeckr (septembre 2026). */
+@theme {
+  --color-night: #16113a;
+  --color-ink: #26215c;
+  --color-violet: #534ab7;
+  --color-violet-400: #7f77dd;
+  --color-violet-300: #8b85d4;
+  --color-violet-200: #afa9ec;
+  --color-violet-100: #cecbf6;
+  --color-mist: #eeedfe;
+  --color-text: #2c2c2a;
+  --color-text-soft: #5f5e5a;
+  --color-meta: #888780;
+  --color-line: #d3d1c7;
+  --color-paper: #f1efe8;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-muted: var(--muted);
-  --color-line: var(--line);
-  --color-primary: var(--primary);
-  --color-on-primary: var(--on-primary);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-poppins), system-ui, sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --font-script: var(--font-pacifico), cursive;
+}
+
+@keyframes enter {
+  from {
+    opacity: 0;
+    translate: 0 0.75rem;
+  }
+}
+
+html {
+  scroll-padding-top: 5rem;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: var(--font-sans), system-ui, sans-serif;
+  background: var(--color-night);
+  color: var(--color-mist);
+}
+
+/* Apparition douce au défilement, sans JavaScript. */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  @supports (animation-timeline: view()) {
+    .reveal {
+      animation: enter linear both;
+      animation-timeline: view();
+      animation-range: entry 0% entry 70%;
+    }
+  }
+}
+
+/* Filet de sécurité : sous mouvement réduit, plus aucune animation. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    /* biome-ignore-start lint/complexity/noImportantStyles: doit l'emporter sur toute animation */
+    animation: none !important;
+    transition: none !important;
+    /* biome-ignore-end lint/complexity/noImportantStyles: fin du filet */
+  }
 }

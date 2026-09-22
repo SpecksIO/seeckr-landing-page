@@ -1,15 +1,13 @@
-import { faq } from '@/lib/content'
-import { absoluteUrl, siteConfig } from '@/lib/site'
 import type { Graph } from 'schema-dts'
+import { faq } from '@/content/home'
+import { absoluteUrl, siteConfig } from '@/lib/site'
 
 const organizationId = absoluteUrl('/#organization')
 const websiteId = absoluteUrl('/#website')
 
 /**
- * Schema.org graph for the home page, type-checked against schema-dts.
- *
- * `speakable` marks the passages assistants should read aloud or quote, which
- * is what makes the page usable by voice and LLM surfaces (GEO).
+ * Graphe Schema.org de l'accueil, typé avec schema-dts. `speakable` désigne
+ * les passages qu'un assistant vocal ou un LLM peut citer.
  */
 export const homeGraph: Graph = {
   '@context': 'https://schema.org',
@@ -34,7 +32,7 @@ export const homeGraph: Graph = {
       '@type': 'WebPage',
       '@id': absoluteUrl('/#webpage'),
       url: absoluteUrl('/'),
-      name: `${siteConfig.name} — ${siteConfig.tagline}`,
+      name: siteConfig.name,
       description: siteConfig.description,
       isPartOf: { '@id': websiteId },
       about: { '@id': organizationId },
@@ -48,13 +46,10 @@ export const homeGraph: Graph = {
       '@type': 'FAQPage',
       '@id': absoluteUrl('/#faq'),
       isPartOf: { '@id': websiteId },
-      mainEntity: faq.map((item) => ({
+      mainEntity: faq.items.map((item) => ({
         '@type': 'Question' as const,
         name: item.question,
-        acceptedAnswer: {
-          '@type': 'Answer' as const,
-          text: item.answer,
-        },
+        acceptedAnswer: { '@type': 'Answer' as const, text: item.answer },
       })),
     },
   ],
