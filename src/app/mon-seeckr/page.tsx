@@ -14,6 +14,7 @@ const promises = [
   'Votre assistant, construit sur votre vrai catalogue.',
   'À essayer sur votre site, avec vos produits.',
   'Rien à installer, rien à signer.',
+  'Prêt sous 24 h ouvrées.',
 ]
 
 export default function MonSeeckrPage() {

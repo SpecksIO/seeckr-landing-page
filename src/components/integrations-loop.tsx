@@ -13,10 +13,10 @@ const zones: Record<Placement['id'], { box: string; card: string }> = {
   bandeau: { box: 'inset-x-0 top-0', card: 'rounded-t-none' },
   fenetre: {
     box: 'inset-0 grid place-items-center bg-night/60 p-4',
-    card: 'w-11/12',
+    card: 'w-3/5 flex-col items-start gap-3',
   },
-  bulle: { box: 'right-3 bottom-3 w-3/5', card: '' },
-  encart: { box: 'inset-x-5 top-[44%]', card: '' },
+  bulle: { box: 'right-3 bottom-3 w-1/2', card: 'flex-col items-start gap-2' },
+  encart: { box: 'inset-x-5 top-[46%]', card: '' },
 }
 
 /** L'assistant tel qu'il apparaît, identique d'un emplacement à l'autre. */
@@ -47,14 +47,20 @@ function Assistant({
 /** La fiche produit du marchand, en aplats : l'œil doit aller à l'assistant. */
 function MockPage() {
   return (
-    <div className="grid h-full grid-cols-2 gap-4 p-5">
-      <div className="rounded-xl bg-paper" />
-      <div className="space-y-2.5 pt-1">
-        <div className="h-3 w-4/5 rounded-full bg-paper" />
+    <div className="h-full p-5">
+      <div className="grid grid-cols-2 gap-4">
+        <div className="aspect-square rounded-xl bg-paper" />
+        <div className="space-y-2.5 pt-1">
+          <div className="h-3 w-4/5 rounded-full bg-paper" />
+          <div className="h-2 w-full rounded-full bg-paper" />
+          <div className="h-2 w-5/6 rounded-full bg-paper" />
+          <div className="mt-6 h-6 w-1/2 rounded-full bg-paper" />
+        </div>
+      </div>
+      <div className="mt-6 space-y-2.5">
         <div className="h-2 w-full rounded-full bg-paper" />
-        <div className="h-2 w-5/6 rounded-full bg-paper" />
-        <div className="h-2 w-2/3 rounded-full bg-paper" />
-        <div className="mt-5 h-6 w-1/2 rounded-full bg-paper" />
+        <div className="h-2 w-11/12 rounded-full bg-paper" />
+        <div className="h-2 w-3/4 rounded-full bg-paper" />
       </div>
     </div>
   )
@@ -81,7 +87,7 @@ export function IntegrationsLoop({
   useEffect(() => {
     if (reducedMotion || paused) return
     const timer = setTimeout(
-      () => setCurrent((index) => (index + 1) % placements.length),
+      () => setCurrent((current + 1) % placements.length),
       PLACEMENT_MS
     )
     return () => clearTimeout(timer)
@@ -100,11 +106,11 @@ export function IntegrationsLoop({
             <span className="size-2 rounded-full bg-line" />
             <span className="size-2 rounded-full bg-line" />
             <span className="size-2 rounded-full bg-line" />
-            <span className="ml-2 truncate rounded-full bg-white px-2.5 py-0.5 text-[10px] text-meta">
+            <span className="ml-2 truncate rounded-full bg-white px-2.5 py-0.5 text-[10px] text-text-soft">
               votre-boutique.fr
             </span>
           </div>
-          <div className="relative aspect-[4/3]">
+          <div className="relative aspect-4/3">
             <MockPage />
             {placements.map((placement, index) => (
               <div
