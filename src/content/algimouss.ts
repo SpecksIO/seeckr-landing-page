@@ -56,3 +56,47 @@ export const algimouss = {
 }
 
 export type AlgimoussFigure = keyof typeof algimouss.figures
+
+/**
+ * La page `/cas-clients/algimouss`. Elle ne fait que mettre en scène les
+ * chiffres ci-dessus : aucune affirmation qui ne s'y lise déjà.
+ */
+export const algimoussCase = {
+  meta: {
+    title: 'Cas client Algimouss, 19 jours de conseil mesurés',
+    description: `${algimouss.about} ${algimouss.context}`,
+  },
+  eyebrow: 'Cas client',
+  title: 'Algimouss, 19 jours de conseil mesurés.',
+  vertical: { href: '/produits-techniques', label: 'Produits techniques' },
+  setup:
+    "Les mesures distinguent deux emplacements : un bandeau sur les fiches produit, et une fenêtre au moment où le visiteur quitte la page. C'est tout ce qui a été posé sur leur site.",
+  figuresTitle: 'Ce que le conseil a produit, chiffre par chiffre.',
+  /** Le chiffre mis en avant dès le haut de la page. */
+  highlight: 'otherProduct' as AlgimoussFigure,
+  /** Les quatre chiffres que les autres pages montrent avant de renvoyer ici. */
+  teaserFigures: [
+    'opened',
+    'advised',
+    'topScore',
+    'otherProduct',
+  ] satisfies AlgimoussFigure[],
+  link: {
+    href: '/cas-clients/algimouss',
+    label: 'Lire le cas Algimouss en entier',
+  },
+  groups: [
+    {
+      title: 'Ce que les visiteurs en font',
+      figures: ['opened', 'advised', 'trend', 'firstAnswer'],
+    },
+    {
+      title: 'Où la conversation commence',
+      figures: ['exitIntent', 'productPage'],
+    },
+    {
+      title: 'Ce que le conseil change',
+      figures: ['topScore', 'otherProduct'],
+    },
+  ] satisfies { title: string; figures: AlgimoussFigure[] }[],
+}

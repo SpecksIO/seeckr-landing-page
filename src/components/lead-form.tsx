@@ -62,11 +62,11 @@ export function LeadForm() {
         className="rounded-2xl bg-white p-6 text-text outline-none sm:p-8"
       >
         <p className="font-display font-semibold text-2xl text-ink">
-          Merci, votre demande est bien arrivée.
+          C'est noté. On se met au travail.
         </p>
         <p className="mt-3 text-text-soft leading-relaxed">
           Nous construisons votre Seeckr sur votre catalogue, puis nous revenons
-          vers vous pour vous le présenter.
+          vers vous pour vous le montrer en action.
         </p>
       </div>
     )

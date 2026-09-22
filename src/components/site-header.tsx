@@ -2,18 +2,15 @@ import Link from 'next/link'
 import { Logo } from '@/components/logo'
 import { MobileMenu } from '@/components/mobile-menu'
 import { button } from '@/components/styles'
-import { verticals } from '@/content/verticals'
+import { VerticalsMenu } from '@/components/verticals-menu'
 import { isUpcoming, webinar } from '@/content/webinar'
 import { cta, siteConfig } from '@/lib/site'
 
 export function SiteHeader() {
-  const links = verticals.map((vertical) => ({
-    href: `/${vertical.slug}`,
-    label: vertical.name,
-  }))
-  if (isUpcoming(webinar.startsAt)) {
-    links.push({ href: '/#webinar', label: 'Webinar' })
-  }
+  // Les verticales vivent dans le menu « Par métier », jamais à plat ici.
+  const links = isUpcoming(webinar.startsAt)
+    ? [{ href: '/#webinar', label: 'Webinar' }]
+    : []
 
   return (
     <header className="sticky top-0 z-30 border-white/10 border-b bg-night">
@@ -27,6 +24,9 @@ export function SiteHeader() {
         </Link>
         <nav aria-label="Principal" className="ml-auto hidden lg:block">
           <ul className="flex items-center gap-7 text-sm">
+            <li>
+              <VerticalsMenu />
+            </li>
             {links.map((link) => (
               <li key={link.href}>
                 <Link

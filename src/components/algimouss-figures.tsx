@@ -1,7 +1,17 @@
 import { type AlgimoussFigure, algimouss } from '@/content/algimouss'
 
-/** Chiffres Algimouss, toujours suivis du client et de la période. */
-export function AlgimoussFigures({ figures }: { figures: AlgimoussFigure[] }) {
+/**
+ * Chiffres Algimouss, toujours suivis du client et de la période. Seule une
+ * page qui rappelle elle-même la source, une fois pour toutes ses séries,
+ * passe `showSource={false}`.
+ */
+export function AlgimoussFigures({
+  figures,
+  showSource = true,
+}: {
+  figures: AlgimoussFigure[]
+  showSource?: boolean
+}) {
   return (
     <figure>
       <dl className="grid gap-x-12 gap-y-10 sm:grid-cols-2">
@@ -27,9 +37,11 @@ export function AlgimoussFigures({ figures }: { figures: AlgimoussFigure[] }) {
           )
         })}
       </dl>
-      <figcaption className="mt-10 text-ink/70 text-sm">
-        {algimouss.source}
-      </figcaption>
+      {showSource && (
+        <figcaption className="mt-10 text-ink/70 text-sm">
+          {algimouss.source}
+        </figcaption>
+      )}
     </figure>
   )
 }

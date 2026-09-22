@@ -7,7 +7,7 @@ import { FinalCta } from '@/components/final-cta'
 import { Section } from '@/components/section'
 import { button, eyebrow } from '@/components/styles'
 import { WebinarBlock } from '@/components/webinar-block'
-import { type AlgimoussFigure, algimouss } from '@/content/algimouss'
+import { algimouss, algimoussCase } from '@/content/algimouss'
 import { doctrine } from '@/content/doctrine'
 import { verticals } from '@/content/verticals'
 import { isUpcoming, webinar } from '@/content/webinar'
@@ -72,7 +72,7 @@ export default async function VerticalPage({
         id="traduction"
         tone="light"
         eyebrow="La traduction"
-        title="Ce que dit votre visiteur, ce que dit votre fiche produit."
+        title="Il vous parle comme ça. Votre fiche lui répond comme ça."
       >
         <div className="hidden grid-cols-2 gap-10 pb-4 font-medium text-sm text-violet md:grid">
           <p>Votre visiteur</p>
@@ -132,7 +132,7 @@ export default async function VerticalPage({
       <Section
         id="benefices"
         eyebrow="Ce que vous y gagnez"
-        title={vertical.meta.title}
+        title={vertical.benefitsTitle}
       >
         <ol className="grid gap-10 md:grid-cols-3 md:gap-8">
           {vertical.benefits.map((benefit) => (
@@ -159,9 +159,13 @@ export default async function VerticalPage({
           title="Algimouss, 19 jours de conseil mesurés."
           intro={`${algimouss.about} ${algimouss.context}`}
         >
-          <AlgimoussFigures
-            figures={Object.keys(algimouss.figures) as AlgimoussFigure[]}
-          />
+          <AlgimoussFigures figures={algimoussCase.teaserFigures} />
+          <Link
+            href={algimoussCase.link.href}
+            className="mt-8 inline-flex min-h-11 items-center font-medium text-violet underline underline-offset-4"
+          >
+            {algimoussCase.link.label}
+          </Link>
         </Section>
       )}
 

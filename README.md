@@ -46,9 +46,9 @@ Sans `NEXT_PUBLIC_SITE_URL`, le site suppose `https://seeckr.fr`. Aucune base de
 
 Le contenu vit dans `src/content/`, jamais dans les composants :
 
-- `home.ts` : accueil, la conversation du hero, la FAQ
+- `home.ts` : accueil, la conversation jouée en boucle, la FAQ
 - `verticals/*.ts` : un fichier par verticale, alimentant le gabarit `src/app/[vertical]/page.tsx`
-- `algimouss.ts` : les chiffres du seul client citable, avec leur période et leur source
+- `algimouss.ts` : les chiffres du seul client citable, avec leur période et leur source, et la page de cas client
 - `webinar.ts` : titre, date et lien d'inscription du prochain webinar
 - `doctrine.ts` : ce qui distingue le conseil Seeckr d'un chatbot
 - `src/lib/site.ts` : identité du site, appel à l'action, liste des pages publiques
@@ -63,6 +63,9 @@ Une date passée ou vide fait disparaître tout ce qui concerne le webinar, y co
 Seul Algimouss peut être nommé, et ses chiffres mesurent le conseil, jamais des ventes. Tout chiffre affiché vient de
 `src/content/algimouss.ts` et s'accompagne du nom du client et de la période. Les scores de compatibilité des
 conversations d'exemple sont des illustrations, attribuées à « Votre marque ».
+
+La page `/cas-clients/algimouss` porte les chiffres au complet. L'accueil et les pages verticales n'en montrent que
+`teaserFigures`, puis renvoient dessus : un chiffre ne se raconte en entier qu'à un seul endroit.
 
 ## Formulaire du Seeckr personnalisé
 

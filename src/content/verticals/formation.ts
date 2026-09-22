@@ -4,17 +4,17 @@ import type { Vertical } from '@/content/types'
 export const formation: Vertical = {
   slug: 'formation',
   name: 'Formation',
-  teaser: 'Vos visiteurs disent où ils en sont et où ils veulent aller.',
+  teaser: "Il sait ce qui le bloque. Pas comment ça s'appelle.",
   meta: {
     title: 'Seeckr pour les organismes de formation',
     description:
-      "Votre visiteur sait où il en est et où il veut aller. Seeckr lui pose des questions sur mesure et propose les formations de votre catalogue qui l'y mènent.",
+      "Votre visiteur sait où il en est et où il veut aller. Seeckr lui montre laquelle de vos formations l'y emmène, et pourquoi celle-là.",
   },
   hero: {
     title:
-      'Votre visiteur sait où il en est. Seeckr lui montre le chemin dans votre catalogue.',
+      'Il ne cherche pas une formation. Il cherche à ne plus refaire ses tableaux le dimanche soir.',
     intro:
-      "Il décrit son métier, ce qui le freine et ce qu'il vise. Seeckr lui propose les formations de votre catalogue qui l'y mènent, et lui explique pourquoi celles-ci.",
+      "Il vous dit où il en est, ce qui le bloque, ce qu'il vise. Seeckr lui montre laquelle de vos formations l'y emmène, et pourquoi celle-là plutôt qu'une autre.",
   },
   contrast: {
     pairs: [
@@ -35,10 +35,10 @@ export const formation: Vertical = {
       },
     ],
     closing:
-      "Entre le point de départ et l'intitulé de la formation, Seeckr trace le chemin.",
+      'Entre son point de départ et votre intitulé, Seeckr trace le chemin.',
   },
   conversation: {
-    title: 'Des questions sur son travail, jamais sur le programme.',
+    title: 'On part de son lundi matin.',
     steps: [
       {
         stage: 'On fait connaissance',
@@ -82,24 +82,25 @@ export const formation: Vertical = {
       {
         name: 'Automatiser ses rapports avec un tableur',
         score: 92,
-        why: 'Elle part de rapports comme les vôtres et vous fait refaire chaque étape sur un cas concret : de quoi ne plus refaire vos tableaux à la main.',
+        why: 'Elle part de rapports comme les vôtres et vous fait refaire chaque étape sur un cas concret. Vous ne remonterez plus vos tableaux à la main.',
       },
       { name: 'Tableur perfectionnement', score: 77 },
       { name: 'Tableaux de bord : les bases', score: 64 },
     ],
   },
+  benefitsTitle: 'Des inscrits qui savent pourquoi ils viennent.',
   benefits: [
     {
-      title: 'Du point de départ à la destination',
-      text: "Votre visiteur n'a pas à connaître l'intitulé exact d'une formation. Il dit où il en est et où il veut aller, Seeckr trace le chemin.",
+      title: 'De son problème à votre catalogue',
+      text: "Il n'a aucune idée de l'intitulé qu'il devrait chercher. Il sait seulement ce qui lui pourrit ses semaines. Seeckr fait le chemin.",
     },
     {
-      title: 'Un parcours argumenté',
-      text: "Chaque formation proposée porte un score de compatibilité et la raison de sa place. Si aucune ne convient, l'assistant le dit.",
+      title: 'Il comprend pourquoi celle-là',
+      text: "Chaque formation proposée porte un score de compatibilité et la raison de sa place. Un stagiaire qui a compris pourquoi cette formation-là s'engage avec autrement plus d'assurance.",
     },
     {
-      title: 'Les attentes de vos futurs stagiaires',
-      text: 'Chaque conversation est lisible. Vous découvrez comment vos visiteurs décrivent leurs besoins : de la matière directe pour vos intitulés et vos campagnes.',
+      title: 'Les attentes de vos futurs stagiaires, en clair',
+      text: "Vous lirez, dans leurs mots, ce qu'ils viennent vraiment chercher. Vos intitulés, vos programmes et vos campagnes n'ont jamais eu de meilleure matière.",
     },
   ],
 }

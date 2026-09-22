@@ -1,24 +1,18 @@
 'use client'
 
-import { useEffect, useState, useSyncExternalStore } from 'react'
+import { useEffect, useState } from 'react'
+import { AnimationToggle } from '@/components/animation-toggle'
 import { CardFrame, StepView, TopThree } from '@/components/conversation-card'
 import type { Conversation } from '@/content/types'
+import { useReducedMotion } from '@/lib/reduced-motion'
 
 const QUESTION_MS = 1900
 const PICK_MS = 1100
 const TOP_MS = 5500
 
-const REDUCED_MOTION = '(prefers-reduced-motion: reduce)'
-
-function subscribeToReducedMotion(onChange: () => void) {
-  const query = matchMedia(REDUCED_MOTION)
-  query.addEventListener('change', onChange)
-  return () => query.removeEventListener('change', onChange)
-}
-
 /**
- * La conversation du hero, qui se joue seule en boucle : une question, un
- * choix, la question suivante, puis le top 3.
+ * La conversation qui se joue seule en boucle sur fond clair : une question,
+ * un choix, la question suivante, puis le top 3.
  *
  * Chaque question occupe deux images (posée, puis répondue), le top 3 la
  * dernière. Sous mouvement réduit, seul le top 3 s'affiche, sans animation.
@@ -30,11 +24,7 @@ export function DemoConversation({
 }) {
   const { steps, top } = conversation
   const lastFrame = steps.length * 2
-  const reducedMotion = useSyncExternalStore(
-    subscribeToReducedMotion,
-    () => matchMedia(REDUCED_MOTION).matches,
-    () => false
-  )
+  const reducedMotion = useReducedMotion()
   const [frame, setFrame] = useState(0)
   const [paused, setPaused] = useState(false)
 
@@ -90,13 +80,11 @@ export function DemoConversation({
         </CardFrame>
       </div>
       {!reducedMotion && (
-        <button
-          type="button"
-          onClick={() => setPaused(!paused)}
-          className="mt-3 min-h-11 text-sm text-violet-200 underline-offset-4 hover:underline focus-visible:outline-2 focus-visible:outline-violet-300"
-        >
-          {paused ? "Reprendre l'animation" : "Mettre l'animation en pause"}
-        </button>
+        <AnimationToggle
+          paused={paused}
+          onToggle={() => setPaused(!paused)}
+          className="text-violet focus-visible:outline-violet"
+        />
       )}
     </figure>
   )

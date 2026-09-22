@@ -3,16 +3,18 @@ import type { Vertical } from '@/content/types'
 export const produitsTechniques: Vertical = {
   slug: 'produits-techniques',
   name: 'Produits techniques',
-  teaser: 'Vos visiteurs décrivent leur maison, pas une référence.',
+  teaser:
+    "Il voit des traces noires. Il ne sait pas que ça s'appelle un hydrofuge.",
   meta: {
     title: 'Seeckr pour les produits techniques',
     description:
-      "Vos visiteurs décrivent leur maison, un matériau, un symptôme. Seeckr les conduit au bon produit de votre catalogue. Le cas Algimouss, chiffres à l'appui.",
+      "Votre visiteur décrit sa maison, un matériau, un symptôme. Seeckr le conduit au bon produit de votre catalogue. Le cas Algimouss, chiffres à l'appui.",
   },
   hero: {
-    title: 'Votre visiteur parle de sa maison, pas de vos références.',
+    title:
+      "Il voit des traces noires sur son mur nord. Il ne sait pas que ça s'appelle un hydrofuge.",
     intro:
-      "Un matériau, un symptôme, un coin d'ombre : Seeckr part de ce que votre visiteur voit chez lui et le conduit au produit de votre catalogue qui règle son cas.",
+      "Un matériau, un symptôme, un coin d'ombre : Seeckr part de ce qu'il voit chez lui et le conduit au produit qui règle son cas. Chez Algimouss, une conversation sur deux a mis en tête un autre produit que celui de la page d'arrivée. Autant de visiteurs qui repartaient avec le mauvais bidon.",
   },
   contrast: {
     pairs: [
@@ -30,10 +32,11 @@ export const produitsTechniques: Vertical = {
         sheet: 'Antidérapant, supports bois et composite.',
       },
     ],
-    closing: "Traduire l'un en l'autre, c'est le travail de Seeckr.",
+    closing:
+      "Entre ce qu'il voit chez lui et ce que vous vendez, il manque un traducteur.",
   },
   conversation: {
-    title: "Des questions sur sa maison, jamais sur l'étiquette.",
+    title: 'On commence par son toit.',
     steps: [
       {
         stage: 'On fait connaissance',
@@ -75,24 +78,25 @@ export const produitsTechniques: Vertical = {
       {
         name: 'Traitement toiture curatif',
         score: 91,
-        why: "Il s'applique depuis l'échelle, sans rinçage, et agit dans la durée : fait pour un toit à l'ombre que vous ne voulez pas remonter nettoyer.",
+        why: "Il s'applique depuis l'échelle, sans rinçage, et il agit dans la durée. Vous ne remonterez pas nettoyer l'an prochain.",
       },
       { name: 'Nettoyant toiture concentré', score: 79 },
       { name: 'Hydrofuge incolore', score: 63 },
     ],
   },
+  benefitsTitle: 'Le bon produit du premier coup, même par le mauvais chemin.',
   benefits: [
     {
-      title: 'Du symptôme au produit',
-      text: "Votre visiteur n'a pas à connaître vos gammes. Il décrit ce qu'il voit chez lui, Seeckr fait la traduction.",
+      title: 'Du symptôme au bon bidon',
+      text: "Votre visiteur n'a pas à connaître vos gammes. Il décrit la trace noire sur son mur nord, Seeckr fait le reste.",
     },
     {
-      title: 'Le bon produit, même depuis la mauvaise fiche',
-      text: 'Un visiteur arrive souvent sur une fiche qui ne correspond pas à son cas. Seeckr place alors en tête le produit qui lui convient, et lui dit pourquoi.',
+      title: 'Le bon produit, même depuis la mauvaise page',
+      text: "Un visiteur atterrit rarement sur la fiche qui correspond à son cas. Chez Algimouss, c'était une fois sur deux. Seeckr remet le bon produit en tête et lui explique pourquoi il change d'avis.",
     },
     {
-      title: 'Un conseil utile, même sans vente en ligne',
-      text: 'Votre site ne vend pas ? Seeckr conseille quand même : votre visiteur sait quoi demander à son distributeur.',
+      title: 'Vous conseillez même sans vendre en ligne',
+      text: "Votre site ne prend pas de commande ? Seeckr conseille quand même, et votre visiteur arrive chez son distributeur en sachant exactement quoi demander. C'est précisément le cas d'Algimouss.",
     },
   ],
   showAlgimouss: true,

@@ -23,6 +23,14 @@ export type Conversation = {
   top: Recommendation[]
 }
 
+/** Un emplacement possible de l'assistant sur le site du marchand. */
+export type Placement = {
+  /** Identifie la position jouée dans la démonstration animée. */
+  id: 'bandeau' | 'fenetre' | 'bulle' | 'encart'
+  name: string
+  text: string
+}
+
 export type Vertical = {
   slug: string
   name: string
@@ -35,6 +43,8 @@ export type Vertical = {
     closing: string
   }
   conversation: Conversation & { title: string }
+  /** Titre de la section bénéfices. Le `meta.title` sert au SEO, pas au lecteur. */
+  benefitsTitle: string
   benefits: { title: string; text: string }[]
   /** Affiche le cas Algimouss complet. */
   showAlgimouss?: boolean

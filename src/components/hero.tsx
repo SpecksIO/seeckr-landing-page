@@ -1,7 +1,6 @@
 import Link from 'next/link'
-import { DemoConversation } from '@/components/demo-conversation'
 import { button } from '@/components/styles'
-import { hero, heroConversation } from '@/content/home'
+import { hero } from '@/content/home'
 import { isUpcoming, webinar } from '@/content/webinar'
 import { cta } from '@/lib/site'
 
@@ -40,7 +39,17 @@ export function Hero() {
           </div>
         </div>
         <div className="mx-auto w-full max-w-md lg:max-w-none">
-          <DemoConversation conversation={heroConversation} />
+          <video
+            controls
+            muted
+            playsInline
+            preload="none"
+            poster="/media/demo-produit.jpg"
+            aria-label={hero.videoLabel}
+            className="aspect-square w-full rounded-3xl bg-paper"
+          >
+            <source src="/media/demo-produit.mp4" type="video/mp4" />
+          </video>
         </div>
       </div>
     </section>

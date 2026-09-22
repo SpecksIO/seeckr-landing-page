@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import { algimoussCase } from '@/content/algimouss'
 import { verticals } from '@/content/verticals'
 
 /**
@@ -11,14 +12,14 @@ export const siteConfig = {
   lang: 'fr',
   locale: 'fr_FR',
   description:
-    'Seeckr conseille chaque visiteur de votre site e-commerce comme un bon vendeur : des questions sur mesure, puis un top 3 classé de votre catalogue, avec le pourquoi.',
+    "Vos visiteurs connaissent leur vie, pas votre catalogue. Seeckr les écoute, leur pose les questions qu'ils n'auraient jamais formulées seuls, et les conduit au produit qui leur va vraiment.",
   loginUrl: 'https://app.seeckr.fr/login',
 } as const
 
 export const cta = {
   href: '/mon-seeckr',
-  label: 'Je veux recevoir gratuitement mon Seeckr personnalisé',
-  shortLabel: 'Mon Seeckr gratuit',
+  label: 'Je veux voir Seeckr sur mon catalogue',
+  shortLabel: 'Tester sur mon catalogue',
 } as const
 
 /** Routes publiques et indexables : alimentent le sitemap et llms.txt. */
@@ -38,10 +39,16 @@ export const pages = [
   })),
   {
     path: cta.href,
-    title: 'Mon Seeckr gratuit',
+    title: 'Tester Seeckr sur mon catalogue',
     summary:
       'Demander son assistant Seeckr, construit sur son propre catalogue.',
     priority: 0.9,
+  },
+  {
+    path: '/cas-clients/algimouss',
+    title: algimoussCase.meta.title,
+    summary: algimoussCase.meta.description,
+    priority: 0.8,
   },
   {
     path: '/mentions-legales',

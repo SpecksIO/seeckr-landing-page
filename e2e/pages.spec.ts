@@ -2,10 +2,11 @@ import { expect, test } from '@playwright/test'
 
 const pages = [
   { path: '/', heading: /vendeur/i },
-  { path: '/cosmetique-nutrition', heading: /routine/i },
-  { path: '/produits-techniques', heading: /maison/i },
-  { path: '/formation', heading: /chemin/i },
-  { path: '/mon-seeckr', heading: /gratuitement/i },
+  { path: '/cosmetique-nutrition', heading: /sérum/i },
+  { path: '/produits-techniques', heading: /hydrofuge/i },
+  { path: '/formation', heading: /tableaux/i },
+  { path: '/mon-seeckr', heading: /travailler/i },
+  { path: '/cas-clients/algimouss', heading: /algimouss/i },
   { path: '/mentions-legales', heading: /mentions légales/i },
   { path: '/confidentialite', heading: /confidentialité/i },
 ]
@@ -38,7 +39,7 @@ test('le formulaire refuse un envoi incomplet, champ par champ', async ({
   )
 
   await page.getByLabel('Site internet').fill('maboutique')
-  await page.getByRole('button', { name: /mon Seeckr personnalisé/i }).click()
+  await page.getByRole('button', { name: /sur mon catalogue/i }).click()
 
   await expect(page.getByText(/Il manque une information/)).toBeVisible()
   await expect(page.locator('#site-error')).toContainText(/adresse/)
@@ -51,7 +52,7 @@ test("l'appel principal mène au formulaire", async ({ page }) => {
   await page.goto('/')
 
   await page
-    .getByRole('link', { name: /mon Seeckr personnalisé/i })
+    .getByRole('link', { name: /sur mon catalogue/i })
     .first()
     .click()
 

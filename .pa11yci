@@ -12,6 +12,7 @@
     "http://localhost:3000/produits-techniques",
     "http://localhost:3000/formation",
     "http://localhost:3000/mon-seeckr",
+    "http://localhost:3000/cas-clients/algimouss",
     "http://localhost:3000/mentions-legales",
     "http://localhost:3000/confidentialite"
   ]

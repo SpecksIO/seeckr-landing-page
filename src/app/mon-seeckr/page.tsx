@@ -11,9 +11,9 @@ export const metadata: Metadata = pageMetadata({
 })
 
 const promises = [
-  'Votre assistant, construit sur votre propre catalogue.',
-  'À essayer sur votre propre site, avec vos produits.',
-  "Rien n'est installé chez vous.",
+  'Votre assistant, construit sur votre vrai catalogue.',
+  'À essayer sur votre site, avec vos produits.',
+  'Rien à installer, rien à signer.',
 ]
 
 export default function MonSeeckrPage() {
@@ -29,11 +29,12 @@ export default function MonSeeckrPage() {
             id="mon-seeckr-title"
             className="mt-5 text-balance font-display font-semibold text-[clamp(2.125rem,5vw,3.5rem)] leading-[1.08] tracking-tight"
           >
-            Voyez Seeckr conseiller vos propres clients, gratuitement.
+            Voyez-le travailler sur vos propres produits.
           </h1>
           <p className="mt-6 max-w-xl text-lg text-violet-200 leading-relaxed">
             Donnez-nous l'adresse de votre site. Nous construisons votre
-            assistant sur votre catalogue, puis nous vous le présentons.
+            assistant sur votre vrai catalogue, puis nous vous le montrons en
+            action.
           </p>
           <ul className="mt-10 max-w-xl border-white/15 border-b">
             {promises.map((promise) => (

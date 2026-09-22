@@ -4,17 +4,17 @@ import type { Vertical } from '@/content/types'
 export const cosmetiqueNutrition: Vertical = {
   slug: 'cosmetique-nutrition',
   name: 'Cosmétique et nutrition',
-  teaser: 'Vos visiteurs parlent de leur routine, pas de la composition.',
+  teaser: "Ce qu'il fait le matin compte plus que votre formule.",
   meta: {
     title: 'Seeckr pour la cosmétique et la nutrition',
     description:
-      "Vos visiteurs parlent de leur routine et de leurs habitudes, pas d'actifs. Seeckr leur pose des questions sur mesure et classe les produits de votre catalogue qui leur conviennent.",
+      "Vos visiteurs parlent de leur routine et de leurs habitudes, pas d'actifs. Seeckr les écoute et classe les produits de votre catalogue qu'ils tiendront vraiment.",
   },
   hero: {
     title:
-      "Votre visiteur ne cherche pas un actif. Il cherche la routine qu'il tiendra.",
+      'Il a arrêté son dernier sérum, et il ne sait pas vraiment pourquoi.',
     intro:
-      "Seeckr l'interroge sur son quotidien, sur ce qu'il a déjà essayé et ce qu'il a laissé tomber, puis classe les produits de votre catalogue qui lui vont vraiment, avec le pourquoi.",
+      "Seeckr l'interroge sur ses journées, sur ce qu'il a essayé et laissé tomber, et trouve la vraie raison : il l'oubliait. À partir de là, le bon produit n'est plus le plus actif, c'est celui qu'il tiendra.",
   },
   contrast: {
     pairs: [
@@ -34,10 +34,11 @@ export const cosmetiqueNutrition: Vertical = {
       },
     ],
     closing:
-      "Entre les deux, il manque un vendeur qui écoute. C'est la place de Seeckr.",
+      "Entre les deux, il manque quelqu'un qui écoute. C'est la place de Seeckr.",
   },
   conversation: {
-    title: 'Des questions sur sa journée, jamais sur la fiche.',
+    title:
+      "Ce qu'il fait le matin en dit plus long que votre liste d'ingrédients.",
     steps: [
       {
         stage: 'On fait connaissance',
@@ -80,24 +81,25 @@ export const cosmetiqueNutrition: Vertical = {
       {
         name: 'Poudre Végétale Vanille',
         score: 93,
-        why: 'Elle se mélange à votre café du matin, et son goût vanille ne demande aucun effort : de quoi la prendre encore dans un mois.',
+        why: 'Elle se mélange à votre café du matin et son goût vanille ne demande aucun effort. Vous la prendrez encore dans un mois.',
       },
       { name: 'Gélules Magnésium', score: 74 },
       { name: 'Infusion du Soir', score: 62 },
     ],
   },
+  benefitsTitle: 'Des clients qui gardent le produit, et qui reviennent.',
   benefits: [
     {
-      title: 'La routine avant la composition',
-      text: 'Votre visiteur décrit ses journées et ses habitudes. Seeckr traduit ce quotidien en produits de votre catalogue, sans lui demander de connaître la fiche.',
+      title: 'La routine avant la formule',
+      text: 'Il décrit ses journées, ses oublis, ses ras-le-bol. Seeckr traduit tout ça en produits de votre catalogue, sans jamais lui demander de déchiffrer une étiquette.',
     },
     {
-      title: 'Un top 3 qui sait dire non',
-      text: "Si un seul produit lui convient, il n'en voit qu'un. Si rien ne convient, l'assistant le lui dit. Votre visiteur choisit en confiance.",
+      title: 'Un conseil qui sait dire non',
+      text: "Si un seul produit lui convient, il n'en voit qu'un. Si rien ne convient, l'assistant le dit. Un conseil qui refuse de vendre, c'est un conseil qu'on croit, et c'est ce qui fait revenir.",
     },
     {
-      title: 'Les mots de vos clients, pour vos campagnes',
-      text: 'Chaque conversation est lisible. Vous découvrez comment vos clients parlent de leur peau, de leur rythme et de leurs envies : de la matière directe pour vos campagnes.',
+      title: 'Les mots de vos clients, prêts pour vos campagnes',
+      text: "Vous saurez enfin comment ils parlent de leur peau, de leur fatigue, de leur rythme. Ce ne sont plus des personas, ce sont des phrases, et elles sonnent plus juste que tout ce qu'un brief produira.",
     },
   ],
 }

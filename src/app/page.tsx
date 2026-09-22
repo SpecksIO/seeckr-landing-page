@@ -1,22 +1,27 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { AlgimoussFigures } from '@/components/algimouss-figures'
+import { DemoConversation } from '@/components/demo-conversation'
 import { Faq } from '@/components/faq'
 import { FinalCta } from '@/components/final-cta'
 import { Hero } from '@/components/hero'
+import { IntegrationsLoop } from '@/components/integrations-loop'
 import { JsonLd } from '@/components/json-ld'
 import { Section } from '@/components/section'
+import { button } from '@/components/styles'
 import { WebinarBlock } from '@/components/webinar-block'
-import { algimouss } from '@/content/algimouss'
+import { algimouss, algimoussCase } from '@/content/algimouss'
 import {
   benefits,
-  demoVideo,
+  demoConversation,
   howItWorks,
+  integrations,
   proof,
+  situation,
   verticalsIntro,
 } from '@/content/home'
 import { verticals } from '@/content/verticals'
-import { pageMetadata, siteConfig } from '@/lib/site'
+import { cta, pageMetadata, siteConfig } from '@/lib/site'
 import { homeGraph } from '@/lib/structured-data'
 
 export const metadata: Metadata = {
@@ -62,23 +67,39 @@ export default function Home() {
       </Section>
 
       <Section
+        id="integrations"
+        eyebrow={integrations.eyebrow}
+        title={integrations.title}
+        intro={integrations.text}
+      >
+        <IntegrationsLoop
+          placements={integrations.placements}
+          question={integrations.question}
+          start={integrations.start}
+        />
+        <div className="reveal mt-14 flex flex-col gap-6 border-white/15 border-t pt-10 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <p className="font-display font-semibold text-xl">
+              {integrations.cta.title}
+            </p>
+            <p className="mt-2 text-violet-200">{integrations.cta.text}</p>
+          </div>
+          <Link href={cta.href} className={`${button('primary')} shrink-0`}>
+            {integrations.cta.label}
+          </Link>
+        </div>
+      </Section>
+
+      <Section
         id="demonstration"
         tone="light"
-        eyebrow={demoVideo.eyebrow}
-        title={demoVideo.title}
-        intro={demoVideo.text}
+        eyebrow={situation.eyebrow}
+        title={situation.title}
+        intro={situation.text}
       >
-        <video
-          controls
-          muted
-          playsInline
-          preload="none"
-          poster="/media/demo-produit.jpg"
-          aria-label={demoVideo.label}
-          className="reveal mx-auto aspect-square w-full max-w-2xl rounded-3xl bg-paper"
-        >
-          <source src="/media/demo-produit.mp4" type="video/mp4" />
-        </video>
+        <div className="reveal mx-auto w-full max-w-md">
+          <DemoConversation conversation={demoConversation} />
+        </div>
       </Section>
 
       <Section id="benefices" eyebrow={benefits.eyebrow} title={benefits.title}>
@@ -129,12 +150,12 @@ export default function Home() {
         title={proof.title}
         intro={`${algimouss.about} ${algimouss.context}`}
       >
-        <AlgimoussFigures figures={proof.figures} />
+        <AlgimoussFigures figures={algimoussCase.teaserFigures} />
         <Link
-          href={proof.link.href}
+          href={algimoussCase.link.href}
           className="mt-8 inline-flex min-h-11 items-center font-medium text-violet underline underline-offset-4"
         >
-          {proof.link.label}
+          {algimoussCase.link.label}
         </Link>
       </Section>
 
