@@ -89,6 +89,9 @@ export function pageMetadata({
       url: path,
       title,
       description,
+      // Next remplace l'`openGraph` du layout au lieu de le compléter. Sans
+      // cette ligne, seul l'accueil hériterait de l'image du segment racine.
+      images: ['/opengraph-image.png'],
     },
   }
 }
