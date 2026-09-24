@@ -89,35 +89,43 @@ export const integrations = {
   eyebrow: 'Plusieurs intégrations possibles',
   title: 'Le même assistant, là où votre visiteur hésite.',
   text: "Vous ne collez qu'une ligne de script. L'emplacement, lui, se choisit depuis le back office, et vous en changez d'un clic autant de fois que vous voulez.",
-  /** Ce que l'assistant dit dans la démonstration, quel que soit l'emplacement. */
-  question: 'Pas sûr que ce produit soit le bon pour vous ?',
-  start: 'Démarrer',
+  video: {
+    src: '/media/integrations.mp4',
+    poster: '/media/integrations.jpg',
+    label:
+      "Démonstration : le même assistant sur une fiche produit, en barre en bas de l'écran, en aperçu latéral, sur une recherche sans résultat, puis au moment du départ.",
+  },
   placements: [
     {
-      id: 'bandeau',
-      name: 'Le bandeau sur la fiche produit',
-      text: "En haut du produit qu'il regarde, avant qu'il ait fini de lire la description.",
+      id: 'fiche-produit',
+      name: 'Sur la fiche produit',
+      text: "Sous le produit qu'il regarde, la question qu'il n'ose pas poser : est-ce vraiment celui-là qu'il lui faut ?",
     },
     {
-      id: 'fenetre',
+      id: 'barre',
+      name: "La barre en bas de l'écran",
+      text: "Sur toutes les pages, fermable d'un clic, elle attend le moment où il bloque.",
+    },
+    {
+      id: 'apercu',
+      name: "L'aperçu qui glisse sur le côté",
+      text: "Après quelques secondes d'hésitation, avec déjà la première question posée.",
+    },
+    {
+      id: 'sans-resultat',
+      name: 'Quand la recherche ne donne rien',
+      text: "Zéro résultat, le moment où il s'en va. L'assistant, lui, regarde au-delà des filtres.",
+    },
+    {
+      id: 'depart',
       name: 'La fenêtre au moment du départ',
-      text: "Au moment où il quitte la page. Une question, plutôt qu'une remise de dernière minute.",
-    },
-    {
-      id: 'bulle',
-      name: "La bulle, en bas de l'écran",
-      text: 'Discrète, sur toutes les pages, elle attend le moment où il bloque.',
-    },
-    {
-      id: 'encart',
-      name: "L'encart dans une page",
-      text: "Dans le fil d'une page d'accueil ou d'un guide d'achat, comme un paragraphe de plus.",
+      text: "Il s'apprête à fermer l'onglet. Une question, plutôt qu'une remise de dernière minute.",
     },
   ] satisfies Placement[],
   cta: {
     title: 'Recevez votre Seeckr personnalisé sous 24 h ouvrées.',
     text: "C'est gratuit, et vous avez de quoi en faire la démonstration à vos équipes.",
-    label: 'Recevez votre Seeckr personnalisé',
+    label: 'Recevez gratuitement votre Seeckr personnalisé',
   },
 }
 

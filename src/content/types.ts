@@ -25,8 +25,7 @@ export type Conversation = {
 
 /** Un emplacement possible de l'assistant sur le site du marchand. */
 export type Placement = {
-  /** Identifie la position jouée dans la démonstration animée. */
-  id: 'bandeau' | 'fenetre' | 'bulle' | 'encart'
+  id: string
   name: string
   text: string
 }

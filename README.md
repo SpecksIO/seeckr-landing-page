@@ -80,6 +80,9 @@ JavaScript côté client.
 - `pnpm lint` et `pnpm format` : Biome ; `pnpm lint:md` : markdownlint
 - `pnpm test:run` : tests unitaires ; `pnpm test:e2e` : Playwright
 - `pnpm lighthouse`, `pnpm lighthouse:mobile`, `pnpm pa11y`, `pnpm webhint` : audits, rapports dans `reports/`
+- `./scripts/build-integrations-video.sh [captures]` : refait `public/media/integrations.mp4` et son affiche à partir
+  des maquettes du banc d'essai Seeckr. Demande `ffmpeg`. Les emplacements montrés, leur ordre et leur durée sont en
+  tête du script ; les textes qui les accompagnent vivent dans `integrations` de `src/content/home.ts`
 
 Sur un poste sans les bibliothèques système de Chromium, `CHROME_PATH` pointe vers le Chrome utilisé par les audits,
 et Playwright s'en sert aussi : `CHROME_PATH=$(which google-chrome) pnpm test:e2e`.

@@ -74,8 +74,7 @@ export default function Home() {
       >
         <IntegrationsLoop
           placements={integrations.placements}
-          question={integrations.question}
-          start={integrations.start}
+          video={integrations.video}
         />
         <div className="reveal mt-14 flex flex-col gap-6 border-white/15 border-t pt-10 sm:flex-row sm:items-center sm:justify-between">
           <div>
