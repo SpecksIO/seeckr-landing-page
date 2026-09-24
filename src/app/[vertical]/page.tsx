@@ -4,6 +4,7 @@ import { notFound } from 'next/navigation'
 import { AlgimoussFigures } from '@/components/algimouss-figures'
 import { ConversationTranscript } from '@/components/conversation-card'
 import { FinalCta } from '@/components/final-cta'
+import { JsonLd } from '@/components/json-ld'
 import { Section } from '@/components/section'
 import { button, eyebrow } from '@/components/styles'
 import { WebinarBlock } from '@/components/webinar-block'
@@ -12,6 +13,7 @@ import { doctrine } from '@/content/doctrine'
 import { verticals } from '@/content/verticals'
 import { isUpcoming, webinar } from '@/content/webinar'
 import { cta, pageMetadata } from '@/lib/site'
+import { verticalGraph } from '@/lib/structured-data'
 
 export const dynamicParams = false
 
@@ -40,6 +42,7 @@ export default async function VerticalPage({
 
   return (
     <>
+      <JsonLd graph={verticalGraph(vertical)} />
       <section
         aria-labelledby="hero-title"
         className="px-4 pt-[clamp(3rem,8vw,6rem)] pb-[clamp(4rem,9vw,7rem)] sm:px-6"

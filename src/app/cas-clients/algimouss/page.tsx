@@ -2,11 +2,13 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { AlgimoussFigures } from '@/components/algimouss-figures'
 import { FinalCta } from '@/components/final-cta'
+import { JsonLd } from '@/components/json-ld'
 import { Section } from '@/components/section'
 import { eyebrow } from '@/components/styles'
 import { WebinarBlock } from '@/components/webinar-block'
 import { algimouss, algimoussCase } from '@/content/algimouss'
 import { pageMetadata } from '@/lib/site'
+import { caseGraph } from '@/lib/structured-data'
 
 export const metadata: Metadata = pageMetadata({
   ...algimoussCase.meta,
@@ -18,6 +20,7 @@ const highlight = algimouss.figures[algimoussCase.highlight]
 export default function AlgimoussCasePage() {
   return (
     <>
+      <JsonLd graph={caseGraph} />
       <section
         aria-labelledby="hero-title"
         className="px-4 pt-[clamp(3rem,8vw,6rem)] pb-[clamp(4rem,9vw,7rem)] sm:px-6"
