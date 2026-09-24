@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { LegalPage } from '@/components/legal-page'
+import { company, headquarters } from '@/content/company'
 import { cta, pageMetadata } from '@/lib/site'
 
 export const metadata: Metadata = pageMetadata({
@@ -16,13 +17,13 @@ export default function ConfidentialitePage() {
       <section>
         <h2>Responsable du traitement</h2>
         <p>
-          SPECKS, 1 rue Pauline Roland, 44200 Nantes. Pour toute question sur
-          vos données :{' '}
+          {company.legalName}, {headquarters}. Pour toute question sur vos
+          données :{' '}
           <a
-            href="mailto:contact@seeckr.fr"
+            href={`mailto:${company.email}`}
             className="underline underline-offset-4"
           >
-            contact@seeckr.fr
+            {company.email}
           </a>
         </p>
       </section>
@@ -84,10 +85,10 @@ export default function ConfidentialitePage() {
           vous opposer à leur traitement, en demander la limitation ou la
           portabilité. Écrivez à{' '}
           <a
-            href="mailto:contact@seeckr.fr"
+            href={`mailto:${company.email}`}
             className="underline underline-offset-4"
           >
-            contact@seeckr.fr
+            {company.email}
           </a>
           .
         </p>

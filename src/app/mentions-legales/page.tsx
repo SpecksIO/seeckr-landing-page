@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import { LegalPage } from '@/components/legal-page'
+import { company, headquarters } from '@/content/company'
 import { pageMetadata } from '@/lib/site'
 
 export const metadata: Metadata = pageMetadata({
@@ -15,25 +16,30 @@ export default function MentionsLegalesPage() {
         <h2>Éditeur du site</h2>
         <ul>
           <li>
-            SPECKS, société par actions simplifiée au capital de 1 000 euros
+            {company.legalName}, {company.legalForm}
           </li>
-          <li>Siège social : 1 rue Pauline Roland, 44200 Nantes</li>
-          <li>SIREN 980 269 062, RCS Nantes</li>
+          <li>Siège social : {headquarters}</li>
+          <li>
+            SIREN {company.siren}, {company.registry}
+          </li>
           <li>TVA intracommunautaire : [À COMPLÉTER : numéro de TVA]</li>
           <li>
             Contact :{' '}
             <a
-              href="mailto:contact@seeckr.fr"
+              href={`mailto:${company.email}`}
               className="underline underline-offset-4"
             >
-              contact@seeckr.fr
+              {company.email}
             </a>
             ,{' '}
-            <a href="tel:+33658305185" className="underline underline-offset-4">
-              06 58 30 51 85
+            <a
+              href={`tel:${company.phone}`}
+              className="underline underline-offset-4"
+            >
+              {company.phoneLabel}
             </a>
           </li>
-          <li>Directrice de la publication : Amandine Musseau</li>
+          <li>Directrice de la publication : {company.publicationDirector}</li>
         </ul>
       </section>
       <section>
