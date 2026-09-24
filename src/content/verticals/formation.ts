@@ -4,17 +4,17 @@ import type { Vertical } from '@/content/types'
 export const formation: Vertical = {
   slug: 'formation',
   name: 'Formation',
-  teaser: 'Son blocage, pas votre intitulé.',
+  teaser: 'La trace pour Qualiopi.',
   meta: {
     title: 'Seeckr pour les organismes de formation',
     description:
-      "Votre visiteur sait où il en est et où il veut aller. Seeckr lui montre laquelle de vos formations l'y emmène, et pourquoi celle-là.",
+      "Votre visiteur dit où il en est, Seeckr lui montre quelle formation l'y emmène. Et chaque demande reste tracée pour votre analyse du besoin.",
   },
   hero: {
     title:
       'Il ne cherche pas une formation. Il cherche à ne plus refaire ses tableaux le dimanche soir.',
     intro:
-      "Il vous dit où il en est, ce qui le bloque, ce qu'il vise. Seeckr lui montre laquelle de vos formations l'y emmène, et pourquoi celle-là plutôt qu'une autre.",
+      "Il vous dit où il en est, ce qui le bloque, ce qu'il vise. Seeckr lui montre laquelle de vos formations l'y emmène, et pourquoi celle-là plutôt qu'une autre. Vous, vous gardez la trace de la demande, telle qu'il l'a formulée.",
   },
   contrast: {
     pairs: [
@@ -90,6 +90,10 @@ export const formation: Vertical = {
   },
   benefitsTitle: 'Des inscrits qui savent pourquoi ils viennent.',
   benefits: [
+    {
+      title: 'Chaque demande laisse une trace',
+      text: "La conversation reste lisible en entier : la situation qu'il a décrite, ce qu'il cherchait à régler, la formation qui lui a été recommandée et la raison de ce classement. Le jour de l'audit Qualiopi, votre analyse du besoin n'est plus à reconstituer de mémoire, elle est écrite, demande par demande.",
+    },
     {
       title: 'De son problème à votre catalogue',
       text: "Il n'a aucune idée de l'intitulé qu'il devrait chercher. Il sait seulement ce qui lui pourrit ses semaines. Seeckr fait le chemin.",

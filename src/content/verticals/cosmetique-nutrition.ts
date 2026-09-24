@@ -4,7 +4,7 @@ import type { Vertical } from '@/content/types'
 export const cosmetiqueNutrition: Vertical = {
   slug: 'cosmetique-nutrition',
   name: 'Cosmétique et nutrition',
-  teaser: 'Sa routine avant votre formule.',
+  teaser: 'Les questions de routine.',
   meta: {
     title: 'Seeckr pour la cosmétique et la nutrition',
     description:

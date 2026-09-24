@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { LegalPage } from '@/components/legal-page'
-import { pageMetadata } from '@/lib/site'
+import { cta, pageMetadata } from '@/lib/site'
 
 export const metadata: Metadata = pageMetadata({
   title: 'Politique de confidentialité',
@@ -30,8 +30,8 @@ export default function ConfidentialitePage() {
         <h2>Données collectées</h2>
         <p>
           Le site ne collecte des données personnelles que par le formulaire{' '}
-          <Link href="/mon-seeckr" className="underline underline-offset-4">
-            Tester sur mon catalogue
+          <Link href={cta.href} className="underline underline-offset-4">
+            {cta.shortLabel}
           </Link>
           {'\u00a0'}: l'adresse de votre site internet, votre e-mail
           professionnel et votre téléphone professionnel.

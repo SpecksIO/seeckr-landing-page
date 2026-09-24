@@ -8,9 +8,12 @@ import { cta, siteConfig } from '@/lib/site'
 
 export function SiteHeader() {
   // Les verticales vivent dans le menu « Par métier », jamais à plat ici.
-  const links = isUpcoming(webinar.startsAt)
-    ? [{ href: '/#webinar', label: 'Webinar' }]
-    : []
+  const links = [
+    { href: '/#prix', label: 'Tarifs' },
+    ...(isUpcoming(webinar.startsAt)
+      ? [{ href: '/#webinar', label: 'Webinar' }]
+      : []),
+  ]
 
   return (
     <header className="sticky top-0 z-30 border-white/10 border-b bg-night">

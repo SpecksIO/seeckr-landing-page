@@ -1,7 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import { AlgimoussFigures } from '@/components/algimouss-figures'
-import { DemoConversation } from '@/components/demo-conversation'
 import { Faq } from '@/components/faq'
 import { FinalCta } from '@/components/final-cta'
 import { Hero } from '@/components/hero'
@@ -10,14 +8,10 @@ import { JsonLd } from '@/components/json-ld'
 import { Section } from '@/components/section'
 import { button } from '@/components/styles'
 import { WebinarBlock } from '@/components/webinar-block'
-import { algimouss, algimoussCase } from '@/content/algimouss'
 import {
   benefits,
-  demoConversation,
   howItWorks,
   integrations,
-  proof,
-  situation,
   verticalsIntro,
 } from '@/content/home'
 import { verticals } from '@/content/verticals'
@@ -89,18 +83,6 @@ export default function Home() {
         </div>
       </Section>
 
-      <Section
-        id="demonstration"
-        tone="light"
-        eyebrow={situation.eyebrow}
-        title={situation.title}
-        intro={situation.text}
-      >
-        <div className="reveal mx-auto w-full max-w-md">
-          <DemoConversation conversation={demoConversation} />
-        </div>
-      </Section>
-
       <Section id="benefices" eyebrow={benefits.eyebrow} title={benefits.title}>
         <div className="grid gap-14 lg:grid-cols-[1fr_1.2fr] lg:gap-20">
           <div className="reveal">
@@ -140,22 +122,6 @@ export default function Home() {
             </ul>
           </div>
         </div>
-      </Section>
-
-      <Section
-        id="preuve"
-        tone="light"
-        eyebrow={proof.eyebrow}
-        title={proof.title}
-        intro={`${algimouss.about} ${algimouss.context}`}
-      >
-        <AlgimoussFigures figures={algimoussCase.teaserFigures} />
-        <Link
-          href={algimoussCase.link.href}
-          className="mt-8 inline-flex min-h-11 items-center font-medium text-violet underline underline-offset-4"
-        >
-          {algimoussCase.link.label}
-        </Link>
       </Section>
 
       <Section

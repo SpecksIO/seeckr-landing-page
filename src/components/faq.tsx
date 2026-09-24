@@ -1,12 +1,30 @@
+'use client'
+
+import { useEffect } from 'react'
 import { Section } from '@/components/section'
 import { faq } from '@/content/home'
 
 export function Faq() {
+  // Le lien « Tarifs » du menu pointe sur #prix : la question visée s'ouvre.
+  useEffect(() => {
+    const openTarget = () => {
+      const target = document.getElementById(window.location.hash.slice(1))
+      if (target instanceof HTMLDetailsElement) target.open = true
+    }
+    openTarget()
+    window.addEventListener('hashchange', openTarget)
+    return () => window.removeEventListener('hashchange', openTarget)
+  }, [])
+
   return (
     <Section id="faq" tone="light" eyebrow={faq.eyebrow} title={faq.title}>
       <div className="max-w-3xl border-ink/15 border-b">
         {faq.items.map((item) => (
-          <details key={item.id} className="group border-ink/15 border-t">
+          <details
+            key={item.id}
+            id={item.id}
+            className="group border-ink/15 border-t"
+          >
             <summary className="flex min-h-16 cursor-pointer list-none items-center justify-between gap-6 py-4 font-display font-medium text-lg focus-visible:outline-2 focus-visible:outline-violet [&::-webkit-details-marker]:hidden">
               {item.question}
               <span

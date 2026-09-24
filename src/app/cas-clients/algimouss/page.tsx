@@ -70,12 +70,11 @@ export default function AlgimoussCasePage() {
                 {group.title}
               </h3>
               <div className="mt-8">
-                <AlgimoussFigures figures={group.figures} showSource={false} />
+                <AlgimoussFigures figures={group.figures} />
               </div>
             </div>
           ))}
         </div>
-        <p className="mt-16 text-ink/70 text-sm">{algimouss.source}</p>
       </Section>
 
       <WebinarBlock />

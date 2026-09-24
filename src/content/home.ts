@@ -1,65 +1,13 @@
-import { algimouss } from '@/content/algimouss'
-import type { Conversation, Placement } from '@/content/types'
+import type { Placement } from '@/content/types'
 
 export const hero = {
   titleLead: 'Le vendeur que votre',
   titleStrong: "site e-commerce n'a jamais eu.",
   subtitle:
-    "Votre moteur de recherche attend qu'on lui dise quoi chercher. Vos visiteurs, eux, connaissent leur vie, pas votre catalogue. Seeckr les écoute la raconter, leur pose les questions qu'ils n'auraient jamais formulées seuls, et les conduit au produit qui leur va vraiment.",
+    "En boutique, quelqu'un lui aurait demandé ce qu'il cherche. En ligne, on lui tend une barre de recherche et on attend. Seeckr, lui, demande.",
   webinarLabel: 'Voir le prochain webinar',
   videoLabel:
     'Démonstration : le bandeau Seeckr sur une fiche produit, la conversation avec le visiteur, puis son top 3.',
-}
-
-/** La conversation qui se joue en boucle dans la section « En situation ». */
-export const demoConversation: Conversation = {
-  steps: [
-    {
-      stage: 'On fait connaissance',
-      question: 'Votre routine du matin, elle ressemble à quoi en ce moment ?',
-      choices: [
-        'Deux ou trois gestes, pas plus',
-        'Un vrai moment pour moi',
-        'Ça dépend des jours',
-      ],
-      picked: 0,
-    },
-    {
-      stage: 'On comprend votre situation',
-      intro:
-        'Deux ou trois gestes, donc ce qui entre dans votre salle de bain doit gagner sa place.',
-      question:
-        "Le dernier produit que vous avez arrêté, c'était pour quelle raison ?",
-      choices: [
-        "Je n'ai pas vu de résultat",
-        'Trop long à appliquer',
-        "Je l'ai oublié, tout simplement",
-      ],
-      picked: 2,
-    },
-    {
-      stage: 'On affine vos goûts',
-      intro:
-        "Un produit qu'on oublie, c'est souvent qu'il n'a pas trouvé sa place dans le geste.",
-      question:
-        "Qu'est-ce qui vous ferait dire, dans un mois, que c'était le bon choix ?",
-      choices: [
-        "Je l'utilise encore",
-        "C'est devenu un réflexe",
-        "Mon entourage l'a remarqué",
-      ],
-      picked: 0,
-    },
-  ],
-  top: [
-    {
-      name: 'Crème Riche Nourrissante',
-      score: 92,
-      why: "Un seul geste le matin, un flacon à portée de main, une formule courte. Vous l'utiliserez encore dans un mois.",
-    },
-    { name: 'Sérum Éclat', score: 78 },
-    { name: 'Baume Nettoyant', score: 71 },
-  ],
 }
 
 export const howItWorks = {
@@ -129,12 +77,6 @@ export const integrations = {
   },
 }
 
-export const situation = {
-  eyebrow: 'En situation',
-  title: 'Au moment exact où il allait partir.',
-  text: `Il hésite sur une fiche produit, sa souris remonte vers la croix. Seeckr lui propose trois questions. Chez Algimouss, ${algimouss.figures.exitIntent.value} visiteurs qui quittaient la page ont cliqué sur « Démarrer » plutôt que de fermer l'onglet. Voilà ce qui se passe ensuite.`,
-}
-
 export const benefits = {
   eyebrow: 'Ce que ça change',
   title: 'Il se sent écouté. Vous vendez plus.',
@@ -165,20 +107,21 @@ export const benefits = {
   },
 }
 
-export const proof = {
-  eyebrow: 'La preuve',
-  title: `En 19 jours, ${algimouss.figures.opened.value} visiteurs se sont confiés.`,
-}
-
 export const verticalsIntro = {
   eyebrow: 'Par métier',
-  title: 'Chaque métier a ses clients, et chaque client sa façon de le dire.',
+  title: 'Chaque métier a ses règles, Seeckr a ses fonctionnalités.',
 }
 
 export const faq = {
   eyebrow: 'Questions fréquentes',
   title: 'Ce que vous vous demandez peut-être.',
   items: [
+    {
+      id: 'prix',
+      question: 'Combien ça coûte ?',
+      answer:
+        'Ça dépend de la taille de votre catalogue, des fonctionnalités que vous choisissez et des statistiques que vous voulez récupérer. Réservez votre démo personnalisée et nous en parlons directement.',
+    },
     {
       id: 'integration',
       question: "Comment Seeckr s'installe-t-il sur mon site ?",
@@ -207,6 +150,6 @@ export const faq = {
 }
 
 export const finalCta = {
-  title: 'Essayez-le sur vos propres clients.',
+  title: 'Essayez-le sur votre site.',
   text: "Nous construisons votre assistant sur votre catalogue, et vous le voyez travailler sur votre site. C'est gratuit, et il n'y a rien à installer.",
 }

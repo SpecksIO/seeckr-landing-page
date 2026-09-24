@@ -18,8 +18,8 @@ export const siteConfig = {
 
 export const cta = {
   href: '/mon-seeckr',
-  label: 'Je veux voir Seeckr sur mon catalogue',
-  shortLabel: 'Tester sur mon catalogue',
+  label: 'Tester gratuitement Seeckr sur mon catalogue',
+  shortLabel: 'Tester gratuitement sur mon catalogue',
 } as const
 
 /** Routes publiques et indexables : alimentent le sitemap et llms.txt. */
@@ -27,8 +27,7 @@ export const pages = [
   {
     path: '/',
     title: 'Accueil',
-    summary:
-      "Ce que fait Seeckr, comment il s'installe, et la preuve Algimouss.",
+    summary: "Ce que fait Seeckr, comment il s'installe, et ce qu'il change.",
     priority: 1,
   },
   ...verticals.map((vertical) => ({
