@@ -91,10 +91,6 @@ export const formation: Vertical = {
   benefitsTitle: 'Des inscrits qui savent pourquoi ils viennent.',
   benefits: [
     {
-      title: 'Chaque demande laisse une trace',
-      text: "La conversation reste lisible en entier : la situation qu'il a décrite, ce qu'il cherchait à régler, la formation qui lui a été recommandée et la raison de ce classement. Le jour de l'audit Qualiopi, votre analyse du besoin n'est plus à reconstituer de mémoire, elle est écrite, demande par demande.",
-    },
-    {
       title: 'De son problème à votre catalogue',
       text: "Il n'a aucune idée de l'intitulé qu'il devrait chercher. Il sait seulement ce qui lui pourrit ses semaines. Seeckr fait le chemin.",
     },
@@ -107,4 +103,24 @@ export const formation: Vertical = {
       text: "Vous lirez, dans leurs mots, ce qu'ils viennent vraiment chercher. Vos intitulés, vos programmes et vos campagnes n'ont jamais eu de meilleure matière.",
     },
   ],
+  compliance: {
+    eyebrow: 'Traçabilité Qualiopi',
+    title: 'Vos preuves se rédigent pendant que vous dormez.',
+    intro:
+      "Aujourd'hui, vous remplissez un tableur à la main pour montrer que chaque demande a été analysée. C'est long, fastidieux, et c'est le premier endroit où l'audit trouve un trou. Chaque conversation Seeckr écrit cette preuve à votre place.",
+    items: [
+      {
+        title: 'Fini la saisie manuelle',
+        text: "Tout est archivé au fil des demandes et s'exporte en un clic. Votre tableau de suivi, vous ne le remplirez plus.",
+      },
+      {
+        title: 'Une preuve par bénéficiaire',
+        text: "Chaque échange est horodaté et rattaché à la personne : ce qu'elle a décrit de sa situation, ce qu'elle visait, ce qui lui a été recommandé, et quand.",
+      },
+      {
+        title: 'Les critères 2 et 3 documentés',
+        text: "L'identification des objectifs et l'adaptation au bénéficiaire, renseignées toutes seules, demande après demande. Le jour de l'audit, vous ouvrez le dossier.",
+      },
+    ],
+  },
 }

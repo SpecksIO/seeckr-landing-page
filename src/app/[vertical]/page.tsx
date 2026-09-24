@@ -151,6 +151,30 @@ export default async function VerticalPage({
         </ol>
       </Section>
 
+      {vertical.compliance && (
+        <Section
+          id="conformite"
+          tone="light"
+          eyebrow={vertical.compliance.eyebrow}
+          title={vertical.compliance.title}
+          intro={vertical.compliance.intro}
+        >
+          <ol className="grid gap-10 md:grid-cols-3 md:gap-8">
+            {vertical.compliance.items.map((item) => (
+              <li
+                key={item.title}
+                className="reveal border-ink/15 border-t pt-6"
+              >
+                <h3 className="font-display font-semibold text-xl">
+                  {item.title}
+                </h3>
+                <p className="mt-3 text-ink/80 leading-relaxed">{item.text}</p>
+              </li>
+            ))}
+          </ol>
+        </Section>
+      )}
+
       {vertical.showAlgimouss && (
         <Section
           id="algimouss"

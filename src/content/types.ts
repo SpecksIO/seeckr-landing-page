@@ -45,6 +45,13 @@ export type Vertical = {
   /** Titre de la section bénéfices. Le `meta.title` sert au SEO, pas au lecteur. */
   benefitsTitle: string
   benefits: { title: string; text: string }[]
+  /** Ce que le métier doit prouver à son auditeur, quand il en a un. */
+  compliance?: {
+    eyebrow: string
+    title: string
+    intro: string
+    items: { title: string; text: string }[]
+  }
   /** Affiche le cas Algimouss complet. */
   showAlgimouss?: boolean
 }
