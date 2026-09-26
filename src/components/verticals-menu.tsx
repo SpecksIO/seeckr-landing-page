@@ -2,14 +2,19 @@
 
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
-import { verticals } from '@/content/verticals'
 
 /**
  * Le menu « Par métier » de l'en-tête, sur grand écran. Un <details> natif :
  * il s'ouvre au clic comme au clavier, et se referme quand on suit un lien,
  * qu'on appuie sur Échap, ou qu'on clique ailleurs dans la page.
  */
-export function VerticalsMenu() {
+export function VerticalsMenu({
+  label,
+  verticals,
+}: {
+  label: string
+  verticals: { href: string; name: string; teaser: string }[]
+}) {
   const menu = useRef<HTMLDetailsElement>(null)
   const close = () => menu.current?.removeAttribute('open')
 
@@ -33,7 +38,7 @@ export function VerticalsMenu() {
       className="group relative"
     >
       <summary className="flex cursor-pointer list-none items-center gap-1.5 rounded-md text-violet-100 hover:text-white focus-visible:outline-2 focus-visible:outline-violet-300 [&::-webkit-details-marker]:hidden">
-        Par métier
+        {label}
         <svg
           viewBox="0 0 24 24"
           aria-hidden="true"
@@ -49,9 +54,9 @@ export function VerticalsMenu() {
       </summary>
       <ul className="absolute top-full left-1/2 mt-4 w-88 -translate-x-1/2 rounded-2xl border border-white/10 bg-night p-2 shadow-[0_40px_80px_-40px_#07051c]">
         {verticals.map((vertical) => (
-          <li key={vertical.slug}>
+          <li key={vertical.href}>
             <Link
-              href={`/${vertical.slug}`}
+              href={vertical.href}
               onClick={close}
               className="block rounded-xl px-4 py-3 hover:bg-white/5 focus-visible:outline-2 focus-visible:outline-violet-300"
             >

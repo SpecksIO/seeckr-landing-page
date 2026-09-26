@@ -1,20 +1,26 @@
 import type { ReactNode } from 'react'
 import { HeartMark } from '@/components/logo'
+import type { Dictionary } from '@/content'
+import { getDictionary } from '@/content/get-dictionary'
 import type {
   Conversation,
   ConversationStep,
   Recommendation,
 } from '@/content/types'
 
+type Labels = Dictionary['ui']['conversation']
+
 /**
  * La fenêtre de l'assistant telle que le visiteur la voit, d'après la vidéo
  * de démonstration : carte blanche, barre de progression, « Votre marque ».
  */
 export function CardFrame({
+  labels,
   progress,
   stage,
   children,
 }: {
+  labels: Labels
   /** Avancement, de 0 à 1. */
   progress: number
   stage: string
@@ -34,7 +40,7 @@ export function CardFrame({
       <div className="mt-4 flex items-center justify-between gap-3 text-xs">
         <span className="flex items-center gap-1.5 text-text-soft">
           <HeartMark className="size-4 text-text" />
-          Votre marque
+          {labels.brand}
         </span>
         <span className="font-medium">{stage}</span>
       </div>
@@ -45,9 +51,11 @@ export function CardFrame({
 
 /** Une question et ses choix en pastilles. */
 export function StepView({
+  labels,
   step,
   showPick,
 }: {
+  labels: Labels
   step: ConversationStep
   showPick: boolean
 }) {
@@ -68,33 +76,41 @@ export function StepView({
               className={`rounded-full px-3 py-1.5 transition-colors duration-300 ${picked ? 'bg-violet text-white' : 'bg-paper'}`}
             >
               {choice}
-              {picked && <span className="sr-only"> (réponse choisie)</span>}
+              {picked && <span className="sr-only"> {labels.picked}</span>}
             </li>
           )
         })}
-        <li className="rounded-full border border-line px-3 py-1.5">+ Autre</li>
+        <li className="rounded-full border border-line px-3 py-1.5">
+          {labels.other}
+        </li>
       </ul>
     </div>
   )
 }
 
-const score = (value: number) => `${value} % compatible`
-
 /** Le top 3 classé : le premier avec son pourquoi, les autres en dessous. */
-export function TopThree({ top }: { top: Recommendation[] }) {
+export function TopThree({
+  labels,
+  top,
+}: {
+  labels: Labels
+  top: Recommendation[]
+}) {
   const [first, ...others] = top
   return (
     <div>
       <p className="font-semibold text-[11px] text-violet uppercase tracking-[0.2em]">
-        Votre top 3
+        {labels.top3}
       </p>
       <div className="mt-3 rounded-xl border border-violet-100 bg-mist/50 p-4">
         <p className="font-semibold text-[11px] text-violet uppercase tracking-[0.15em]">
-          Recommandé
+          {labels.recommended}
         </p>
         <p className="mt-1 flex flex-wrap items-baseline justify-between gap-x-3">
           <span className="font-semibold">1 · {first.name}</span>
-          <span className="text-[13px] text-violet">{score(first.score)}</span>
+          <span className="text-[13px] text-violet">
+            {labels.score(first.score)}
+          </span>
         </p>
         {first.why && (
           <p className="mt-2 text-[13px] text-text-soft leading-relaxed">
@@ -105,7 +121,7 @@ export function TopThree({ top }: { top: Recommendation[] }) {
       {others.length > 0 && (
         <div className="mt-3 rounded-xl bg-paper p-4">
           <p className="text-[11px] text-text-soft uppercase tracking-[0.15em]">
-            Autres choix
+            {labels.others}
           </p>
           <ul className="mt-2 space-y-1.5 text-[13px]">
             {others.map((item, index) => (
@@ -116,7 +132,7 @@ export function TopThree({ top }: { top: Recommendation[] }) {
                 <span>
                   {index + 2} · {item.name}
                 </span>
-                <span className="text-violet">{score(item.score)}</span>
+                <span className="text-violet">{labels.score(item.score)}</span>
               </li>
             ))}
           </ul>
@@ -127,22 +143,23 @@ export function TopThree({ top }: { top: Recommendation[] }) {
 }
 
 /** La conversation entière, figée : chaque question, la réponse, le top 3. */
-export function ConversationTranscript({
+export async function ConversationTranscript({
   conversation,
 }: {
   conversation: Conversation
 }) {
+  const labels = (await getDictionary()).ui.conversation
   return (
-    <CardFrame progress={1} stage="C'est prêt">
+    <CardFrame labels={labels} progress={1} stage={labels.ready}>
       <ol className="space-y-7">
         {conversation.steps.map((step) => (
           <li key={step.question}>
-            <StepView step={step} showPick />
+            <StepView labels={labels} step={step} showPick />
           </li>
         ))}
       </ol>
       <div className="mt-7 border-paper border-t-2 pt-6">
-        <TopThree top={conversation.top} />
+        <TopThree labels={labels} top={conversation.top} />
       </div>
     </CardFrame>
   )

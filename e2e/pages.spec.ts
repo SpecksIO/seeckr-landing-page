@@ -48,6 +48,16 @@ test('le formulaire refuse un envoi incomplet, champ par champ', async ({
   await expect(page.getByLabel('Site internet')).toHaveValue('maboutique')
 })
 
+test('le sélecteur de langue garde la page en cours', async ({ page }) => {
+  await page.setViewportSize({ width: 1280, height: 800 })
+  await page.goto('/formation')
+
+  await page.getByRole('link', { name: 'English' }).click()
+
+  await expect(page).toHaveURL(/\/en\/training$/)
+  await expect(page.locator('html')).toHaveAttribute('lang', 'en')
+})
+
 test("l'appel principal mène au formulaire", async ({ page }) => {
   await page.goto('/')
 

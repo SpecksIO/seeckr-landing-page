@@ -1,92 +1,87 @@
 import type { Metadata } from 'next'
-import { algimoussCase } from '@/content/algimouss'
-import { verticals } from '@/content/verticals'
+import type { Dictionary } from '@/content'
+import { verticalSlugs } from '@/content/verticals'
+import { type Locale, localePath, locales } from '@/lib/i18n'
 
 /**
- * Identité du site. Métadonnées, JSON-LD, sitemap, robots et llms.txt
- * lisent tous ce fichier.
+ * Identité du site, commune à toutes les langues. Ce qui se traduit vit
+ * dans `site` de chaque dictionnaire.
  */
 export const siteConfig = {
   name: 'Seeckr',
   url: process.env.NEXT_PUBLIC_SITE_URL ?? 'https://seeckr.fr',
-  lang: 'fr',
-  locale: 'fr_FR',
-  description:
-    "Vos visiteurs connaissent leur vie, pas votre catalogue. Seeckr les écoute, leur pose les questions qu'ils n'auraient jamais formulées seuls, et les conduit au produit qui leur va vraiment.",
   loginUrl: 'https://app.seeckr.fr/login',
 } as const
 
-export const cta = {
-  href: '/mon-seeckr',
-  label: 'Tester gratuitement Seeckr sur mon catalogue',
-  shortLabel: 'Tester gratuitement sur mon catalogue',
+/** Chemins des pages, sans préfixe de langue. */
+export const paths = {
+  lead: '/mon-seeckr',
+  algimoussCase: '/cas-clients/algimouss',
+  legalNotice: '/mentions-legales',
+  privacy: '/confidentialite',
 } as const
 
-/** Routes publiques et indexables : alimentent le sitemap et llms.txt. */
-export const pages = [
-  {
-    path: '/',
-    title: 'Accueil',
-    summary: "Ce que fait Seeckr, comment il s'installe, et ce qu'il change.",
-    priority: 1,
-  },
-  ...verticals.map((vertical) => ({
-    path: `/${vertical.slug}`,
-    title: vertical.name,
-    summary: vertical.meta.description,
-    priority: 0.8,
-  })),
-  {
-    path: cta.href,
-    title: 'Tester Seeckr sur mon catalogue',
-    summary:
-      'Demander son assistant Seeckr, construit sur son propre catalogue.',
-    priority: 0.9,
-  },
-  {
-    path: '/cas-clients/algimouss',
-    title: algimoussCase.meta.title,
-    summary: algimoussCase.meta.description,
-    priority: 0.8,
-  },
-  {
-    path: '/mentions-legales',
-    title: 'Mentions légales',
-    summary: 'Éditeur et hébergeur du site.',
-    priority: 0.1,
-  },
-  {
-    path: '/confidentialite',
-    title: 'Confidentialité',
-    summary: 'Traitement des données envoyées par le formulaire.',
-    priority: 0.1,
-  },
-]
+/** Routes publiques et indexables d'une langue : sitemap et llms.txt. */
+export function pages(dict: Dictionary) {
+  return [
+    { path: '/', ...dict.site.pages.home, priority: 1 },
+    ...verticalSlugs.map((slug) => ({
+      path: `/${slug}`,
+      title: dict.verticals[slug].name,
+      summary: dict.verticals[slug].meta.description,
+      priority: 0.8,
+    })),
+    { path: paths.lead, ...dict.site.pages.lead, priority: 0.9 },
+    {
+      path: paths.algimoussCase,
+      title: dict.algimoussCase.meta.title,
+      summary: dict.algimoussCase.meta.description,
+      priority: 0.8,
+    },
+    { path: paths.legalNotice, ...dict.site.pages.legalNotice, priority: 0.1 },
+    { path: paths.privacy, ...dict.site.pages.privacy, priority: 0.1 },
+  ]
+}
 
 /** URL absolue d'un chemin du site. */
 export function absoluteUrl(path = '/') {
   return new URL(path, siteConfig.url).toString()
 }
 
-/** Titre, description, URL canonique et Open Graph d'une page. */
-export function pageMetadata({
-  title,
-  description,
-  path,
-}: {
-  title: string
-  description: string
-  path: string
-}): Metadata {
+/** La même page dans chaque langue, pour `hreflang`. */
+export function languageAlternates(path: string) {
+  return {
+    ...Object.fromEntries(
+      locales.map((locale) => [locale, localePath(locale, path)])
+    ),
+    'x-default': path,
+  }
+}
+
+/** Titre, description, URL canonique, variantes de langue et Open Graph. */
+export function pageMetadata(
+  locale: Locale,
+  dict: Dictionary,
+  {
+    title,
+    description,
+    path,
+  }: {
+    title: string
+    description: string
+    path: string
+  }
+): Metadata {
+  const url = localePath(locale, path)
   return {
     title,
     description,
-    alternates: { canonical: path },
+    alternates: { canonical: url, languages: languageAlternates(path) },
     openGraph: {
       type: 'website',
       siteName: siteConfig.name,
-      locale: siteConfig.locale,
-      url: path,
+      locale: dict.site.ogLocale,
+      url,
       title,
       description,
       // Next remplace l'`openGraph` du layout au lieu de le compléter. Sans

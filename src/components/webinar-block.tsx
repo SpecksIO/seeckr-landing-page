@@ -1,5 +1,6 @@
 import { button, eyebrow } from '@/components/styles'
-import { isUpcoming, webinar } from '@/content/webinar'
+import { getLocale } from '@/content/get-dictionary'
+import { showWebinar, webinar } from '@/content/webinar'
 
 const dateFormat = new Intl.DateTimeFormat('fr-FR', {
   dateStyle: 'full',
@@ -8,8 +9,8 @@ const dateFormat = new Intl.DateTimeFormat('fr-FR', {
 })
 
 /** Le prochain webinar. Rien du tout si la session est passée. */
-export function WebinarBlock() {
-  if (!isUpcoming(webinar.startsAt)) return null
+export async function WebinarBlock() {
+  if (!showWebinar(await getLocale())) return null
 
   return (
     <section

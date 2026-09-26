@@ -1,10 +1,18 @@
 'use client'
 
+import Link from 'next/link'
 import { useEffect } from 'react'
 import { Section } from '@/components/section'
-import { faq } from '@/content/home'
+import type { Dictionary } from '@/content'
 
-export function Faq() {
+/** `leadHref` : le formulaire de coordonnées, cible du lien d'une réponse. */
+export function Faq({
+  faq,
+  leadHref,
+}: {
+  faq: Dictionary['faq']
+  leadHref: string
+}) {
   // Le lien « Tarifs » du menu pointe sur #prix : la question visée s'ouvre.
   useEffect(() => {
     const openTarget = () => {
@@ -36,6 +44,17 @@ export function Faq() {
             </summary>
             <p className="max-w-prose pb-6 text-ink/80 leading-relaxed">
               {item.answer}
+              {item.link && (
+                <>
+                  {' '}
+                  <Link
+                    href={leadHref}
+                    className="font-medium text-violet underline underline-offset-4"
+                  >
+                    {item.link}
+                  </Link>
+                </>
+              )}
             </p>
           </details>
         ))}

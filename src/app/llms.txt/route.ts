@@ -1,3 +1,5 @@
+import { dictionaries } from '@/content'
+import { localeNames, localePath, locales } from '@/lib/i18n'
 import { absoluteUrl, pages, siteConfig } from '@/lib/site'
 
 export const dynamic = 'force-static'
@@ -7,14 +9,17 @@ export function GET() {
   const body = [
     `# ${siteConfig.name}`,
     '',
-    `> ${siteConfig.description}`,
+    `> ${dictionaries.fr.site.description}`,
     '',
-    '## Pages',
-    '',
-    ...pages.map(
-      (page) => `- [${page.title}](${absoluteUrl(page.path)}): ${page.summary}`
-    ),
-    '',
+    ...locales.flatMap((locale) => [
+      `## ${localeNames[locale]}`,
+      '',
+      ...pages(dictionaries[locale]).map(
+        (page) =>
+          `- [${page.title}](${absoluteUrl(localePath(locale, page.path))}): ${page.summary}`
+      ),
+      '',
+    ]),
   ].join('\n')
 
   return new Response(body, {

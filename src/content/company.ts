@@ -4,8 +4,8 @@
  */
 export const company = {
   legalName: 'SPECKS',
-  /** Forme sociale et capital, tels qu'ils doivent figurer aux mentions légales. */
-  legalForm: 'société par actions simplifiée au capital de 1 000 euros',
+  /** Capital social, en euros. Chaque langue le formate à sa façon. */
+  shareCapital: 1000,
   address: {
     street: '1 rue Pauline Roland',
     postalCode: '44200',
@@ -20,8 +20,19 @@ export const company = {
   phone: '+33658305185',
   /** Le même numéro, tel qu'on le lit. */
   phoneLabel: '06 58 30 51 85',
+  /** Le même numéro, tel qu'on le lit depuis l'étranger. */
+  phoneLabelIntl: '+33 6 58 30 51 85',
   publicationDirector: 'Amandine Musseau',
 } as const
+
+/** Le capital social au format d'une langue : `1 000 €`, `€1,000`. */
+export function shareCapital(locale: string) {
+  return new Intl.NumberFormat(locale, {
+    style: 'currency',
+    currency: 'EUR',
+    maximumFractionDigits: 0,
+  }).format(company.shareCapital)
+}
 
 /** Le siège social sur une ligne. */
 export const headquarters = `${company.address.street}, ${company.address.postalCode} ${company.address.city}`

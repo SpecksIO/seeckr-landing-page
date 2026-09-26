@@ -121,7 +121,8 @@ export const faq = {
       id: 'prix',
       question: 'Combien ça coûte ?',
       answer:
-        'Ça dépend de la taille de votre catalogue, des fonctionnalités que vous choisissez et des statistiques que vous voulez récupérer. Réservez votre démo personnalisée et nous en parlons directement.',
+        'Ça dépend de la taille de votre catalogue, des fonctionnalités que vous choisissez et des statistiques que vous voulez récupérer.',
+      link: 'Réservez votre démo personnalisée et nous en parlons directement.',
     },
     {
       id: 'integration',

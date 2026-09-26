@@ -3,20 +3,13 @@
 export const leadFields = ['site', 'email', 'phone'] as const
 export type LeadField = (typeof leadFields)[number]
 export type Lead = Record<LeadField, string>
-export type LeadErrors = Partial<Record<LeadField, string>>
+/** Les champs à corriger. Le message vient du dictionnaire de la page. */
+export type LeadErrors = LeadField[]
 
 export type LeadState =
   | { status: 'idle' }
   | { status: 'sent' }
   | { status: 'invalid' | 'failed'; values: Lead; errors: LeadErrors }
-
-export const leadErrors: Record<LeadField, string> = {
-  site: "Indiquez l'adresse de votre site, par exemple maboutique.fr.",
-  email:
-    'Indiquez un e-mail professionnel valide, par exemple prenom@maboutique.fr.',
-  phone:
-    "Indiquez un numéro de téléphone valide, avec l'indicatif du pays s'il n'est pas français.",
-}
 
 const EMAIL = /^[^\s@<>]+@[^\s@<>]+\.[^\s@<>]{2,}$/
 const PHONE = /^\+?\d{9,15}$/
@@ -36,14 +29,12 @@ export function parseLead(
   }
 
   const site = normalizeSite(values.site)
-  const errors: LeadErrors = {}
-  if (!site) errors.site = leadErrors.site
-  if (!EMAIL.test(values.email)) errors.email = leadErrors.email
-  if (!PHONE.test(values.phone.replace(/[\s.()-]/g, ''))) {
-    errors.phone = leadErrors.phone
-  }
+  const errors: LeadErrors = []
+  if (!site) errors.push('site')
+  if (!EMAIL.test(values.email)) errors.push('email')
+  if (!PHONE.test(values.phone.replace(/[\s.()-]/g, ''))) errors.push('phone')
 
-  if (!site || Object.keys(errors).length > 0) {
+  if (!site || errors.length > 0) {
     return { ok: false, values, errors }
   }
   return { ok: true, lead: { ...values, site } }

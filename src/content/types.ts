@@ -30,8 +30,8 @@ export type Placement = {
   text: string
 }
 
+/** Une verticale, sans son slug : `@/content/verticals` les porte. */
 export type Vertical = {
-  slug: string
   name: string
   /** Une ligne pour la carte de la verticale sur l'accueil. */
   teaser: string
@@ -52,6 +52,4 @@ export type Vertical = {
     intro: string
     items: { title: string; text: string }[]
   }
-  /** Affiche le cas Algimouss complet. */
-  showAlgimouss?: boolean
 }

@@ -160,7 +160,7 @@ export default async function Home() {
       </Section>
 
       <WebinarBlock />
-      <Faq faq={dict.faq} />
+      <Faq faq={dict.faq} leadHref={localePath(locale, paths.lead)} />
       <FinalCta />
     </>
   )

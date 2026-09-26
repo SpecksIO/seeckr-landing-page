@@ -1,58 +1,72 @@
 import Link from 'next/link'
 import { Logo } from '@/components/logo'
-import { verticals } from '@/content/verticals'
-import { cta, siteConfig } from '@/lib/site'
+import { getDictionary, getLocale } from '@/content/get-dictionary'
+import { verticalSlugs } from '@/content/verticals'
+import { localePath } from '@/lib/i18n'
+import { paths, siteConfig } from '@/lib/site'
 
 const linkClass = 'text-violet-200 hover:text-white'
 
-export function SiteFooter() {
+export async function SiteFooter() {
+  const locale = await getLocale()
+  const { site, ui, verticals } = await getDictionary()
+
   return (
     <footer className="border-white/10 border-t px-4 py-14 sm:px-6">
       <div className="mx-auto grid w-full max-w-6xl gap-10 text-sm sm:grid-cols-[1.6fr_1fr_1fr]">
         <div>
           <Logo />
           <p className="mt-4 max-w-sm text-violet-200 leading-relaxed">
-            {siteConfig.description}
+            {site.description}
           </p>
         </div>
-        <nav aria-label="Verticales">
+        <nav aria-label={ui.nav.verticals}>
           <ul className="space-y-3">
-            {verticals.map((vertical) => (
-              <li key={vertical.slug}>
-                <Link href={`/${vertical.slug}`} className={linkClass}>
-                  {vertical.name}
+            {verticalSlugs.map((slug) => (
+              <li key={slug}>
+                <Link
+                  href={localePath(locale, `/${slug}`)}
+                  className={linkClass}
+                >
+                  {verticals[slug].name}
                 </Link>
               </li>
             ))}
           </ul>
         </nav>
-        <nav aria-label="Seeckr">
+        <nav aria-label={siteConfig.name}>
           <ul className="space-y-3">
             <li>
-              <Link href={cta.href} className={linkClass}>
-                {cta.shortLabel}
+              <Link href={localePath(locale, paths.lead)} className={linkClass}>
+                {site.cta.shortLabel}
               </Link>
             </li>
             <li>
               <a href={siteConfig.loginUrl} className={linkClass}>
-                Se connecter
+                {ui.nav.login}
               </a>
             </li>
             <li>
-              <Link href="/mentions-legales" className={linkClass}>
-                Mentions légales
+              <Link
+                href={localePath(locale, paths.legalNotice)}
+                className={linkClass}
+              >
+                {site.pages.legalNotice.title}
               </Link>
             </li>
             <li>
-              <Link href="/confidentialite" className={linkClass}>
-                Confidentialité
+              <Link
+                href={localePath(locale, paths.privacy)}
+                className={linkClass}
+              >
+                {site.pages.privacy.title}
               </Link>
             </li>
           </ul>
         </nav>
       </div>
       <p className="mx-auto mt-12 w-full max-w-6xl text-violet-300 text-xs">
-        © {new Date().getFullYear()} Seeckr
+        © {new Date().getFullYear()} {siteConfig.name}
       </p>
     </footer>
   )

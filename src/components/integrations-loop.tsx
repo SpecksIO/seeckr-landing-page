@@ -13,9 +13,11 @@ import { useReducedMotion } from '@/lib/reduced-motion'
 export function IntegrationsLoop({
   placements,
   video,
+  toggleLabels,
 }: {
   placements: Placement[]
   video: { src: string; poster: string; label: string }
+  toggleLabels: { pause: string; resume: string }
 }) {
   const reducedMotion = useReducedMotion()
   const player = useRef<HTMLVideoElement>(null)
@@ -58,6 +60,7 @@ export function IntegrationsLoop({
         <AnimationToggle
           paused={paused}
           onToggle={toggle}
+          labels={toggleLabels}
           className="text-violet-200 focus-visible:outline-violet-300"
         />
       </figure>

@@ -1,3 +1,5 @@
+import type { Locale } from '@/lib/i18n'
+
 /**
  * Le prochain webinar. Seule source de vérité : l'en-tête, le hero et chaque
  * bloc webinar lisent cette constante. Nouvelle session : on change ces trois
@@ -13,7 +15,15 @@ export const webinar = {
   registrationUrl: 'https://live.zoho.eu/kdem-miz-hkv',
 }
 
+/** Le bouton qui mène au bloc webinar, dans les héros. */
+export const webinarTeaser = 'Voir le prochain webinar'
+
 /** Vrai si la session n'a pas encore commencé. Une date invalide renvoie faux. */
 export function isUpcoming(startsAt: string, now = new Date()) {
   return new Date(startsAt).getTime() > now.getTime()
+}
+
+/** Le webinar se tient en français : les autres langues ne le montrent pas. */
+export function showWebinar(locale: Locale) {
+  return locale === 'fr' && isUpcoming(webinar.startsAt)
 }

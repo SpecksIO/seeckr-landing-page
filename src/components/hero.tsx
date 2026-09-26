@@ -1,10 +1,14 @@
 import Link from 'next/link'
 import { button } from '@/components/styles'
-import { hero } from '@/content/home'
-import { isUpcoming, webinar } from '@/content/webinar'
-import { cta } from '@/lib/site'
+import { getDictionary, getLocale } from '@/content/get-dictionary'
+import { showWebinar, webinarTeaser } from '@/content/webinar'
+import { localePath } from '@/lib/i18n'
+import { paths } from '@/lib/site'
 
-export function Hero() {
+export async function Hero() {
+  const locale = await getLocale()
+  const { hero, site } = await getDictionary()
+
   return (
     <section
       aria-labelledby="hero-title"
@@ -28,12 +32,15 @@ export function Hero() {
             {hero.subtitle}
           </p>
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:flex-wrap">
-            <Link href={cta.href} className={button('primary')}>
-              {cta.label}
+            <Link
+              href={localePath(locale, paths.lead)}
+              className={button('primary')}
+            >
+              {site.cta.label}
             </Link>
-            {isUpcoming(webinar.startsAt) && (
+            {showWebinar(locale) && (
               <Link href="#webinar" className={button('secondary')}>
-                {hero.webinarLabel}
+                {webinarTeaser}
               </Link>
             )}
           </div>

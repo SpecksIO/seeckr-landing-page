@@ -2,8 +2,10 @@
 
 import Link from 'next/link'
 import { useRef } from 'react'
+import { LanguageSwitcher } from '@/components/language-switcher'
 import { eyebrow } from '@/components/styles'
-import { verticals } from '@/content/verticals'
+import type { Dictionary } from '@/content'
+import type { Locale } from '@/lib/i18n'
 
 /**
  * Menu des petits écrans. Un <details> natif : il s'ouvre sans JavaScript,
@@ -11,9 +13,15 @@ import { verticals } from '@/content/verticals'
  * « Par métier », comme dans le menu déroulant des grands écrans.
  */
 export function MobileMenu({
+  locale,
+  labels,
+  verticals,
   links,
   loginUrl,
 }: {
+  locale: Locale
+  labels: Dictionary['ui']['nav']
+  verticals: { href: string; name: string }[]
   links: { href: string; label: string }[]
   loginUrl: string
 }) {
@@ -23,7 +31,7 @@ export function MobileMenu({
   return (
     <details ref={menu} className="group lg:hidden">
       <summary className="flex size-11 cursor-pointer list-none items-center justify-center rounded-full border border-white/20 focus-visible:outline-2 focus-visible:outline-violet-300 [&::-webkit-details-marker]:hidden">
-        <span className="sr-only">Menu</span>
+        <span className="sr-only">{labels.menu}</span>
         <svg
           viewBox="0 0 24 24"
           aria-hidden="true"
@@ -37,44 +45,40 @@ export function MobileMenu({
           <path d="M6 6l12 12M18 6L6 18" className="hidden group-open:block" />
         </svg>
       </summary>
-      <nav
-        aria-label="Principal"
-        className="absolute inset-x-0 top-16 border-white/10 border-b bg-night px-4 pt-2 pb-6"
-      >
-        <p className={`${eyebrow} py-3 text-violet-300`}>Par métier</p>
-        <ul>
-          {verticals.map((vertical) => (
-            <li key={vertical.slug}>
-              <Link
-                href={`/${vertical.slug}`}
-                onClick={close}
-                className="flex min-h-12 items-center border-white/10 border-b text-lg"
+      <div className="absolute inset-x-0 top-16 border-white/10 border-b bg-night px-4 pt-2 pb-6">
+        <nav aria-label={labels.main}>
+          <p className={`${eyebrow} py-3 text-violet-300`}>{labels.byTrade}</p>
+          <ul>
+            {[
+              ...verticals.map((v) => ({ href: v.href, label: v.name })),
+              ...links,
+            ].map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  onClick={close}
+                  className="flex min-h-12 items-center border-white/10 border-b text-lg"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+            <li>
+              <a
+                href={loginUrl}
+                className="flex min-h-12 items-center text-lg text-violet-200"
               >
-                {vertical.name}
-              </Link>
+                {labels.login}
+              </a>
             </li>
-          ))}
-          {links.map((link) => (
-            <li key={link.href}>
-              <Link
-                href={link.href}
-                onClick={close}
-                className="flex min-h-12 items-center border-white/10 border-b text-lg"
-              >
-                {link.label}
-              </Link>
-            </li>
-          ))}
-          <li>
-            <a
-              href={loginUrl}
-              className="flex min-h-12 items-center text-lg text-violet-200"
-            >
-              Se connecter
-            </a>
-          </li>
-        </ul>
-      </nav>
+          </ul>
+        </nav>
+        <LanguageSwitcher
+          locale={locale}
+          label={labels.language}
+          className="mt-4 border-white/10 border-t pt-2"
+        />
+      </div>
     </details>
   )
 }

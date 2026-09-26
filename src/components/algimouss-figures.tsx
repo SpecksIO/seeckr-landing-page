@@ -1,7 +1,13 @@
-import { type AlgimoussFigure, algimouss } from '@/content/algimouss'
+import type { AlgimoussFigure } from '@/content/fr/algimouss'
+import { getDictionary } from '@/content/get-dictionary'
 
 /** Les chiffres mesurés chez Algimouss, tels que le site les publie. */
-export function AlgimoussFigures({ figures }: { figures: AlgimoussFigure[] }) {
+export async function AlgimoussFigures({
+  figures,
+}: {
+  figures: AlgimoussFigure[]
+}) {
+  const { algimouss } = await getDictionary()
   return (
     <figure>
       <dl className="grid gap-x-12 gap-y-10 sm:grid-cols-2">

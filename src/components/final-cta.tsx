@@ -1,10 +1,14 @@
 import Link from 'next/link'
 import { button, sectionTitle } from '@/components/styles'
-import { finalCta } from '@/content/home'
-import { cta } from '@/lib/site'
+import { getDictionary, getLocale } from '@/content/get-dictionary'
+import { localePath } from '@/lib/i18n'
+import { paths } from '@/lib/site'
 
 /** Appel final vers /mon-seeckr, en bas de chaque page. */
-export function FinalCta() {
+export async function FinalCta() {
+  const locale = await getLocale()
+  const { finalCta, site } = await getDictionary()
+
   return (
     <section
       aria-labelledby="final-cta-title"
@@ -18,10 +22,10 @@ export function FinalCta() {
           {finalCta.text}
         </p>
         <Link
-          href={cta.href}
+          href={localePath(locale, paths.lead)}
           className={`${button('inverted')} mt-10 w-full sm:w-auto`}
         >
-          {cta.label}
+          {site.cta.label}
         </Link>
       </div>
     </section>

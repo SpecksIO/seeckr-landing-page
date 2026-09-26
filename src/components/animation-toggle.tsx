@@ -4,9 +4,11 @@
 export function AnimationToggle({
   paused,
   onToggle,
+  labels,
   className = '',
 }: {
   paused: boolean
+  labels: { pause: string; resume: string }
   onToggle: () => void
   className?: string
 }) {
@@ -16,7 +18,7 @@ export function AnimationToggle({
       onClick={onToggle}
       className={`mt-3 min-h-11 text-sm underline-offset-4 hover:underline focus-visible:outline-2 ${className}`}
     >
-      {paused ? "Reprendre l'animation" : "Mettre l'animation en pause"}
+      {paused ? labels.resume : labels.pause}
     </button>
   )
 }

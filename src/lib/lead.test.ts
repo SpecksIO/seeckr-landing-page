@@ -1,4 +1,4 @@
-import { leadErrors, parseLead } from '@/lib/lead'
+import { parseLead } from '@/lib/lead'
 
 function form(values: Record<string, string>) {
   const data = new FormData()
@@ -34,7 +34,7 @@ describe('parseLead', () => {
     expect(result).toEqual({
       ok: false,
       values: { site: '', email: '', phone: '' },
-      errors: leadErrors,
+      errors: ['site', 'email', 'phone'],
     })
   })
 
@@ -46,7 +46,7 @@ describe('parseLead', () => {
     const result = parseLead(form({ ...valid, [field]: value }))
 
     expect(result.ok).toBe(false)
-    if (!result.ok) expect(Object.keys(result.errors)).toEqual([field])
+    if (!result.ok) expect(result.errors).toEqual([field])
   })
 
   it('renvoie les valeurs saisies pour les réafficher', () => {
