@@ -46,7 +46,7 @@ Sinon :
 3. Commite en imitant le format de `git log --oneline -10`, puis `git push`.
 4. Une fois le site redéployé, ouvre l'URL en ligne et vérifie que la page s'affiche. Si elle est toujours introuvable au bout de 15 minutes, fais prévenir Amandine.
 5. Si Laureline a accès à Google Search Console, fais-lui demander l'indexation de l'URL (« Inspection de l'URL », puis « Demander l'indexation »).
-6. Donne-lui le prompt pour l'outil LinkedIn (voir les relais dans SKILL.md). Quand le post est publié, note son URL sur la ligne du guide.
+6. Donne-lui le prompt pour son outil LinkedIn (voir les relais dans SKILL.md). Quand le post est publié, note son URL sur la ligne du guide.
 
 ## 7. Mettre à jour le suivi
 

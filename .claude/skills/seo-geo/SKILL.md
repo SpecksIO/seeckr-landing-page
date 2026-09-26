@@ -1,12 +1,12 @@
 ---
 name: seo-geo
-description: "Pilote le travail SEO et GEO du site seeckr.fr avec Laureline, deux jours par semaine : choisir quoi faire, rédiger et publier des guides, relever les citations de Seeckr dans les assistants IA, obtenir des mentions externes. À utiliser dès que Laureline ouvre une séance ou dit « on fait quoi aujourd'hui », « je commence ma journée SEO », « écris un guide », « nouvel article », « panel du mois », « est-ce que ChatGPT nous cite », « trouve des annuaires », « à qui j'écris cette semaine », « relance », même sans nommer le skill."
+description: "Pilote le travail SEO et GEO du site seeckr.fr avec Laureline, en deux séances de 2 heures par semaine : choisir quoi faire, rédiger et publier des guides, relever les citations de Seeckr dans les assistants IA, obtenir des mentions externes. À utiliser dès que Laureline ouvre une séance ou dit « on fait quoi aujourd'hui », « je commence ma séance SEO », « écris un guide », « nouvel article », « panel du mois », « est-ce que ChatGPT nous cite », « trouve des annuaires », « à qui j'écris cette semaine », « relance », même sans nommer le skill."
 argument-hint: "[seance|guide|panel|mentions] (sans argument = seance)"
 ---
 
 # SEO et GEO de seeckr.fr
 
-Transforme deux jours par semaine de Laureline en progression mesurable du référencement de seeckr.fr, dans Google comme dans les assistants IA.
+Transforme deux séances de 2 heures par semaine de Laureline en progression mesurable du référencement de seeckr.fr, dans Google comme dans les assistants IA.
 
 ## Ouverture
 
@@ -29,10 +29,10 @@ Elle publie seule sur `main`, sans relecture. Tu es donc le dernier contrôle av
 
 ## Les deux relais de Laureline
 
-Dans son navigateur, Laureline a accès à deux outils que tu ne peux pas appeler toi-même. Tu lui donnes un prompt prêt à coller dans un bloc de code, elle te rapporte la réponse.
+Dans son Claude sur navigateur (claude.ai), Laureline a accès à deux outils que tu ne peux pas appeler toi-même. Tu lui donnes un prompt prêt à coller dans un bloc de code, elle te rapporte la réponse.
 
 - **Le projet Seeckr sur claude.ai** : la source des faits produit qui ne sont pas encore sur le site (nouvelles fonctionnalités, nouveaux secteurs, statistiques clés). Écris un prompt autonome qui pose des questions précises et demande pour chaque fait sa date, sa source et s'il peut être publié. Un fait que la réponse ne déclare pas publiable ne se publie pas.
-- **L'outil de posts LinkedIn** : il relaie chaque guide publié. Le prompt donne l'URL du guide, sa réponse en deux phrases, le lecteur visé et un seul appel à l'action : lire le guide.
+- **Son outil de posts LinkedIn, dans ce même Claude** : il relaie chaque guide publié. Le prompt donne l'URL du guide, sa réponse en deux phrases, le lecteur visé et un seul appel à l'action : lire le guide.
 
 ## Commandes
 

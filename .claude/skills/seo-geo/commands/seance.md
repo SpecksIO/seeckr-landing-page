@@ -1,4 +1,4 @@
-# `seance` : ouvrir la journée
+# `seance` : ouvrir la séance
 
 ## 1. Préparer le poste
 
@@ -18,20 +18,16 @@ Vérifie en silence, et ne parle à Laureline que de ce qui manque :
 
 ## 4. Proposer le programme
 
-Lis `seo/backlog.md`, `seo/panel-geo.md` et `seo/mentions.md`, puis compare-les au rythme cible :
+Laureline a deux séances de 2 heures par semaine, pas plus. Note l'heure de début avec `date`. Chaque séance suit le même plan :
 
-| Volet    | Cible                                                |
-| -------- | ---------------------------------------------------- |
-| Guides   | 2 publiés par semaine                                |
-| Mentions | une demi-journée par semaine, relances comprises     |
-| Panel    | un relevé par mois, dans la première semaine du mois |
+| Temps  | Tâche                                                                                           |
+| ------ | ----------------------------------------------------------------------------------------------- |
+| 1 h 15 | un guide (reprendre celui qui est commencé, sinon le suivant du backlog)                        |
+| 30 min | mentions : les relances dues d'abord (7 jours sans réponse), puis deux nouvelles cibles au plus |
+| 15 min | nouvelles de Seeckr (étape 3), à la première séance de la semaine seulement                     |
 
-Propose à Laureline une ou deux tâches pour la journée, dans cet ordre de priorité :
+La première séance du mois, le panel remplace le guide.
 
-1. le panel, si le relevé du mois courant manque ;
-2. un guide commencé mais non publié ;
-3. les relances dues dans `seo/mentions.md` (contact sans réponse depuis 7 jours ou plus) ;
-4. le prochain guide du backlog ;
-5. de nouvelles cibles de mentions.
+Son temps compte, pas le tien. Pendant que tu cherches ou rédiges, donne-lui une tâche qui ne dépend pas de toi, par exemple envoyer les messages de mentions déjà prêts ou publier le post LinkedIn du guide précédent. Ne la sollicite que pour décider : valider un plan, relire, envoyer.
 
-Formule-le en trois lignes au plus, avec la commande que tu vas enchaîner, et laisse-la choisir.
+Annonce le programme en trois lignes au plus, puis enchaîne. À 1 h 45 de séance, termine ce qui est en cours sans en ouvrir de nouveau : commite, pousse, mets le suivi à jour. Un guide inachevé reprend à la séance suivante.

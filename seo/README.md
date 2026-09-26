@@ -26,8 +26,8 @@ semaine ? ».
 
 ## Quand Claude te donne un prompt à coller
 
-Certains outils ne sont accessibles que depuis ton navigateur : le projet Seeckr sur claude.ai, et ton outil de posts
-LinkedIn. Quand Claude te donne un texte dans un encadré, copie-le dans l'outil qu'il te nomme, puis recolle la réponse
+Deux outils ne sont accessibles que depuis ton Claude sur navigateur : le projet Seeckr, et ton outil de posts LinkedIn.
+Quand Claude Code te donne un texte dans un encadré, colle-le dans l'outil qu'il te nomme, puis recolle la réponse
 dans Claude Code.
 
 ## Trois règles
