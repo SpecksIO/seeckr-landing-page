@@ -25,7 +25,9 @@ export default defineConfig({
     { name: 'Mobile Safari', use: { ...devices['iPhone 12'] } },
   ],
   webServer: {
-    command: 'pnpm dev',
+    // Le build de production : c'est lui qu'on livre, et `next dev` corrompt
+    // son prerender-manifest.json quand plusieurs pages compilent à la fois.
+    command: 'pnpm preview',
     url: baseURL,
     reuseExistingServer: !process.env.CI,
     timeout: 120_000,
