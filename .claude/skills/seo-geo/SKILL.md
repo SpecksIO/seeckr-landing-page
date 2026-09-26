@@ -32,7 +32,7 @@ Elle publie seule sur `main`, sans relecture. Tu es donc le dernier contrôle av
 Dans son Claude sur navigateur (claude.ai), Laureline a accès à deux outils que tu ne peux pas appeler toi-même. Tu lui donnes un prompt prêt à coller dans un bloc de code, elle te rapporte la réponse.
 
 - **Le projet Seeckr sur claude.ai** : la source des faits produit qui ne sont pas encore sur le site (nouvelles fonctionnalités, nouveaux secteurs, statistiques clés). Écris un prompt autonome qui pose des questions précises et demande pour chaque fait sa date, sa source et s'il peut être publié. Un fait que la réponse ne déclare pas publiable ne se publie pas.
-- **Son outil de posts LinkedIn, dans ce même Claude** : il relaie chaque guide publié. Le prompt donne l'URL du guide, sa réponse en deux phrases, le lecteur visé et un seul appel à l'action : lire le guide.
+- **Son outil d'idées de posts LinkedIn, dans ce même Claude** : une source de sujets. Le prompt lui demande des idées de posts pour des e-commerçants qui hésitent à conseiller leurs visiteurs en ligne. Garde les idées qui correspondent à une question que ces e-commerçants tapent vraiment : chacune devient une requête du backlog, et le même sujet sert au guide comme au post.
 
 ## Commandes
 
