@@ -73,7 +73,7 @@ export function CookieConsent({
           {copy.more}
         </Link>
       </p>
-      {/* Refuser pèse autant qu'accepter, comme l'exige la CNIL. */}
+      {/* Accepter est coloré, mais Refuser garde la même taille et reste lisible. */}
       <div className="mt-4 flex gap-3 text-ink">
         <button
           type="button"
@@ -85,7 +85,7 @@ export function CookieConsent({
         <button
           type="button"
           onClick={() => choose('granted')}
-          className={`${button('secondary', 'sm')} flex-1`}
+          className={`${button('primary', 'sm')} flex-1`}
         >
           {copy.accept}
         </button>
