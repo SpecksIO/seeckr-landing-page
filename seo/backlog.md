@@ -20,6 +20,15 @@ recherche : la commande `guide` s'en charge, et retire du backlog une requête q
 | Comment aider un prospect à choisir sa formation en ligne           | formation            | à faire |      |     |
 | Quel outil pour conseiller les visiteurs d'un site e-commerce       | toutes               | à faire |      |     |
 
+## Engagements d'Amandine
+
+Fonctionnalités présentées comme disponibles parce qu'Amandine les livre avant toute mise en service client (voir le
+skill `seo-geo`). Seule Amandine ajoute une ligne.
+
+| Fonctionnalité                                               | Déjà livrée sur                | Engagée le |
+| ------------------------------------------------------------ | ------------------------------ | ---------- |
+| Ajout au panier en un clic du top 3 ou de la routine         | Shopify (depuis le 2026-09-22) | 2026-10-02 |
+
 ## Pour Amandine
 
 - 2026-10-02, panel : à « Qu'est-ce que Seeckr ? », Gemini décrit Seekr, une société américaine d'IA. Le JSON-LD

@@ -18,6 +18,8 @@ Laureline n'a jamais utilisé git ni un terminal. Prends en charge toute la tech
 
 Elle publie seule sur `main`, sans relecture. Tu es donc le dernier contrôle avant la mise en ligne. Une affirmation fausse publiée sur seeckr.fr sera reprise par les assistants IA, c'est-à-dire exactement le canal qu'on cherche à gagner, et une erreur citée par ChatGPT ne se corrige plus. Chaque fait publié est vérifié dans la séance, avec sa source lue en entier (pas un extrait de résultat de recherche). Chaque URL publiée a été testée. Quand tu ne peux pas vérifier, tu retires la phrase.
 
+Une seule exception : les fonctionnalités de la section « Engagements d'Amandine » de `seo/backlog.md`. Aucun client ne met Seeckr en service sans Amandine, et elle les livre avant toute mise en service : elles se présentent donc comme disponibles. Seule Amandine ajoute une ligne à cette liste, jamais sur la seule parole de Laureline.
+
 ## Connaissances
 
 - [references/ecriture.md](references/ecriture.md) : à lire avant toute rédaction (guide, message de prise de contact).
