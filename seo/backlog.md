@@ -1,6 +1,6 @@
 # Backlog des guides
 
-Dernières nouvelles de Seeckr : jamais
+Dernières nouvelles de Seeckr : 2026-10-02
 
 Une ligne par requête ciblée, dans l'ordre de traitement. Statuts : `à faire`, `en cours`, `publié`.
 
@@ -33,4 +33,5 @@ skill `seo-geo`). Seule Amandine ajoute une ligne.
 
 - 2026-10-02, panel : à « Qu'est-ce que Seeckr ? », Gemini décrit Seekr, une société américaine d'IA. Le JSON-LD
   `Organization` (`src/lib/structured-data.ts`) n'a pas de `sameAs` vers les profils officiels de Seeckr (LinkedIn, etc.),
-  qui aideraient les moteurs à distinguer les deux marques. À décider.
+  qui aideraient les moteurs à distinguer les deux marques. À décider. Profil vérifié le 2026-10-02 :
+  https://www.linkedin.com/company/seeckr (page « Seeckr | LinkedIn »). Aucun autre profil officiel connu.
