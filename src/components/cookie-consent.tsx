@@ -11,6 +11,20 @@ const storageKey = 'cookie-consent'
 
 type Consent = 'granted' | 'denied'
 
+const day = 24 * 60 * 60 * 1000
+/** Passé ce délai, le bandeau repose la question. */
+const lifetime: Record<Consent, number> = {
+  granted: 182 * day,
+  denied: day,
+}
+
+/** Le choix est stocké sous la forme `granted:1790930431714`. */
+function readConsent(): Consent | null {
+  const [value, at] = (localStorage.getItem(storageKey) ?? '').split(':')
+  if (value !== 'granted' && value !== 'denied') return null
+  return Date.now() - Number(at) < lifetime[value] ? value : null
+}
+
 /**
  * Bandeau de consentement au pixel Meta. Le pixel ne se charge qu'après
  * « Accepter », puis compte une page vue à chaque navigation.
@@ -27,7 +41,7 @@ export function CookieConsent({
   const pathname = usePathname()
 
   useEffect(() => {
-    setConsent(localStorage.getItem(storageKey) as Consent | null)
+    setConsent(readConsent())
   }, [])
 
   // pathname n'est pas lu, il relance l'effet à chaque navigation.
@@ -41,7 +55,7 @@ export function CookieConsent({
   if (!pixelId || consent !== null) return null
 
   function choose(value: Consent) {
-    localStorage.setItem(storageKey, value)
+    localStorage.setItem(storageKey, `${value}:${Date.now()}`)
     setConsent(value)
   }
 
