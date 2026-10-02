@@ -5,9 +5,10 @@ import type {
   SoftwareApplication,
   WebSite,
 } from 'schema-dts'
-import type { Dictionary } from '@/content'
+import { type Dictionary, dictionaries } from '@/content'
 import { company } from '@/content/company'
 import type { VerticalSlug } from '@/content/verticals'
+import type { Guide } from '@/lib/guides'
 import { type Locale, localePath } from '@/lib/i18n'
 import { absoluteUrl, paths, siteConfig } from '@/lib/site'
 
@@ -188,6 +189,33 @@ export function caseGraph(locale: Locale, dict: Dictionary): Graph {
       },
       // `Article` ne porte pas de `breadcrumb` : le fil reste un nœud du graphe.
       breadcrumb(locale, dict, paths.algimoussCase, dict.algimouss.name),
+    ],
+  }
+}
+
+/** Graphe d'un guide : un article, écrit en français. */
+export function guideGraph(guide: Guide): Graph {
+  const dict = dictionaries.fr
+  const path = `${paths.guides}/${guide.slug}`
+  const url = absoluteUrl(path)
+  return {
+    '@context': 'https://schema.org',
+    '@graph': [
+      organization(dict),
+      website(dict),
+      {
+        '@type': 'Article',
+        '@id': `${url}#article`,
+        url,
+        headline: guide.question,
+        description: guide.description,
+        datePublished: guide.date,
+        isPartOf: { '@id': websiteId },
+        author: { '@id': organizationId },
+        publisher: { '@id': organizationId },
+        inLanguage: 'fr',
+      },
+      breadcrumb('fr', dict, path, guide.question),
     ],
   }
 }

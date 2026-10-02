@@ -17,6 +17,7 @@ export const siteConfig = {
 export const paths = {
   lead: '/mon-seeckr',
   algimoussCase: '/cas-clients/algimouss',
+  guides: '/guides',
   legalNotice: '/mentions-legales',
   privacy: '/confidentialite',
 } as const

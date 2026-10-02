@@ -1,9 +1,7 @@
 ---
-requete: "Chatbot e-commerce ou conseiller produit : quelle différence"
-titre_seo: "Chatbot e-commerce ou conseiller produit : la différence"
+titre: "Chatbot e-commerce ou conseiller produit : la différence"
 description: "Un chatbot répond aux questions du visiteur, un conseiller produit lui en pose. Ce qui les sépare, et comment savoir lequel il faut à votre site."
-statut: brouillon, en attente de la rubrique guides
-date: 2026-10-02
+date: "2026-10-02"
 ---
 
 # Chatbot e-commerce ou conseiller produit : quelle différence ?

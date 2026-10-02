@@ -1,4 +1,5 @@
 import { dictionaries } from '@/content'
+import { guidePages } from '@/lib/guides'
 import { localeNames, localePath, locales } from '@/lib/i18n'
 import { absoluteUrl, pages, siteConfig } from '@/lib/site'
 
@@ -14,7 +15,10 @@ export function GET() {
     ...locales.flatMap((locale) => [
       `## ${localeNames[locale]}`,
       '',
-      ...pages(dictionaries[locale]).map(
+      ...[
+        ...pages(dictionaries[locale]),
+        ...(locale === 'fr' ? guidePages() : []),
+      ].map(
         (page) =>
           `- [${page.title}](${absoluteUrl(localePath(locale, page.path))}): ${page.summary}`
       ),

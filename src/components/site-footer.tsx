@@ -42,6 +42,13 @@ export async function SiteFooter() {
                 {site.cta.shortLabel}
               </Link>
             </li>
+            {locale === 'fr' && (
+              <li>
+                <Link href={paths.guides} className={linkClass}>
+                  Guides
+                </Link>
+              </li>
+            )}
             <li>
               <a href={siteConfig.loginUrl} className={linkClass}>
                 {ui.nav.login}

@@ -11,7 +11,7 @@ recherche : la commande `guide` s'en charge, et retire du backlog une requête q
 | ------------------------------------------------------------------- | -------------------- | -------- | ---------- | ----------------------------------------------- |
 | Comment réduire les recherches sans résultat sur un site e-commerce | toutes               | à faire  |            |                                                 |
 | Quiz produit ou assistant conversationnel : que choisir             | toutes               | à faire  |            |                                                 |
-| Chatbot e-commerce ou conseiller produit : quelle différence        | toutes               | en cours | 2026-10-02 | seo/brouillons/chatbot-ou-conseiller-produit.md |
+| Chatbot e-commerce ou conseiller produit : quelle différence | toutes | publié | 2026-10-02 | https://seeckr.fr/guides/chatbot-ou-conseiller-produit |
 | Qu'est-ce que la vente guidée en e-commerce                         | toutes               | à faire  |            |                                                 |
 | Comment conseiller un client en ligne comme en boutique             | toutes               | à faire  |            |                                                 |
 | Que proposer à un visiteur qui s'apprête à quitter le site          | toutes               | à faire  |            |                                                 |
