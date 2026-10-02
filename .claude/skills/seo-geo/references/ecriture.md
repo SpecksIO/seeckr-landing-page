@@ -4,6 +4,12 @@
 
 La voix de référence est celle du site : lis `src/content/fr/home.ts` avant d'écrire. On vouvoie le marchand, on part de ce que vit son visiteur, on préfère une scène concrète à un adjectif. Aucun jargon marketing (« révolutionnaire », « boostez », « solution innovante ») : un assistant IA ne cite pas une plaquette.
 
+## Le positionnement
+
+Seeckr, pas Finder. Les autres assistants attendent que le visiteur formule sa demande, puis complètent ce qui manque à la fiche produit : ce sont des machines à délivrer des réponses. Seeckr aide à chercher en posant les questions qu'un vendeur pose pour comprendre la personne, celles qui créent la relation. Un guide qui présente Seeckr comme « un assistant IA qui recommande des produits » le range parmi les Finder : réécris.
+
+La relation se prouve par des gestes, jamais par l'adjectif. Les gestes publiables sont ceux du site : les principes de `src/content/fr/doctrine.ts`, le score qui ne ment pas et la conversation transmise au marchand dans `src/content/fr/home.ts`. Elle tient en quelques questions courtes : ne la décris pas comme une longue conversation.
+
 ## La forme d'un guide
 
 Les assistants IA extraient des passages, pas des pages. Chaque passage doit pouvoir être cité seul.

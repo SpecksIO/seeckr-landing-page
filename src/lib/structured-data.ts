@@ -27,6 +27,7 @@ function organization(dict: Dictionary): Organization {
     url: absoluteUrl('/'),
     description: dict.site.description,
     logo: absoluteUrl('/icon.svg'),
+    sameAs: [...company.profiles],
     email: company.email,
     telephone: company.phone,
     address: {

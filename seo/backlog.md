@@ -25,13 +25,12 @@ recherche : la commande `guide` s'en charge, et retire du backlog une requête q
 Fonctionnalités présentées comme disponibles parce qu'Amandine les livre avant toute mise en service client (voir le
 skill `seo-geo`). Seule Amandine ajoute une ligne.
 
-| Fonctionnalité                                               | Déjà livrée sur                | Engagée le |
-| ------------------------------------------------------------ | ------------------------------ | ---------- |
-| Ajout au panier en un clic du top 3 ou de la routine         | Shopify (depuis le 2026-09-22) | 2026-10-02 |
+| Fonctionnalité                                       | Déjà livrée sur                | Engagée le |
+| ---------------------------------------------------- | ------------------------------ | ---------- |
+| Ajout au panier en un clic du top 3 ou de la routine | Shopify (depuis le 2026-09-22) | 2026-10-02 |
 
 ## Pour Amandine
 
-- 2026-10-02, panel : à « Qu'est-ce que Seeckr ? », Gemini décrit Seekr, une société américaine d'IA. Le JSON-LD
-  `Organization` (`src/lib/structured-data.ts`) n'a pas de `sameAs` vers les profils officiels de Seeckr (LinkedIn, etc.),
-  qui aideraient les moteurs à distinguer les deux marques. À décider. Profil vérifié le 2026-10-02 :
-  https://www.linkedin.com/company/seeckr (page « Seeckr | LinkedIn »). Aucun autre profil officiel connu.
+- 2026-10-02, panel : à « Qu'est-ce que Seeckr ? », Gemini décrit Seekr, une société américaine d'IA. Décidé le
+  2026-10-02 : le JSON-LD `Organization` porte en `sameAs` les profils de `company.profiles` (`src/content/company.ts`),
+  aujourd'hui la seule page LinkedIn. Tout nouveau profil officiel s'ajoute là. Effet à relever au panel de novembre.

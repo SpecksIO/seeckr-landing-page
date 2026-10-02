@@ -23,6 +23,11 @@ export const company = {
   /** Le même numéro, tel qu'on le lit depuis l'étranger. */
   phoneLabelIntl: '+33 6 58 30 51 85',
   publicationDirector: 'Amandine Musseau',
+  /**
+   * Profils officiels, en `sameAs` du JSON-LD : ils distinguent Seeckr de Seekr,
+   * une société américaine d'IA avec laquelle Gemini nous confond.
+   */
+  profiles: ['https://www.linkedin.com/company/seeckr'],
 } as const
 
 /** Le capital social au format d'une langue : `1 000 €`, `€1,000`. */

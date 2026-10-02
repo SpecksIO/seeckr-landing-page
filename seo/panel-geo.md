@@ -31,7 +31,10 @@ Chaque mois ajoute une section `### AAAA-MM` : taux de citation par assistant et
 ### 2026-10
 
 Relevé du 2 octobre 2026, conversations neuves. L'assistant et le numéro de chaque réponse sont déduits de l'ordre
-d'envoi. Les liens des sources de ChatGPT se sont perdus au copier-coller : seuls leurs libellés sont notés.
+d'envoi. Les liens de ChatGPT ont été récupérés après coup, sans savoir à quelle question chacun appartient :
+shopify.com (Q1 et Q5), askdialog.com, wavize.com, mygoodsite.fr, olvio.ai (deux fois), francenum.gouv.fr. Doofinder et
+chatbot.fr n'ont pas été récupérés. Hors Shopify, ce sont des éditeurs concurrents ou un site public : pas de cible de
+mention.
 
 | Assistant | Citations de Seeckr | Taux |
 | --------- | ------------------- | ---- |
