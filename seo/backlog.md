@@ -18,3 +18,10 @@ recherche : la commande `guide` s'en charge, et retire du backlog une requête q
 | Comment recommander une routine de soin sur un site cosmétique      | cosmetique-nutrition | à faire |      |     |
 | Comment aider un client à choisir un produit technique en ligne     | produits-techniques  | à faire |      |     |
 | Comment aider un prospect à choisir sa formation en ligne           | formation            | à faire |      |     |
+| Quel outil pour conseiller les visiteurs d'un site e-commerce       | toutes               | à faire |      |     |
+
+## Pour Amandine
+
+- 2026-10-02, panel : à « Qu'est-ce que Seeckr ? », Gemini décrit Seekr, une société américaine d'IA. Le JSON-LD
+  `Organization` (`src/lib/structured-data.ts`) n'a pas de `sameAs` vers les profils officiels de Seeckr (LinkedIn, etc.),
+  qui aideraient les moteurs à distinguer les deux marques. À décider.

@@ -25,5 +25,45 @@ ChatGPT, Gemini.
 
 ## Relevés
 
-Aucun relevé pour l'instant. Chaque mois ajoute une section `### AAAA-MM` : taux de citation par assistant et au total,
+Chaque mois ajoute une section `### AAAA-MM` : taux de citation par assistant et au total,
 écart avec le mois précédent, puis le détail par question (Seeckr cité ou non, rang, concurrents cités, domaines sources).
+
+### 2026-10
+
+Relevé du 2 octobre 2026, conversations neuves. L'assistant et le numéro de chaque réponse sont déduits de l'ordre
+d'envoi. Les liens des sources de ChatGPT se sont perdus au copier-coller : seuls leurs libellés sont notés.
+
+| Assistant | Citations de Seeckr | Taux |
+| --------- | ------------------- | ---- |
+| ChatGPT   | 0 / 10              | 0 %  |
+| Gemini    | 0 / 10              | 0 %  |
+| Total     | 0 / 20              | 0 %  |
+
+Écart avec le mois précédent : premier relevé.
+
+| Q   | Assistant | Seeckr | Rang | Concurrents cités                                                                           | Sources citées                                                 |
+| --- | --------- | ------ | ---- | ------------------------------------------------------------------------------------------- | -------------------------------------------------------------- |
+| 1   | ChatGPT   | non    |      | iAdvize, Dialog, Doofinder, Wavize, Klozio                                                  | Shopify, Dialog, Doofinder, Wavize, MyGoodSite, chatbot.fr (+1) |
+| 1   | Gemini    | non    |      | Octane AI, Typeform, Qualifio, Klevu, Doofinder, Algolia, Tidio (Lyro), Botpress, Gorgias, Recom.ai | aucune                                                         |
+| 2   | ChatGPT   | non    |      | aucun                                                                                       | aucune                                                         |
+| 2   | Gemini    | non    |      | aucun                                                                                       | aucune                                                         |
+| 3   | ChatGPT   | non    |      | aucun                                                                                       | aucune                                                         |
+| 3   | Gemini    | non    |      | aucun                                                                                       | aucune                                                         |
+| 4   | ChatGPT   | non    |      | aucun                                                                                       | aucune                                                         |
+| 4   | Gemini    | non    |      | aucun                                                                                       | aucune                                                         |
+| 5   | ChatGPT   | non    |      | aucun                                                                                       | Shopify (+1), Chatbot (+1)                                     |
+| 5   | Gemini    | non    |      | aucun                                                                                       | aucune                                                         |
+| 6   | ChatGPT   | non    |      | aucun                                                                                       | aucune                                                         |
+| 6   | Gemini    | non    |      | aucun                                                                                       | aucune                                                         |
+| 7   | ChatGPT   | non    |      | aucun                                                                                       | aucune                                                         |
+| 7   | Gemini    | non    |      | aucun                                                                                       | aucune                                                         |
+| 8   | ChatGPT   | non    |      | aucun                                                                                       | aucune                                                         |
+| 8   | Gemini    | non    |      | aucun                                                                                       | aucune                                                         |
+| 9   | ChatGPT   | non    |      | aucun                                                                                       | aucune                                                         |
+| 9   | Gemini    | non    |      | aucun                                                                                       | aucune                                                         |
+| 10  | ChatGPT   | non    |      | aucun : ne connaît pas Seeckr, demande un lien                                              | aucune                                                         |
+| 10  | Gemini    | non    |      | aucun : confond Seeckr avec Seekr, société américaine d'IA                                  | aucune                                                         |
+
+Constats : seule la question 1 fait nommer des outils, et Doofinder est le seul cité par les deux assistants. Les
+questions 2 à 9 reçoivent des conseils de méthode sans outil ni source, que les guides du backlog peuvent occuper. À la
+question 10, Gemini attribue le nom à Seekr.
