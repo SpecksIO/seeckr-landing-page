@@ -6,6 +6,7 @@ import { submitLead } from '@/app/[lang]/mon-seeckr/actions'
 import { button } from '@/components/styles'
 import type { Dictionary } from '@/content'
 import type { LeadField, LeadState } from '@/lib/lead'
+import { track } from '@/lib/meta-pixel'
 
 const fields: {
   name: LeadField
@@ -40,7 +41,9 @@ export function LeadForm({
   const confirmation = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
-    if (state.status === 'sent') confirmation.current?.focus()
+    if (state.status !== 'sent') return
+    confirmation.current?.focus()
+    track('Lead')
   }, [state.status])
 
   if (state.status === 'sent') {

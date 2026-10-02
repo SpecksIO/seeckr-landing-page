@@ -43,6 +43,14 @@ export const ui = {
     menu: 'Menu',
     language: 'Langue',
   },
+  consent: {
+    label: 'Cookies',
+    text: 'Avec votre accord, nous utilisons le pixel Meta pour mesurer nos publicités et vous en montrer sur Facebook et Instagram.',
+    more: 'En savoir plus',
+    accept: 'Accepter',
+    refuse: 'Refuser',
+    settings: 'Gérer les cookies',
+  },
   animation: {
     pause: "Mettre l'animation en pause",
     resume: "Reprendre l'animation",

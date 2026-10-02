@@ -61,8 +61,12 @@ export const legalNotice = {
       <section>
         <h2>Cookies</h2>
         <p>
-          Ce site ne dépose aucun cookie et n'utilise aucun outil de mesure
-          d'audience.
+          Avec votre accord, ce site utilise le pixel Meta. Le détail figure
+          dans la{' '}
+          <Link href={paths.privacy} className="underline underline-offset-4">
+            politique de confidentialité
+          </Link>
+          .
         </p>
       </section>
     </>
@@ -87,7 +91,7 @@ export const privacy = {
       <section>
         <h2>Données collectées</h2>
         <p>
-          Le site ne collecte des données personnelles que par le formulaire{' '}
+          Le site collecte des données personnelles par le formulaire{' '}
           <Link href={paths.lead} className="underline underline-offset-4">
             {site.cta.shortLabel}
           </Link>
@@ -95,8 +99,9 @@ export const privacy = {
           votre téléphone professionnel.
         </p>
         <p>
-          Le site ne dépose aucun cookie et n'utilise aucun outil de mesure
-          d'audience.
+          Avec votre accord, le pixel Meta collecte aussi des données de
+          navigation : voir la section Cookies et publicité. Les sections
+          suivantes portent sur les données du formulaire.
         </p>
       </section>
       <section>
@@ -133,6 +138,22 @@ export const privacy = {
         <p>
           Trois ans à compter de notre dernier contact avec vous. Passé ce
           délai, vos coordonnées sont supprimées.
+        </p>
+      </section>
+      <section>
+        <h2>Cookies et publicité</h2>
+        <p>
+          Seulement si vous l'acceptez, le site charge le pixel de Meta
+          Platforms Ireland Limited. Il dépose le cookie _fbp, conservé 90
+          jours, et transmet à Meta les pages que vous consultez et l'envoi du
+          formulaire, sans son contenu. Nous nous en servons pour mesurer nos
+          publicités et vous en montrer sur Facebook et Instagram.
+        </p>
+        <p>
+          La base légale est votre consentement. Meta, responsable conjoint de
+          ce traitement, peut traiter ces données hors de l'Union européenne.
+          Vous pouvez retirer votre accord à tout moment par le lien « Gérer les
+          cookies », en bas de chaque page.
         </p>
       </section>
       <section>

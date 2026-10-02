@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { CookieSettingsButton } from '@/components/cookie-consent'
 import { Logo } from '@/components/logo'
 import { getDictionary, getLocale } from '@/content/get-dictionary'
 import { verticalSlugs } from '@/content/verticals'
@@ -61,6 +62,12 @@ export async function SiteFooter() {
               >
                 {site.pages.privacy.title}
               </Link>
+            </li>
+            <li>
+              <CookieSettingsButton
+                label={ui.consent.settings}
+                className={linkClass}
+              />
             </li>
           </ul>
         </nav>

@@ -65,8 +65,15 @@ export const legalNotice = {
       <section>
         <h2>Cookies</h2>
         <p>
-          Este sitio web no instala ninguna cookie ni utiliza ninguna
-          herramienta de medición de audiencia.
+          Con su consentimiento, este sitio web utiliza el píxel de Meta. Los
+          detalles figuran en la{' '}
+          <Link
+            href={localePath('es', paths.privacy)}
+            className="underline underline-offset-4"
+          >
+            política de privacidad
+          </Link>
+          .
         </p>
       </section>
     </>
@@ -91,7 +98,7 @@ export const privacy = {
       <section>
         <h2>Datos recogidos</h2>
         <p>
-          El sitio web solo recoge datos personales a través del{' '}
+          El sitio web recoge datos personales a través del{' '}
           <Link
             href={localePath('es', paths.lead)}
             className="underline underline-offset-4"
@@ -102,8 +109,9 @@ export const privacy = {
           teléfono profesional.
         </p>
         <p>
-          Este sitio web no instala ninguna cookie ni utiliza ninguna
-          herramienta de medición de audiencia.
+          Con su consentimiento, el píxel de Meta también recoge datos de
+          navegación: véase Cookies y publicidad. Las secciones siguientes se
+          refieren a los datos del formulario.
         </p>
       </section>
       <section>
@@ -141,6 +149,22 @@ export const privacy = {
         <p>
           Tres años desde nuestro último contacto con usted. Transcurrido ese
           plazo, sus datos se suprimen.
+        </p>
+      </section>
+      <section>
+        <h2>Cookies y publicidad</h2>
+        <p>
+          Solo si usted lo acepta, el sitio web carga el píxel de Meta Platforms
+          Ireland Limited. Este instala la cookie _fbp, conservada 90 días, y
+          transmite a Meta las páginas que usted consulta y el envío del
+          formulario, sin su contenido. Lo utilizamos para medir nuestros
+          anuncios y mostrárselos en Facebook e Instagram.
+        </p>
+        <p>
+          La base jurídica es su consentimiento. Meta, corresponsable de este
+          tratamiento, puede tratar estos datos fuera de la Unión Europea. Puede
+          retirar su consentimiento en cualquier momento mediante el enlace
+          «Gestionar las cookies», al pie de cada página.
         </p>
       </section>
       <section>

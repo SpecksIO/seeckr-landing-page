@@ -1,10 +1,11 @@
 import type { Metadata, Viewport } from 'next'
 import { Inter, Pacifico, Poppins } from 'next/font/google'
+import { CookieConsent } from '@/components/cookie-consent'
 import { SiteFooter } from '@/components/site-footer'
 import { SiteHeader } from '@/components/site-header'
 import { getDictionary, getLocale } from '@/content/get-dictionary'
-import { locales } from '@/lib/i18n'
-import { siteConfig } from '@/lib/site'
+import { localePath, locales } from '@/lib/i18n'
+import { paths, siteConfig } from '@/lib/site'
 import './globals.css'
 
 const poppins = Poppins({
@@ -50,9 +51,10 @@ export const viewport: Viewport = {
 
 export default async function RootLayout({ children }: LayoutProps<'/[lang]'>) {
   const dict = await getDictionary()
+  const locale = await getLocale()
   return (
     <html
-      lang={await getLocale()}
+      lang={locale}
       data-scroll-behavior="smooth"
       className={`${poppins.variable} ${inter.variable} ${pacifico.variable} antialiased`}
     >
@@ -68,6 +70,10 @@ export default async function RootLayout({ children }: LayoutProps<'/[lang]'>) {
           {children}
         </main>
         <SiteFooter />
+        <CookieConsent
+          copy={dict.ui.consent}
+          privacyHref={localePath(locale, paths.privacy)}
+        />
       </body>
     </html>
   )

@@ -61,7 +61,17 @@ export const legalNotice = {
       </section>
       <section>
         <h2>Cookies</h2>
-        <p>This website sets no cookies and uses no analytics tools.</p>
+        <p>
+          With your consent, this website uses the Meta pixel. Details are in
+          the{' '}
+          <Link
+            href={localePath('en', paths.privacy)}
+            className="underline underline-offset-4"
+          >
+            privacy policy
+          </Link>
+          .
+        </p>
       </section>
     </>
   ),
@@ -85,7 +95,7 @@ export const privacy = {
       <section>
         <h2>Data collected</h2>
         <p>
-          The website only collects personal data through the{' '}
+          The website collects personal data through the{' '}
           <Link
             href={localePath('en', paths.lead)}
             className="underline underline-offset-4"
@@ -94,7 +104,10 @@ export const privacy = {
           </Link>
           : your website address, your work email and your work phone number.
         </p>
-        <p>This website sets no cookies and uses no analytics tools.</p>
+        <p>
+          With your consent, the Meta pixel also collects browsing data: see
+          Cookies and advertising. The following sections cover the form data.
+        </p>
       </section>
       <section>
         <h2>Purpose</h2>
@@ -130,6 +143,22 @@ export const privacy = {
         <p>
           Three years from our last contact with you. After that, your details
           are deleted.
+        </p>
+      </section>
+      <section>
+        <h2>Cookies and advertising</h2>
+        <p>
+          Only if you accept, the website loads the pixel of Meta Platforms
+          Ireland Limited. It sets the _fbp cookie, kept for 90 days, and sends
+          Meta the pages you view and the submission of the form, without its
+          content. We use it to measure our ads and show them to you on Facebook
+          and Instagram.
+        </p>
+        <p>
+          The legal basis is your consent. Meta, joint controller of this
+          processing, may process this data outside the European Union. You can
+          withdraw your consent at any time through the “Cookie settings” link
+          at the bottom of every page.
         </p>
       </section>
       <section>
