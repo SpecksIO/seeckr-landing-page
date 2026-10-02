@@ -45,7 +45,7 @@ export const ui = {
   },
   consent: {
     label: 'Cookies',
-    text: 'Con su consentimiento, utilizamos el píxel de Meta para medir nuestros anuncios y mostrárselos en Facebook e Instagram.',
+    text: 'Utilizamos cookies publicitarias de Meta para medir nuestras campañas y mostrarle nuestros anuncios en las redes sociales. Nos ayuda a dar a conocer Seeckr.',
     more: 'Más información',
     accept: 'Aceptar',
     refuse: 'Rechazar',
