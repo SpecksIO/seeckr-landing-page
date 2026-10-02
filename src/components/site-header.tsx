@@ -16,6 +16,8 @@ export async function SiteHeader() {
   // Les verticales vivent dans le menu « Par métier », jamais à plat ici.
   const links = [
     { href: localePath(locale, '/#prix'), label: ui.nav.pricing },
+    // Les guides sont écrits en français seulement.
+    ...(locale === 'fr' ? [{ href: paths.guides, label: 'Guides' }] : []),
     ...(showWebinar(locale) ? [{ href: '/#webinar', label: 'Webinar' }] : []),
   ]
   const verticalLinks = verticalSlugs.map((slug) => ({
