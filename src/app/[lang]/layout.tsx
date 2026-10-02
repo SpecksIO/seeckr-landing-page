@@ -42,6 +42,8 @@ export async function generateMetadata(): Promise<Metadata> {
       locale: dict.site.ogLocale,
     },
     twitter: { card: 'summary_large_image' },
+    // Propriété https://seeckr.fr/ de Google Search Console.
+    verification: { google: 'JKcDzkBm_GXGaOtPOIeIiw1sPPOmNiPxrYVCwukHAJM' },
   }
 }
 
