@@ -2,11 +2,11 @@ import type { MetadataRoute } from 'next'
 import { dictionaries } from '@/content'
 import { guidePages } from '@/lib/guides'
 import { localePath, locales } from '@/lib/i18n'
-import { absoluteUrl, languageAlternates, pages } from '@/lib/site'
+import { absoluteUrl, languageAlternates, pages, paths } from '@/lib/site'
 
 /**
  * Chaque page dans chaque langue, avec ses variantes `hreflang`, puis les
- * guides, écrits en français seulement.
+ * guides et les webinars, en français seulement.
  */
 export default function sitemap(): MetadataRoute.Sitemap {
   const guides = guidePages().map((page) => ({
@@ -27,5 +27,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
       },
     }))
   )
-  return [...translated, ...guides]
+  return [
+    ...translated,
+    ...guides,
+    { url: absoluteUrl(paths.webinars), priority: 0.6 },
+  ]
 }

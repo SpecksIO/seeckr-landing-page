@@ -18,6 +18,7 @@ export const paths = {
   lead: '/mon-seeckr',
   algimoussCase: '/cas-clients/algimouss',
   guides: '/guides',
+  webinars: '/webinars',
   legalNotice: '/mentions-legales',
   privacy: '/confidentialite',
 } as const

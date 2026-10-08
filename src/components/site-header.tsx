@@ -18,7 +18,9 @@ export async function SiteHeader() {
     { href: localePath(locale, '/#prix'), label: ui.nav.pricing },
     // Les guides sont écrits en français seulement.
     ...(locale === 'fr' ? [{ href: paths.guides, label: 'Guides' }] : []),
-    ...(showWebinar(locale) ? [{ href: '/#webinar', label: 'Webinar' }] : []),
+    ...(showWebinar(locale)
+      ? [{ href: paths.webinars, label: 'Webinars' }]
+      : []),
   ]
   const verticalLinks = verticalSlugs.map((slug) => ({
     href: localePath(locale, `/${slug}`),
