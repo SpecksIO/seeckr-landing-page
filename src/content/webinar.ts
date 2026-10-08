@@ -17,27 +17,28 @@ type Webinar = {
  */
 export const webinars: Webinar[] = [
   {
-    title: "Arrêtez de perdre vos visiteurs hésitants : la méthode d'Algimouss",
+    title:
+      'Cas client Algimouss x Seeckr : 1 min 40 s pour trouver LE bon produit',
     startsAt: '2026-10-22T11:00:00+02:00',
-    registrationUrl: '',
+    registrationUrl: 'https://live.zoho.eu/kmyi-mjg-yqy',
   },
   {
     title:
-      'Black Friday et Noël : comment conseiller des milliers de visiteurs sans embaucher',
-    startsAt: '2026-10-29T11:00:00+01:00',
-    registrationUrl: '',
+      'Black Friday : comment gérer un afflux de milliers de visiteurs et convertir',
+    startsAt: '2026-10-29T13:30:00+01:00',
+    registrationUrl: 'https://live.zoho.eu/rvan-kyp-uox',
   },
   {
     title:
       'Quand chaque euro de publicité compte : transformer les visites que vous avez déjà',
-    startsAt: '2026-11-05T11:00:00+01:00',
-    registrationUrl: '',
+    startsAt: '2026-11-05T13:30:00+01:00',
+    registrationUrl: 'https://live.zoho.eu/iyrr-tbw-myi',
   },
   {
     title:
       'Et si votre site vendait comme le meilleur vendeur de votre magasin ?',
-    startsAt: '2026-11-12T11:00:00+01:00',
-    registrationUrl: '',
+    startsAt: '2026-11-17T11:00:00+01:00',
+    registrationUrl: 'https://live.zoho.eu/nbvd-dzj-uls',
   },
 ]
 
