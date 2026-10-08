@@ -19,7 +19,7 @@ export const webinars: Webinar[] = [
   {
     title:
       'Cas client Algimouss x Seeckr : 1 min 40 s pour trouver LE bon produit',
-    startsAt: '2026-10-22T11:00:00+02:00',
+    startsAt: '2026-10-22T13:30:00+02:00',
     registrationUrl: 'https://live.zoho.eu/kmyi-mjg-yqy',
   },
   {
