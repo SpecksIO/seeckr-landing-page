@@ -163,7 +163,7 @@ export const algimoussCase = {
       "L'assistant pose quatre à six questions sur sa situation : le support, le matériau, le symptôme, l'accessibilité, l'objectif. Puis il conclut sur un top 3 classé, avec un score de compatibilité et le pourquoi de chaque produit. Le produit en tête affiche un score médian de 95 %. Et quand rien ne convient, il le dit au lieu de forcer une vente.",
       "Sur 373 conseils lancés depuis une fiche produit, il a confirmé la fiche 262 fois. Les 111 autres fois, il a orienté le visiteur vers un produit plus adapté que celui qu'il regardait. Un visiteur sur trois regardait le mauvais produit.",
       "Le conseil va jusqu'au magasin : l'assistant cherche le point de vente le plus proche qui vend le produit recommandé. Pour l'après-vente, une pièce détachée ou un pulvérisateur en panne, il oriente vers notre SAV au lieu d'improviser.",
-      'Depuis le back office, notre équipe relit des conversations et note chaque produit recommandé, bon ou pas bon. Nos remarques repartent dans le savoir métier de l'assistant.',
+      "Depuis le back office, notre équipe relit des conversations et note chaque produit recommandé, bon ou pas bon. Nos remarques repartent dans le savoir métier de l'assistant.",
     ],
   },
   team: {
