@@ -64,8 +64,8 @@ export const legalNotice = {
       <section>
         <h2>Cookie</h2>
         <p>
-          Con il tuo consenso, questo sito utilizza il pixel di Meta. I dettagli
-          sono nell'
+          Con il tuo consenso, questo sito utilizza il pixel di Meta e l'Insight
+          Tag di LinkedIn. I dettagli sono nell'
           <Link
             href={localePath('it', paths.privacy)}
             className="underline underline-offset-4"
@@ -108,9 +108,9 @@ export const privacy = {
           telefono aziendale.
         </p>
         <p>
-          Con il tuo consenso, il pixel di Meta raccoglie anche dati di
-          navigazione: vedi Cookie e pubblicità. Le sezioni seguenti riguardano
-          i dati del modulo.
+          Con il tuo consenso, il pixel di Meta e l'Insight Tag di LinkedIn
+          raccolgono anche dati di navigazione: vedi Cookie e pubblicità. Le
+          sezioni seguenti riguardano i dati del modulo.
         </p>
       </section>
       <section>
@@ -159,10 +159,16 @@ export const privacy = {
           mostrartele su Facebook e Instagram.
         </p>
         <p>
-          La base giuridica è il tuo consenso. Meta, contitolare di questo
-          trattamento, può trattare questi dati al di fuori dell'Unione europea.
-          Puoi revocare il consenso in qualsiasi momento tramite il link
-          «Gestisci i cookie», in fondo a ogni pagina.
+          Con lo stesso consenso, il sito carica anche l'Insight Tag di LinkedIn
+          Ireland Unlimited Company. Il tag installa cookie di LinkedIn e
+          trasmette a LinkedIn le pagine che consulti. Lo usiamo per misurare le
+          nostre pubblicità e mostrartele su LinkedIn.
+        </p>
+        <p>
+          La base giuridica è il tuo consenso. Meta e LinkedIn, contitolari di
+          questi trattamenti, possono trattare questi dati al di fuori
+          dell'Unione europea. Puoi revocare il consenso in qualsiasi momento
+          tramite il link «Gestisci i cookie», in fondo a ogni pagina.
         </p>
       </section>
       <section>

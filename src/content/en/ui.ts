@@ -44,7 +44,7 @@ export const ui = {
   },
   consent: {
     label: 'Cookies',
-    text: 'We use advertising cookies from Meta to measure our campaigns and show you our ads on social media. It helps us spread the word about Seeckr.',
+    text: 'We use advertising cookies from Meta and LinkedIn to measure our campaigns and show you our ads on social media. It helps us spread the word about Seeckr.',
     more: 'Learn more',
     accept: 'Accept',
     refuse: 'Decline',

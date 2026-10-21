@@ -5,9 +5,13 @@ import { usePathname } from 'next/navigation'
 import { useEffect, useState } from 'react'
 import { button } from '@/components/styles'
 import type { Dictionary } from '@/content'
+import { loadInsightTag, partnerId } from '@/lib/linkedin-insight'
 import { loadPixel, pixelId, track } from '@/lib/meta-pixel'
 
 const storageKey = 'cookie-consent'
+
+/** Sans pixel Meta ni Insight Tag LinkedIn, pas de bandeau. */
+const hasTrackers = Boolean(pixelId || partnerId)
 
 type Consent = 'granted' | 'denied'
 
@@ -26,8 +30,9 @@ function readConsent(): Consent | null {
 }
 
 /**
- * Bandeau de consentement au pixel Meta. Le pixel ne se charge qu'après
- * « Accepter », puis compte une page vue à chaque navigation.
+ * Bandeau de consentement au pixel Meta et à l'Insight Tag LinkedIn. Ils ne
+ * se chargent qu'après « Accepter », puis le pixel compte une page vue à
+ * chaque navigation.
  */
 export function CookieConsent({
   copy,
@@ -49,10 +54,11 @@ export function CookieConsent({
   useEffect(() => {
     if (consent !== 'granted') return
     loadPixel()
+    loadInsightTag()
     track('PageView')
   }, [consent, pathname])
 
-  if (!pixelId || consent !== null) return null
+  if (!hasTrackers || consent !== null) return null
 
   function choose(value: Consent) {
     localStorage.setItem(storageKey, `${value}:${Date.now()}`)
@@ -94,7 +100,7 @@ export function CookieConsent({
   )
 }
 
-/** Efface le choix et recharge : le bandeau revient, sans pixel chargé. */
+/** Efface le choix et recharge : le bandeau revient, sans traceur chargé. */
 export function CookieSettingsButton({
   label,
   className,
@@ -102,7 +108,7 @@ export function CookieSettingsButton({
   label: string
   className: string
 }) {
-  if (!pixelId) return null
+  if (!hasTrackers) return null
   return (
     <button
       type="button"

@@ -62,8 +62,8 @@ export const legalNotice = {
       <section>
         <h2>Cookies</h2>
         <p>
-          With your consent, this website uses the Meta pixel. Details are in
-          the{' '}
+          With your consent, this website uses the Meta pixel and the LinkedIn
+          Insight Tag. Details are in the{' '}
           <Link
             href={localePath('en', paths.privacy)}
             className="underline underline-offset-4"
@@ -105,8 +105,9 @@ export const privacy = {
           : your website address, your work email and your work phone number.
         </p>
         <p>
-          With your consent, the Meta pixel also collects browsing data: see
-          Cookies and advertising. The following sections cover the form data.
+          With your consent, the Meta pixel and the LinkedIn Insight Tag also
+          collect browsing data: see Cookies and advertising. The following
+          sections cover the form data.
         </p>
       </section>
       <section>
@@ -155,10 +156,16 @@ export const privacy = {
           and Instagram.
         </p>
         <p>
-          The legal basis is your consent. Meta, joint controller of this
-          processing, may process this data outside the European Union. You can
-          withdraw your consent at any time through the “Cookie settings” link
-          at the bottom of every page.
+          With the same consent, the website also loads the Insight Tag of
+          LinkedIn Ireland Unlimited Company. It sets LinkedIn cookies and sends
+          LinkedIn the pages you view. We use it to measure our ads and show
+          them to you on LinkedIn.
+        </p>
+        <p>
+          The legal basis is your consent. Meta and LinkedIn, joint controllers
+          of this processing, may process this data outside the European Union.
+          You can withdraw your consent at any time through the “Cookie
+          settings” link at the bottom of every page.
         </p>
       </section>
       <section>

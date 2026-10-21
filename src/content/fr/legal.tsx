@@ -61,8 +61,8 @@ export const legalNotice = {
       <section>
         <h2>Cookies</h2>
         <p>
-          Avec votre accord, ce site utilise le pixel Meta. Le détail figure
-          dans la{' '}
+          Avec votre accord, ce site utilise le pixel Meta et l'Insight Tag
+          LinkedIn. Le détail figure dans la{' '}
           <Link href={paths.privacy} className="underline underline-offset-4">
             politique de confidentialité
           </Link>
@@ -99,9 +99,10 @@ export const privacy = {
           votre téléphone professionnel.
         </p>
         <p>
-          Avec votre accord, le pixel Meta collecte aussi des données de
-          navigation : voir la section Cookies et publicité. Les sections
-          suivantes portent sur les données du formulaire.
+          Avec votre accord, le pixel Meta et l'Insight Tag LinkedIn collectent
+          aussi des données de navigation : voir la section Cookies et
+          publicité. Les sections suivantes portent sur les données du
+          formulaire.
         </p>
       </section>
       <section>
@@ -150,10 +151,16 @@ export const privacy = {
           publicités et vous en montrer sur Facebook et Instagram.
         </p>
         <p>
-          La base légale est votre consentement. Meta, responsable conjoint de
-          ce traitement, peut traiter ces données hors de l'Union européenne.
-          Vous pouvez retirer votre accord à tout moment par le lien « Gérer les
-          cookies », en bas de chaque page.
+          Avec le même accord, le site charge aussi l'Insight Tag de LinkedIn
+          Ireland Unlimited Company. Il dépose des cookies LinkedIn et transmet
+          à LinkedIn les pages que vous consultez. Nous nous en servons pour
+          mesurer nos publicités et vous en montrer sur LinkedIn.
+        </p>
+        <p>
+          La base légale est votre consentement. Meta et LinkedIn, responsables
+          conjoints de ces traitements, peuvent traiter ces données hors de
+          l'Union européenne. Vous pouvez retirer votre accord à tout moment par
+          le lien « Gérer les cookies », en bas de chaque page.
         </p>
       </section>
       <section>
