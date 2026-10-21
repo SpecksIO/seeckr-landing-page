@@ -13,7 +13,7 @@ export const algimouss = {
   context:
     'Their site sells nothing: people buy Algimouss at DIY superstores and builders’ merchants. So these figures measure advice, not sales.',
   period:
-    'Measured from 2 September to 21 October 2026, test conversations excluded.',
+    'Measured since launch, over less than two months, test conversations excluded.',
   figures: {
     redirected: {
       value: '1 in 3',
@@ -23,7 +23,7 @@ export const algimouss = {
     },
     conversations: {
       value: '1,298',
-      label: 'visitors advised in 7 weeks',
+      label: 'visitors advised in less than two months',
       detail: 'Around 26 a day.',
     },
     completion: {
@@ -59,24 +59,19 @@ export const algimouss = {
 export type AlgimoussFigure = keyof typeof algimouss.figures
 
 /**
- * La page `/cas-clients/algimouss`. Elle ne fait que mettre en scène les
- * chiffres ci-dessus : aucune affirmation qui ne s'y lise déjà.
+ * La page `/cas-clients/algimouss` : Anthony Durand raconte. Mêmes phrases que
+ * `@/content/fr/algimouss`, validées par lui ; seule la langue change.
  */
 export const algimoussCase = {
   meta: {
-    title: 'Algimouss case study: a salesperson on a showcase site',
+    title: 'Algimouss testimonial: the bet of a salesperson on a showcase site',
     description:
-      'Algimouss makes 52 products for roofs, facades and patios. In seven weeks, the Seeckr assistant redirected one visitor in three to the right product, often in the evening and at weekends.',
+      'Anthony Durand, Marketing Director at Algimouss, explains why he put Seeckr on a site that sells nothing. In less than two months, one visitor in three was redirected to the right product.',
   },
-  eyebrow: 'Algimouss case study',
+  eyebrow: 'Customer testimonial',
   title: 'Algimouss’s bet.',
   intro:
-    'Seven weeks later, one visitor in three had been put back on the right product before going to buy it.',
-  /**
-   * Citation proposée, PAS ENCORE SIGNÉE par Anthony Durand : la page ne
-   * l'affiche qu'en développement. Après son accord écrit, retirer la
-   * condition dans la page du cas.
-   */
+    'Anthony Durand, Marketing Director at Algimouss, explains why he put a salesperson on a site that sells nothing. And what happened in less than two months.',
   testimonial: {
     name: 'Anthony Durand',
     role: 'Marketing Director, Algimouss',
@@ -85,66 +80,60 @@ export const algimoussCase = {
     photo: '/media/anthony-durand.png',
     photoAlt: 'Anthony Durand, Marketing Director at Algimouss',
   },
-  /** Le chiffre mis en avant dès le haut de la page. */
-  highlight: 'offHours' as AlgimoussFigure,
-  /** Les chiffres que les autres pages montrent avant de renvoyer ici. */
   teaserFigures: [
     'redirected',
     'offHours',
     'completion',
     'timeToAdvice',
   ] satisfies AlgimoussFigure[],
-  linkLabel: 'Read the full Algimouss case study',
-  /** Le bouton qui déplie le détail de chaque section du récit. */
+  linkLabel: 'Read the full Algimouss testimonial',
   moreLabel: 'Read the details',
-  /** Le cas tel que l'accueil et la verticale le présentent. */
   teaser: {
     title:
-      'At Algimouss, Seeckr put one visitor in three back on the right product.',
+      'At Algimouss, Seeckr redirected one visitor in three to the right product.',
     intro:
-      'Algimouss, a French maker of roof and facade treatments, plugged Seeckr into its site in September. Seven weeks later:',
+      'Algimouss, a French maker of roof and facade treatments, plugged Seeckr into its site. In less than two months:',
   },
-  /** Lien vers leur verticale, `@/content/verticals`. */
   verticalLink: 'See Seeckr for technical products',
   problem: {
     eyebrow: 'Why this bet',
-    title: 'Visitors lost among 52 products.',
+    title: 'Our customers were getting lost among 52 products.',
     quote:
       '“My facade has black marks and the colour is lighter than it was originally.”',
     intro:
-      'Algimouss’s site has to warm visitors up before the store. They still need to know what to buy there.',
+      'Our site is a showcase: it has to prepare our visitors before they go to the store. They still need to know what to buy there.',
     items: [
       {
         title: 'Which product?',
-        text: 'Moss killer, cleaner or water repellent? For tiles, slate or render? The 52 products overlap.',
+        text: 'Moss killer, cleaner or water repellent? For tiles, slate or render? Our 52 products overlap, and a homeowner gets lost quickly.',
       },
       {
         title: 'Not the same words',
-        text: 'The sheet says “biocide”. The visitor says “my roof has gone all green”.',
+        text: 'Our sheets say “biocide”. Our customers say “my roof has gone all green”.',
       },
       {
         title: 'Closed in the evening',
-        text: 'Advice went through the phone line, during office hours. Yet more than one recommendation in two is given in the evening, at night or at the weekend.',
+        text: 'Advice went through our phone line, during office hours. Today, more than one recommendation in two is given in the evening, at night or at the weekend.',
       },
     ],
     more: [
-      'Algimouss makes 52 products: moss killers, cleaners, preventive treatments, water repellents. From one surface to the next, their uses overlap heavily: tile, slate or steel sheet roofs, rendered, stone or wooden facades, concrete patios, asphalt.',
-      'The site sells nothing online. Products are sold by stockists, at DIY superstores and builders’ merchants. So the visitor has to leave the site knowing exactly which product to ask for in store.',
-      'Product sheets are written in the manufacturer’s words: “biocide”, “ready to use”, “tinted water repellent”. The visitor describes what they see: “my roof has gone all green”, “red marks on the render”. In between, someone was missing to ask the right questions.',
-      'That someone existed: Algimouss’s phone line. But it answers during office hours, and questions also come in the evening and at the weekend.',
+      'We make 52 products: moss killers, cleaners, preventive treatments, water repellents. From one surface to the next, their uses overlap a lot: tile, slate or steel sheet roofs, rendered, stone or wooden facades, concrete patios, asphalt.',
+      'Our site sells nothing online. Our customers buy from our stockists, at DIY superstores and builders’ merchants. So they have to leave the site knowing exactly which product to ask for in store.',
+      'Our product sheets are written in our manufacturer’s words: “biocide”, “ready to use”, “tinted water repellent”. Our customers describe what they see: “my roof has gone all green”, “red marks on the render”. In between, someone was missing to ask the right questions.',
+      'That someone was our phone line. But it answers during office hours, and questions also come in the evening and at the weekend.',
     ],
     moreQuote:
       '“Moss removal for a slate roof with a soft stone wall, tuffeau type.”',
   },
   setup: {
-    eyebrow: 'What was set up',
-    title: 'One line of script. The rest is Algimouss’s know-how.',
+    eyebrow: 'What we set up',
+    title: 'One line of script. The rest is our know-how.',
     quote:
       '“Terracotta tile roof, untreated for over 15 years, hard to reach. Semi-professional application.”',
     items: [
       {
         title: '4 to 6 questions, a top 3',
-        text: 'Surface, material, symptom, access, goal. Then three ranked, scored products. If nothing fits, it says so (72 cases).',
+        text: 'Surface, material, symptom, access, goal. Then three ranked, scored products. And if nothing fits, the assistant says so: that happened 72 times.',
       },
       {
         title: 'All the way to the store',
@@ -152,35 +141,32 @@ export const algimoussCase = {
       },
       {
         title: 'After-sales in the right place',
-        text: 'Spare part, broken sprayer: it hands over to after-sales.',
+        text: 'Spare part, broken sprayer: it hands over to our after-sales team.',
       },
       {
-        title: 'The experts stay in control',
-        text: 'The Algimouss team reads conversations and rates every recommendation. 68 conversations read, and every comment corrects the assistant.',
+        title: 'Our experts stay in control',
+        text: 'Our team reads conversations and rates every recommendation. We train it the way we would train a salesperson: 68 conversations read so far.',
       },
     ],
     more: [
-      'Two entry points. On every product page, a banner asks “is this product right for you?”. And when the visitor is about to leave the site, a pop-up offers to advise them.',
-      'Four to six questions about their situation: surface, material, symptom, access, goal. The assistant ends with a ranked top 3, a compatibility score and the reason for each product. The top product has a median score of 95%. When nothing fits, it says so instead of forcing a sale: 72 times in seven weeks.',
-      'Out of 373 recommendations started from a product page, the assistant confirmed the page 262 times. The other 111 times, it pointed the visitor to a better-suited product than the one they were looking at.',
-      'The advice goes all the way to the store: the assistant looks up the nearest stockist selling the recommended product. For after-sales, a spare part or a broken sprayer, it points to after-sales service instead of improvising.',
-      'From the back office, the Algimouss team reads conversations and rates each recommended product, good or not. Their comments go back into the assistant’s product knowledge: 68 conversations read and rated since launch.',
+      'Setting it up took one line of script, with no development on our side. The real work is our product knowledge, and that is where we spend our time with the Seeckr team.',
+      'There are two entry points. On every product page, a banner asks “is this product right for you?”. And when a visitor is about to leave the site, a pop-up offers to advise them.',
+      'The assistant asks four to six questions about their situation: surface, material, symptom, access, goal. Then it ends with a ranked top 3, a compatibility score and the reason for each product. The top product has a median score of 95%. And when nothing fits, it says so instead of forcing a sale.',
+      'Out of 373 recommendations started from a product page, it confirmed the page 262 times. The other 111 times, it pointed the visitor to a better-suited product than the one they were looking at. One visitor in three was looking at the wrong product.',
+      'The advice goes all the way to the store: the assistant looks up the nearest stockist selling the recommended product. For after-sales, a spare part or a broken sprayer, it points to our after-sales team instead of improvising.',
+      'From the back office, our team reads conversations and rates each recommended product, good or not. Our comments go back into the assistant’s product knowledge.',
     ],
   },
-  /**
-   * La section sur l'équipe Seeckr. Sa citation n'est PAS ENCORE SIGNÉE
-   * par Anthony Durand : la page ne l'affiche qu'en développement.
-   */
   team: {
     eyebrow: 'The Seeckr team',
     title: 'A team that responds fast.',
-    text: 'A catch-up with Algimouss every two weeks: figures, conversations, what gets fixed. A new need? We talk it through, and the assistant evolves.',
+    text: 'We catch up every two weeks: figures, conversations, what gets fixed. When I have a new need, we talk it through, and the assistant evolves.',
     quote:
       '“What we value at Seeckr is how responsive they are: we think together about improving the results, and when we have a need, the feature follows.”',
   },
   results: {
     eyebrow: 'The results',
-    title: 'The figures after seven weeks.',
+    title: 'What happened in less than two months.',
     figures: [
       'conversations',
       'completion',
@@ -191,18 +177,18 @@ export const algimoussCase = {
     ] satisfies AlgimoussFigure[],
   },
   data: {
-    eyebrow: 'What the data teaches Algimouss',
-    title: 'The data Algimouss never had.',
+    eyebrow: 'What the data taught me',
+    title: 'The data we never had.',
     quote:
       '“I want to treat an Eternit roof against moss without discolouring it.”',
     items: [
       {
         title: '9 in 10 go all the way',
-        text: 'The completion rate was the indicator Algimouss watched. It holds every week, between 83% and 94%.',
+        text: 'Completion was the first figure I looked at. 9 visitors in 10 make it to a recommendation: well beyond what I expected.',
       },
       {
         title: 'A stockist near every customer',
-        text: '98 store searches: Algimouss sees where its customers are, and whether a stockist is nearby.',
+        text: '98 store searches. I can see where our customers are, and that they have a stockist near them. That reassured me about our network.',
       },
       {
         title: 'What our customers are really looking for',
@@ -210,27 +196,27 @@ export const algimoussCase = {
       },
     ],
     more: [
-      'The figure Algimouss watched first: completion. Over the period, 90% of visitors who answer the first question go on to the recommendation. Week after week, the rate stays between 83% and 94%.',
-      '626 personalised recommendations in seven weeks, 554 of them with at least one product. More than one in two (55%) was given in the evening, at night or at the weekend, outside 9 am to 6 pm on weekdays.',
-      '46 of the 52 catalogue products were recommended at least once. The advice doesn’t just push best-sellers: it puts the whole catalogue to work.',
-      '98 store searches launched from the assistant. For a manufacturer selling through stockists, that is a map of demand: where its customers are, and whether they find a store near them.',
-      'Every conversation can be read in full in the back office: what the visitor described, what they answered, what they were recommended.',
+      'Completion was the first figure I looked at: 90% of visitors who answer the first question go on to the recommendation. And it holds week after week, between 83% and 94%.',
+      '626 personalised recommendations, 554 of them with at least one product. More than one in two (55%) was given in the evening, at night or at the weekend, when our phone line is closed. These are questions that used to wait until Monday morning, or never came back.',
+      '46 of our 52 products were recommended at least once. The advice doesn’t just push our best-sellers: it puts the whole catalogue to work.',
+      '98 store searches launched from the assistant. For us, selling through stockists, that is a map of demand: I can see where our customers are, and whether they find a store near them.',
+      'And every conversation can be read in full in the back office: what the visitor described, what they answered, what we recommended.',
     ],
   },
-  /** Trois messages de visiteurs qui, lus à la suite, racontent le cas. */
   voices: {
-    eyebrow: 'What their visitors write',
+    eyebrow: 'What our visitors write',
     title:
-      'They describe their problem in their own words, not the product sheet’s.',
+      'They describe their problem in their own words, not in our product sheets’.',
     intro:
-      'First messages from visitors, translated from French and anonymous. The last one had been badly advised in store: the assistant caught them in time.',
+      'The first messages from our visitors, translated from French. The last one had been badly advised in store: the assistant caught them in time.',
     quotes: [
       '“I’m looking for a product to clean my aggregate patio that’s harmless to dogs.”',
       '“I’m looking for a product to kill the moss (not just green grime but actual moss and also some kind of small ferns) on a stone slab roof (schist) in the Cévennes.”',
       '“I bought Algimouss for my patio on your stockist’s advice, and I see on your site that it’s for roofs and facades: can I use it on my stone carpet?”',
     ],
+    /** La phrase qui conclut les trois messages. */
+    closing: 'Selling means taking an interest in your prospect’s life.',
   },
-  /** Sous chaque citation de visiteur. */
-  quoteCaption: 'A visitor, message translated from French',
+  quoteCaption: 'One of our visitors, message translated from French',
   ctaTitle: 'Your catalogue deserves the same adviser.',
 }

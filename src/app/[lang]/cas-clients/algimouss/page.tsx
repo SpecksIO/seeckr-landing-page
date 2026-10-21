@@ -87,8 +87,29 @@ export default async function AlgimoussCasePage() {
         moreLabel={algimoussCase.moreLabel}
       />
 
+      <Section
+        id="visiteurs"
+        eyebrow={voices.eyebrow}
+        title={voices.title}
+        intro={voices.intro}
+      >
+        <ul className="grid gap-10 md:grid-cols-3 md:gap-8">
+          {voices.quotes.map((quote) => (
+            <li key={quote} className="reveal border-white/15 border-t pt-6">
+              <blockquote className="font-display text-mist text-xl leading-snug">
+                {quote}
+              </blockquote>
+            </li>
+          ))}
+        </ul>
+        <p className="reveal mt-16 max-w-3xl text-balance font-display font-semibold text-[clamp(1.75rem,3.5vw,2.5rem)] text-violet-300 leading-tight tracking-tight">
+          {voices.closing}
+        </p>
+      </Section>
+
       <SplitSection
         id="mise-en-place"
+        light
         stacked
         {...setup}
         caption={algimoussCase.quoteCaption}
@@ -149,24 +170,6 @@ export default async function AlgimoussCasePage() {
         caption={algimoussCase.quoteCaption}
         moreLabel={algimoussCase.moreLabel}
       />
-
-      <Section
-        id="visiteurs"
-        tone="light"
-        eyebrow={voices.eyebrow}
-        title={voices.title}
-        intro={voices.intro}
-      >
-        <ul className="grid gap-10 md:grid-cols-3 md:gap-8">
-          {voices.quotes.map((quote) => (
-            <li key={quote} className="reveal border-ink/15 border-t pt-6">
-              <blockquote className="font-display text-ink text-xl leading-snug">
-                {quote}
-              </blockquote>
-            </li>
-          ))}
-        </ul>
-      </Section>
 
       <WebinarBlock />
       <FinalCta title={algimoussCase.ctaTitle} />

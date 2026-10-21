@@ -224,6 +224,8 @@ export const algimoussCase = {
       '« Je cherche un produit pour tuer les mousses (pas seulement des salissures vertes mais des mousses et aussi une variété de petites fougères) sur un toit en lauzes (schiste) en Cévennes. »',
       "« J'ai acheté de l'Algimouss sur le conseil de votre revendeur pour ma terrasse, et je vois sur votre site que c'est fait pour les toitures et les façades : puis-je l'utiliser sur ma moquette de pierre ? »",
     ],
+    /** La phrase qui conclut les trois messages. */
+    closing: "Vendre, c'est savoir s'intéresser à la vie de son prospect.",
   },
   /** Sous chaque citation de visiteur. */
   quoteCaption: 'Un de nos visiteurs, message recopié tel quel',
