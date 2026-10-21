@@ -15,10 +15,10 @@ export async function Hero() {
       className="px-4 pt-[clamp(3rem,8vw,6rem)] pb-[clamp(4rem,9vw,7rem)] sm:px-6"
     >
       <div className="mx-auto grid w-full max-w-6xl items-center gap-14 lg:grid-cols-[1.15fr_1fr] lg:gap-16">
-        <div>
+        <div className="@container">
           <h1
             id="hero-title"
-            className="text-balance font-display text-[clamp(2.25rem,6vw,4.25rem)] leading-[1.05] tracking-tight"
+            className="text-balance font-display text-[clamp(2.25rem,9cqi,4.25rem)] leading-[1.05] tracking-tight"
           >
             <span className="block font-light text-[0.62em] leading-tight">
               {hero.titleLead}
