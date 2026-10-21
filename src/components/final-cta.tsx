@@ -5,7 +5,7 @@ import { localePath } from '@/lib/i18n'
 import { paths } from '@/lib/site'
 
 /** Appel final vers /mon-seeckr, en bas de chaque page. */
-export async function FinalCta() {
+export async function FinalCta({ title }: { title?: string } = {}) {
   const locale = await getLocale()
   const { finalCta, site } = await getDictionary()
 
@@ -16,7 +16,7 @@ export async function FinalCta() {
     >
       <div className="reveal mx-auto w-full max-w-6xl rounded-3xl bg-violet px-6 py-14 text-white sm:px-14 sm:py-20">
         <h2 id="final-cta-title" className={`max-w-3xl ${sectionTitle}`}>
-          {finalCta.title}
+          {title ?? finalCta.title}
         </h2>
         <p className="mt-5 max-w-2xl text-lg text-mist leading-relaxed">
           {finalCta.text}

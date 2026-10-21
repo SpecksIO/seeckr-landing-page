@@ -1,5 +1,6 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
+import { AlgimoussTeaser } from '@/components/algimouss-figures'
 import { Faq } from '@/components/faq'
 import { FinalCta } from '@/components/final-cta'
 import { Hero } from '@/components/hero'
@@ -128,6 +129,8 @@ export default async function Home() {
           </div>
         </div>
       </Section>
+
+      <AlgimoussTeaser />
 
       <Section
         id="verticales"

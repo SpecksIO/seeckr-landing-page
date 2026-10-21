@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
-import { AlgimoussFigures } from '@/components/algimouss-figures'
+import { AlgimoussTeaser } from '@/components/algimouss-figures'
 import { ConversationTranscript } from '@/components/conversation-card'
 import { FinalCta } from '@/components/final-cta'
 import { JsonLd } from '@/components/json-ld'
@@ -48,7 +48,7 @@ export default async function VerticalPage({
   const slug = await getSlug(params)
   const locale = await getLocale()
   const dict = await getDictionary()
-  const { ui, algimouss, algimoussCase } = dict
+  const { ui } = dict
   const vertical = dict.verticals[slug]
 
   return (
@@ -192,23 +192,7 @@ export default async function VerticalPage({
         </Section>
       )}
 
-      {slug === algimoussVertical && (
-        <Section
-          id="algimouss"
-          tone="light"
-          eyebrow={algimoussCase.eyebrow}
-          title={algimoussCase.title}
-          intro={`${algimouss.about} ${algimouss.context}`}
-        >
-          <AlgimoussFigures figures={algimoussCase.teaserFigures} />
-          <Link
-            href={localePath(locale, paths.algimoussCase)}
-            className="mt-8 inline-flex min-h-11 items-center font-medium text-violet underline underline-offset-4"
-          >
-            {algimoussCase.linkLabel}
-          </Link>
-        </Section>
-      )}
+      {slug === algimoussVertical && <AlgimoussTeaser />}
 
       <WebinarBlock />
       <FinalCta />

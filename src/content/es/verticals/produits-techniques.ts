@@ -12,7 +12,7 @@ export const produitsTechniques: Vertical = {
     title:
       'Ve manchas negras en la pared norte. No sabe que lo que necesita se llama hidrofugante.',
     intro:
-      'Un material, un síntoma, un rincón a la sombra: Seeckr parte de lo que ve en su casa y le lleva al producto que resuelve su caso. En Algimouss, una de cada dos conversaciones puso en primer lugar un producto distinto al de la ficha por la que había entrado el cliente. Visitantes que se iban con el bidón equivocado.',
+      'Un material, un síntoma, un rincón a la sombra: Seeckr parte de lo que ve en su casa y le lleva al producto que resuelve su caso. En Algimouss, uno de cada tres visitantes que entraron por una ficha de producto fue reorientado hacia un producto más adecuado a su caso. Visitantes que se iban con el bidón equivocado.',
   },
   contrast: {
     pairs: [
@@ -85,7 +85,7 @@ export const produitsTechniques: Vertical = {
     },
     {
       title: 'El producto adecuado, incluso desde la página equivocada',
-      text: 'Un cliente rara vez aterriza en la ficha que corresponde a su caso. En Algimouss, pasaba una de cada dos veces. Seeckr pone el producto adecuado en primer lugar y le explica por qué le recomienda otro.',
+      text: 'Un cliente no siempre aterriza en la ficha que corresponde a su caso. En Algimouss, uno de cada tres miraba el producto equivocado. Seeckr pone el producto adecuado en primer lugar y le explica por qué le recomienda otro.',
     },
     {
       title: 'Recomiendas aunque no vendas online',

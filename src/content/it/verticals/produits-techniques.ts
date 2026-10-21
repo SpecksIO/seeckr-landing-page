@@ -12,7 +12,7 @@ export const produitsTechniques: Vertical = {
     title:
       'Vede delle macchie nere sul muro esposto a nord. Non sa che la soluzione si chiama idrorepellente.',
     intro:
-      'Un materiale, un sintomo, un angolo in ombra: Seeckr parte da ciò che il cliente vede a casa sua e arriva al prodotto che risolve il problema. Nel caso di Algimouss, una conversazione su due ha messo al primo posto un prodotto diverso da quello della scheda da cui era partita. Tutte persone che sarebbero uscite con il prodotto sbagliato.',
+      'Un materiale, un sintomo, un angolo in ombra: Seeckr parte da ciò che il cliente vede a casa sua e arriva al prodotto che risolve il problema. Nel caso di Algimouss, un visitatore su tre partito da una scheda prodotto è stato indirizzato verso un prodotto più adatto al suo caso. Tutte persone che sarebbero uscite con il prodotto sbagliato.',
   },
   contrast: {
     pairs: [
@@ -88,7 +88,7 @@ export const produitsTechniques: Vertical = {
     },
     {
       title: 'Il prodotto giusto, anche dalla pagina sbagliata',
-      text: 'Raramente un cliente arriva sulla scheda che corrisponde al suo caso. Nel caso di Algimouss, succedeva una volta su due. Seeckr riporta in cima il prodotto giusto e spiega perché è meglio di quello che stava guardando.',
+      text: 'Non sempre un cliente arriva sulla scheda che corrisponde al suo caso. Da Algimouss, uno su tre guardava il prodotto sbagliato. Seeckr riporta in cima il prodotto giusto e spiega perché è meglio di quello che stava guardando.',
     },
     {
       title: 'Raccomandazioni anche senza vendita online',

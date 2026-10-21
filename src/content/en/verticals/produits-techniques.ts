@@ -12,7 +12,7 @@ export const produitsTechniques: Vertical = {
     title:
       'They can see black marks on their north-facing wall. They don’t know the answer is called a water repellent.',
     intro:
-      'A material, a symptom, a shady corner: Seeckr starts from what they can see at home and leads them to the product that solves their problem. At Algimouss, one conversation in two recommended a different product from the one on the product page it started from. Every one of those visitors was about to leave with the wrong product.',
+      'A material, a symptom, a shady corner: Seeckr starts from what they can see at home and leads them to the product that solves their problem. At Algimouss, one visitor in three who started from a product page was redirected to a product better suited to their situation. Every one of those visitors was about to leave with the wrong product.',
   },
   contrast: {
     pairs: [
@@ -86,7 +86,7 @@ export const produitsTechniques: Vertical = {
     },
     {
       title: 'The right product, even from the wrong page',
-      text: 'Visitors rarely land on the product page that matches their problem. At Algimouss, one in two did not. Seeckr puts the right product first and explains why it is worth changing their mind.',
+      text: 'Visitors don’t always land on the product page that matches their problem. At Algimouss, one in three was looking at the wrong product. Seeckr puts the right product first and explains why it is worth changing their mind.',
     },
     {
       title: 'Advice that works even if you don’t sell online',

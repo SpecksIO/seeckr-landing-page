@@ -12,7 +12,7 @@ export const produitsTechniques: Vertical = {
     title:
       "Il voit des traces noires sur son mur nord. Il ne sait pas que ça s'appelle un hydrofuge.",
     intro:
-      "Un matériau, un symptôme, un coin d'ombre : Seeckr part de ce qu'il voit chez lui et le conduit au produit qui règle son cas. Chez Algimouss, une conversation sur deux a mis en tête un autre produit que celui de la page d'arrivée. Autant de visiteurs qui repartaient avec le mauvais bidon.",
+      "Un matériau, un symptôme, un coin d'ombre : Seeckr part de ce qu'il voit chez lui et le conduit au produit qui règle son cas. Chez Algimouss, un visiteur sur trois parti d'une fiche produit a été réorienté vers un produit plus adapté à son cas. Autant de visiteurs qui repartaient avec le mauvais bidon.",
   },
   contrast: {
     pairs: [
@@ -90,7 +90,7 @@ export const produitsTechniques: Vertical = {
     },
     {
       title: 'Le bon produit, même depuis la mauvaise page',
-      text: "Un visiteur atterrit rarement sur la fiche qui correspond à son cas. Chez Algimouss, c'était une fois sur deux. Seeckr remet le bon produit en tête et lui explique pourquoi il change d'avis.",
+      text: "Un visiteur n'atterrit pas toujours sur la fiche qui correspond à son cas. Chez Algimouss, un sur trois regardait le mauvais produit. Seeckr remet le bon produit en tête et lui explique pourquoi il change d'avis.",
     },
     {
       title: 'Vous conseillez même sans vendre en ligne',
