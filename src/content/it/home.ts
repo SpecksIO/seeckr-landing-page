@@ -7,26 +7,26 @@ export const hero = {
   titleLead: 'Il consulente di vendita che il tuo',
   titleStrong: 'e-commerce non ha mai avuto.',
   subtitle:
-    'In negozio, qualcuno avrebbe chiesto ai tuoi clienti cosa cercassero. Online, si ritrovano davanti una barra di ricerca e nessuno chiede niente. Seeckr, invece, chiede.',
+    'Seeckr è un assistente IA che fa qualche domanda ai tuoi clienti, come farebbe un commesso in negozio, poi consiglia i prodotti del tuo catalogo adatti a ciò di cui hanno bisogno.',
   videoLabel:
     'Dimostrazione: il banner Seeckr su una scheda prodotto, la conversazione con il cliente, poi la sua top 3.',
 }
 
 export const howItWorks = {
   eyebrow: 'Come funziona',
-  title: 'Una riga di codice e hai un consulente di vendita.',
+  title: 'Basta una riga di codice per installarlo.',
   steps: [
     {
       title: 'Incolli una riga di script',
-      text: "Nell'<head> del tuo sito e il gioco è fatto. I colori si impostano poi dal back office, senza scomodare lo sviluppatore.",
+      text: "La aggiungi nell'<head> del tuo sito. I colori si impostano poi dal back office, senza ripassare dallo sviluppatore.",
     },
     {
       title: 'I tuoi clienti descrivono la loro situazione',
-      text: "Non sanno se serve loro un divano tre posti o un divano letto. Sanno che due volte l'anno ospitano i suoceri e che non hanno dove mettere un materasso. L'assistente parte da lì.",
+      text: "Non devono conoscere il nome del prodotto. Se spiegano che due volte l'anno ospitano i suoceri e che non hanno spazio per un materasso, l'assistente capisce che serve loro un divano letto.",
     },
     {
       title: 'Ricevono la loro top 3',
-      text: 'Tre prodotti in classifica, un punteggio di compatibilità e il motivo di ogni posizione. Sanno cosa scegliere e, per la prima volta, sanno perché.',
+      text: "L'assistente propone tre prodotti in classifica, ciascuno con un punteggio di compatibilità e il motivo della sua posizione.",
     },
   ],
 }
@@ -36,9 +36,9 @@ export const howItWorks = {
  * démonstration animée de l'accueil comme par la FAQ.
  */
 export const integrations = {
-  eyebrow: 'Diverse posizioni sul tuo sito',
-  title: 'Lo stesso assistente, dove i tuoi clienti esitano.',
-  text: 'Incolli una sola riga di script. La posizione si sceglie dal back office e la cambi con un clic tutte le volte che vuoi.',
+  eyebrow: 'Integrazioni',
+  title: "Scegli dove appare l'assistente sul tuo sito.",
+  text: 'Le posizioni possibili sono cinque, dalla scheda prodotto alla ricerca senza risultati. Scegli dal back office, e puoi cambiarla in qualsiasi momento.',
   video: {
     src: '/media/integrations.mp4',
     poster: '/media/integrations.jpg',
@@ -49,61 +49,62 @@ export const integrations = {
     {
       id: 'fiche-produit',
       name: 'Sulla scheda prodotto',
-      text: 'Sotto il prodotto che stanno guardando, la domanda che non osano fare: è davvero quello giusto per loro?',
+      text: "Sotto il prodotto che stanno guardando, l'assistente li aiuta a verificare che sia proprio quello giusto.",
     },
     {
       id: 'barre',
       name: 'La barra in fondo allo schermo',
-      text: 'Su tutte le pagine, si chiude con un clic e aspetta il momento in cui il cliente esita.',
+      text: 'Resta visibile su tutte le pagine, e il cliente può chiuderla con un clic.',
     },
     {
       id: 'apercu',
       name: 'Il pannello laterale',
-      text: 'Si apre dopo qualche secondo di esitazione, con la prima domanda già pronta.',
+      text: 'Si apre dopo qualche secondo di esitazione, con la prima domanda già posta.',
     },
     {
       id: 'sans-resultat',
       name: 'Quando la ricerca non trova nulla',
-      text: "Zero risultati: è il momento in cui se ne vanno. L'assistente, invece, guarda oltre i filtri.",
+      text: "Quando la ricerca non dà alcun risultato, l'assistente subentra e propone prodotti adatti alle esigenze del cliente.",
     },
     {
       id: 'depart',
       name: 'Il popup di uscita',
-      text: "Stanno per chiudere la pagina. Meglio una domanda che uno sconto dell'ultimo minuto.",
+      text: "Quando il cliente sta per lasciare il sito, l'assistente gli offre il suo aiuto invece di uno sconto dell'ultimo minuto.",
     },
   ] satisfies Placement[],
   cta: {
     title: 'Ricevi il tuo Seeckr personalizzato entro 24 ore lavorative.',
-    text: 'È gratuito e avrai qualcosa di concreto da mostrare al tuo team.',
+    text: 'È gratuito e puoi mostrarlo al tuo team.',
     label: 'Ricevi gratis il tuo Seeckr personalizzato',
   },
 }
 
 export const benefits = {
   eyebrow: 'Cosa cambia',
-  title: 'I tuoi clienti si sentono ascoltati. Tu vendi di più.',
+  title: 'I tuoi clienti sono consigliati meglio, e tu vendi di più.',
   visitor: {
     label: 'Per i tuoi clienti',
-    title: 'Finalmente qualcuno li ascolta.',
+    title: 'Un consiglio adatto alla loro situazione',
     paragraphs: [
-      'Nessuno aveva mai chiesto loro cosa cercassero davvero. I filtri chiedono un prezzo, le schede tecniche danno per scontato che sappiano già tutto. Seeckr chiede come vivono, poi propone tre prodotti in classifica con il motivo di ogni posizione.',
-      "E il punteggio non mente. Se va bene un solo prodotto, ne vedono uno solo. Se non va bene niente, l'assistente lo dice chiaramente. E parla nove lingue: ognuno legge tutto questo nella propria.",
+      'I filtri chiedono un budget e le schede tecniche danno per scontato che conoscano già il prodotto. Seeckr chiede invece come lo useranno, poi propone tre prodotti in classifica spiegando ogni posizione.',
+      "Il punteggio resta onesto: se va bene un solo prodotto, l'assistente ne propone uno solo, e se non va bene nessuno, lo dice. L'assistente parla nove lingue e risponde a ogni cliente nella sua.",
     ],
   },
   merchant: {
     label: 'Per te',
     items: [
       {
-        title: 'Vendi di più e vendi meglio.',
-        text: 'Un cliente che ha dubbi se ne va. Un cliente ascoltato compra. E non se ne va con un solo prodotto, ma con tre, in classifica e motivati.',
+        title: "Più vendite e meno errori d'acquisto",
+        text: 'Un cliente che esita spesso finisce per lasciare il sito. Ben consigliato, sa quale prodotto scegliere, e il rischio di reso diminuisce.',
       },
       {
-        title: 'Finalmente sai chi sono i tuoi clienti.',
-        text: 'Ognuno ti ha appena raccontato, con parole sue, cosa cerca, cosa ha già provato, perché ha rinunciato. È tutto lì, leggibile, conversazione per conversazione, e un report di utilizzo ne fa la sintesi da solo. Le tue buyer persona non le immagini più. Le leggi. E i messaggi che cerchi per le tue campagne, i tuoi clienti li hanno già scritti.',
+        title: 'Finalmente sai cosa cercano i tuoi clienti',
+        text: 'Ogni visitatore ti spiega con parole sue cosa cerca e cosa lo fa esitare. Puoi rileggere ogni conversazione, e un report di utilizzo ne fa la sintesi. Abbastanza per costruire le tue buyer persona su ciò che dicono davvero i tuoi clienti, e trovare nelle loro frasi i messaggi delle tue prossime campagne.',
       },
       {
-        title: 'Spingi i tuoi prodotti prioritari, senza ingannare nessuno.',
-        text: 'I tuoi prodotti prioritari vincono solo quando due prodotti si equivalgono per quel cliente. Mai a scapito della raccomandazione e mai in modo visibile. Il tuo margine cresce, la tua credibilità resta intatta.',
+        title:
+          'I tuoi prodotti prioritari in evidenza, senza falsare il consiglio',
+        text: 'Un prodotto prioritario passa avanti solo quando due prodotti vanno ugualmente bene per quel cliente. Il consiglio resta corretto, e il cliente non vede questa impostazione.',
       },
     ],
   },
@@ -111,13 +112,12 @@ export const benefits = {
 
 export const verticalsIntro = {
   eyebrow: 'Per settore',
-  title:
-    'Ogni settore ha le sue regole. Seeckr ha le funzionalità per ciascuno.',
+  title: 'Funzionalità pensate per il tuo settore.',
 }
 
 export const faq = {
   eyebrow: 'Domande frequenti',
-  title: 'Quello che forse ti stai chiedendo.',
+  title: 'Le tue domande prima di iniziare.',
   items: [
     {
       id: 'prix',
@@ -130,19 +130,19 @@ export const faq = {
       id: 'integration',
       question: 'Come si installa Seeckr sul mio sito?',
       answer:
-        "Una riga di script nell'<head> e il gioco è fatto. Tutto il resto si gestisce dal back office, senza scomodare lo sviluppatore: la posizione dell'assistente sulle tue pagine e i tuoi colori.",
+        "Basta aggiungere una riga di script nell'<head> del tuo sito. Il resto si imposta dal back office, senza passare dallo sviluppatore: la posizione dell'assistente sulle tue pagine e i tuoi colori.",
     },
     {
       id: 'langues',
       question: "In quali lingue parla l'assistente?",
       answer:
-        "In quella dei tuoi clienti. L'assistente ne parla nove e risponde a ognuno nella propria.",
+        "L'assistente parla nove lingue e risponde a ogni cliente nella sua.",
     },
     {
       id: 'donnees',
       question: 'Che fine fanno le risposte dei miei clienti?',
       answer:
-        'Diventano informazioni sui clienti che il tuo motore di ricerca non ti darà mai: le statistiche, ogni conversazione leggibile per intero e un report di utilizzo che si scrive da solo. Il cliente può lasciare i suoi recapiti per essere ricontattato, ma non è obbligatorio.',
+        'Le ritrovi nel back office: le statistiche, ogni conversazione per intero e un report di utilizzo generato automaticamente. Il cliente può lasciare i suoi recapiti per essere ricontattato, ma non è obbligatorio.',
     },
     {
       id: 'seeckr-gratuit',
@@ -155,5 +155,5 @@ export const faq = {
 
 export const finalCta = {
   title: 'Provalo sul tuo sito.',
-  text: "Costruiamo il tuo assistente sul tuo catalogo e lo vedi lavorare sul tuo sito. È gratuito e non c'è niente da installare.",
+  text: "Costruiamo il tuo assistente sul tuo catalogo e lo vedi funzionare sul tuo sito. È gratuito e non c'è niente da installare.",
 }

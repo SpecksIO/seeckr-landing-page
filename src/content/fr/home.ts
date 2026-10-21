@@ -6,26 +6,26 @@ export const hero = {
   titleLead: 'Le vendeur que votre',
   titleStrong: "site e-commerce n'a jamais eu.",
   subtitle:
-    "En boutique, quelqu'un lui aurait demandé ce qu'il cherche. En ligne, on lui tend une barre de recherche et on attend. Seeckr, lui, demande.",
+    'Seeckr est un assistant IA qui pose quelques questions à vos visiteurs, comme le ferait un vendeur en boutique, puis leur recommande les produits de votre catalogue qui correspondent à leur besoin.',
   videoLabel:
-    'Démonstration : le bandeau Seeckr sur une fiche produit, la conversation avec le visiteur, puis son top 3.',
+    'Démonstration : le bandeau Seeckr sur une fiche produit, la conversation avec le visiteur, puis son top 3.',
 }
 
 export const howItWorks = {
   eyebrow: 'Comment ça marche',
-  title: 'Une ligne de code, et vous avez un vendeur.',
+  title: "Une ligne de code suffit pour l'installer.",
   steps: [
     {
       title: 'Vous collez une ligne de script',
-      text: "Dans l'en-tête de votre site, et c'est réglé. Vos couleurs se règlent ensuite depuis le back office, sans jamais rappeler votre développeur.",
+      text: "Vous l'ajoutez dans l'en-tête de votre site. Les couleurs se règlent ensuite depuis le back office, sans repasser par votre développeur.",
     },
     {
-      title: 'Votre visiteur raconte sa vie',
-      text: "Il ne sait pas s'il lui faut un canapé trois places ou un clic-clac. Il sait qu'il reçoit ses beaux-parents deux fois par an et qu'il n'a nulle part où ranger un matelas. L'assistant part de là.",
+      title: 'Votre visiteur décrit sa situation',
+      text: "Il n'a pas besoin de connaître le nom du produit. S'il explique qu'il reçoit ses beaux-parents deux fois par an et qu'il n'a pas de place pour un matelas, l'assistant comprend qu'il lui faut un canapé convertible.",
     },
     {
-      title: 'Il repart avec son top 3',
-      text: 'Trois produits classés, un score de compatibilité, et la raison de chaque place. Il sait quoi prendre, et pour la première fois il sait pourquoi.',
+      title: 'Il reçoit son top 3',
+      text: "L'assistant lui propose trois produits classés, chacun avec un score de compatibilité et la raison de son classement.",
     },
   ],
 }
@@ -35,74 +35,75 @@ export const howItWorks = {
  * démonstration animée de l'accueil comme par la FAQ.
  */
 export const integrations = {
-  eyebrow: 'Plusieurs intégrations possibles',
-  title: 'Le même assistant, là où votre visiteur hésite.',
-  text: "Vous ne collez qu'une ligne de script. L'emplacement, lui, se choisit depuis le back office, et vous en changez d'un clic autant de fois que vous voulez.",
+  eyebrow: 'Intégrations',
+  title: "Choisissez où l'assistant apparaît sur votre site.",
+  text: 'Cinq emplacements sont possibles, de la fiche produit à la recherche sans résultat. Vous choisissez depuis le back office, et vous pouvez en changer à tout moment.',
   video: {
     src: '/media/integrations.mp4',
     poster: '/media/integrations.jpg',
     label:
-      "Démonstration : le même assistant sur une fiche produit, en barre en bas de l'écran, en aperçu latéral, sur une recherche sans résultat, puis au moment du départ.",
+      "Démonstration : le même assistant sur une fiche produit, en barre en bas de l'écran, en aperçu latéral, sur une recherche sans résultat, puis au moment du départ.",
   },
   placements: [
     {
       id: 'fiche-produit',
       name: 'Sur la fiche produit',
-      text: "Sous le produit qu'il regarde, la question qu'il n'ose pas poser : est-ce vraiment celui-là qu'il lui faut ?",
+      text: "Sous le produit qu'il consulte, l'assistant l'aide à vérifier que c'est bien celui qu'il lui faut.",
     },
     {
       id: 'barre',
       name: "La barre en bas de l'écran",
-      text: "Sur toutes les pages, fermable d'un clic, elle attend le moment où il bloque.",
+      text: "Elle reste visible sur toutes les pages, et le visiteur peut la fermer d'un clic.",
     },
     {
       id: 'apercu',
       name: "L'aperçu qui glisse sur le côté",
-      text: "Après quelques secondes d'hésitation, avec déjà la première question posée.",
+      text: "Il s'ouvre après quelques secondes d'hésitation, avec la première question déjà posée.",
     },
     {
       id: 'sans-resultat',
       name: 'Quand la recherche ne donne rien',
-      text: "Zéro résultat, le moment où il s'en va. L'assistant, lui, regarde au-delà des filtres.",
+      text: "Quand la recherche ne renvoie aucun résultat, l'assistant prend le relais et propose des produits adaptés au besoin du visiteur.",
     },
     {
       id: 'depart',
       name: 'La fenêtre au moment du départ',
-      text: "Il s'apprête à fermer l'onglet. Une question, plutôt qu'une remise de dernière minute.",
+      text: "Quand le visiteur s'apprête à quitter le site, l'assistant lui propose son aide plutôt qu'une remise de dernière minute.",
     },
   ] satisfies Placement[],
   cta: {
-    title: 'Recevez votre Seeckr personnalisé sous 24 h ouvrées.',
-    text: "C'est gratuit, et vous avez de quoi en faire la démonstration à vos équipes.",
+    title: 'Recevez votre Seeckr personnalisé sous 24 h ouvrées.',
+    text: "C'est gratuit, et vous pouvez le montrer à vos équipes.",
     label: 'Recevez gratuitement votre Seeckr personnalisé',
   },
 }
 
 export const benefits = {
   eyebrow: 'Ce que ça change',
-  title: 'Il se sent écouté. Vous vendez plus.',
+  title: 'Vos visiteurs sont mieux conseillés, et vous vendez davantage.',
   visitor: {
     label: 'Pour votre visiteur',
-    title: "On l'écoute, enfin.",
+    title: 'Un conseil adapté à sa situation',
     paragraphs: [
-      "Personne ne lui avait jamais demandé ce qu'il cherchait vraiment. Les filtres lui réclament un prix, les fiches techniques lui réclament de savoir. Seeckr lui demande comment il vit, puis lui rend trois produits classés avec la raison de chaque place.",
-      "Et le score ne ment pas. Si un seul produit lui convient, il n'en voit qu'un. Si rien ne convient, l'assistant le lui dit en face. Neuf langues, pour qu'il entende tout ça dans la sienne.",
+      "Les filtres lui demandent un budget et les fiches techniques supposent qu'il connaisse déjà le produit. Seeckr l'interroge plutôt sur son usage, puis lui propose trois produits classés en expliquant chaque classement.",
+      "Le score reste honnête : si un seul produit lui convient, l'assistant n'en propose qu'un, et si aucun ne convient, il le lui dit. L'assistant parle neuf langues et répond à chaque visiteur dans la sienne.",
     ],
   },
   merchant: {
     label: 'Pour vous',
     items: [
       {
-        title: 'Vous vendez plus, et vous vendez mieux.',
-        text: "Un visiteur qui doute s'en va. Un visiteur écouté achète. Et il ne repart pas avec un produit, il repart avec trois, classés et justifiés.",
+        title: "Plus de ventes et moins d'erreurs d'achat",
+        text: 'Un visiteur qui hésite finit souvent par quitter le site. Bien conseillé, il sait quel produit choisir, et le risque de retour diminue.',
       },
       {
-        title: 'Enfin, vous savez qui sont vos clients.',
-        text: "Chacun vient de vous raconter, avec ses mots à lui, ce qu'il cherche, ce qu'il a déjà essayé, ce qui l'a fait renoncer. Tout est là, lisible, conversation par conversation, et un rapport d'usage vous en fait la synthèse tout seul. Vos personas, vous ne les imaginez plus. Vous les lisez. Et les accroches que vous cherchez pour vos campagnes, vos clients les ont déjà écrites.",
+        title: 'Vous savez enfin ce que cherchent vos clients',
+        text: "Chaque visiteur vous explique avec ses propres mots ce qu'il cherche et ce qui le fait hésiter. Vous pouvez relire chaque conversation, et un rapport d'usage en fait la synthèse. De quoi bâtir vos personas sur ce que disent vraiment vos clients, et trouver dans leurs phrases les accroches de vos prochaines campagnes.",
       },
       {
-        title: 'Vos priorités passent devant, sans trahir personne.',
-        text: 'Vos produits prioritaires ne gagnent que lorsque deux produits se valent pour ce visiteur. Jamais au détriment du conseil, et jamais visible pour lui. Votre marge avance, votre crédibilité reste intacte.',
+        title:
+          'Vos produits prioritaires mis en avant, sans fausser le conseil',
+        text: "Un produit prioritaire ne passe devant que si deux produits conviennent autant l'un que l'autre à ce visiteur. Le conseil reste juste, et le visiteur ne voit pas ce réglage.",
       },
     ],
   },
@@ -110,12 +111,12 @@ export const benefits = {
 
 export const verticalsIntro = {
   eyebrow: 'Par métier',
-  title: 'Chaque métier a ses règles, Seeckr a ses fonctionnalités.',
+  title: 'Des fonctionnalités adaptées à votre secteur.',
 }
 
 export const faq = {
   eyebrow: 'Questions fréquentes',
-  title: 'Ce que vous vous demandez peut-être.',
+  title: 'Vos questions avant de commencer.',
   items: [
     {
       id: 'prix',
@@ -126,32 +127,32 @@ export const faq = {
     },
     {
       id: 'integration',
-      question: "Comment Seeckr s'installe-t-il sur mon site ?",
+      question: "Comment Seeckr s'installe-t-il sur mon site ?",
       answer:
-        "Une ligne de script dans l'en-tête, et c'est fini. Tout le reste se pilote depuis le back office, sans jamais rappeler votre développeur : l'emplacement de l'assistant sur vos pages, et vos couleurs.",
+        "Il suffit d'ajouter une ligne de script dans l'en-tête de votre site. Le reste se règle depuis le back office, sans passer par votre développeur : l'emplacement de l'assistant sur vos pages et vos couleurs.",
     },
     {
       id: 'langues',
-      question: "Dans quelles langues l'assistant parle-t-il ?",
+      question: "Dans quelles langues l'assistant parle-t-il ?",
       answer:
-        "Dans celle de votre visiteur. L'assistant en parle neuf et s'adresse à chacun dans la sienne.",
+        "L'assistant parle neuf langues et répond à chaque visiteur dans la sienne.",
     },
     {
       id: 'donnees',
-      question: 'Que deviennent les réponses de mes visiteurs ?',
+      question: 'Que deviennent les réponses de mes visiteurs ?',
       answer:
-        "Elles deviennent la connaissance client que votre moteur de recherche ne vous donnera jamais : les statistiques, chaque conversation lisible en entier, et un rapport d'usage rédigé tout seul. Le visiteur peut laisser ses coordonnées pour être rappelé, rien ne l'y oblige.",
+        "Vous les retrouvez dans le back office : les statistiques, chaque conversation en entier et un rapport d'usage généré automatiquement. Le visiteur peut laisser ses coordonnées pour être recontacté, mais rien ne l'y oblige.",
     },
     {
       id: 'seeckr-gratuit',
-      question: 'Que contient le Seeckr personnalisé gratuit ?',
+      question: 'Que contient le Seeckr personnalisé gratuit ?',
       answer:
-        "Votre assistant, construit sur votre propre catalogue, à essayer sur votre propre site. Il n'y a rien à installer. Il nous faut votre site, votre e-mail et votre téléphone professionnels.",
+        "Votre assistant, construit sur votre catalogue, à essayer sur votre propre site. Il n'y a rien à installer. Nous avons seulement besoin de l'adresse de votre site, de votre e-mail et de votre téléphone professionnels.",
     },
   ],
 }
 
 export const finalCta = {
   title: 'Essayez-le sur votre site.',
-  text: "Nous construisons votre assistant sur votre catalogue, et vous le voyez travailler sur votre site. C'est gratuit, et il n'y a rien à installer.",
+  text: "Nous construisons votre assistant sur votre catalogue, et vous le voyez fonctionner sur votre site. C'est gratuit, et il n'y a rien à installer.",
 }
