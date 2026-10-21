@@ -61,17 +61,18 @@ export async function SiteHeader() {
         >
           {ui.nav.login}
         </a>
-        <LanguageSwitcher
-          locale={locale}
-          label={ui.nav.language}
-          className="hidden lg:ml-2 lg:flex"
-        />
         <Link
           href={localePath(locale, paths.lead)}
           className={`${button('primary', 'sm')} ml-auto lg:ml-2`}
         >
           {site.cta.shortLabel}
         </Link>
+        <LanguageSwitcher
+          locale={locale}
+          label={ui.nav.language}
+          collapsed
+          className="hidden lg:ml-2 lg:flex"
+        />
         <MobileMenu
           locale={locale}
           labels={ui.nav}
