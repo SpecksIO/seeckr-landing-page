@@ -7,7 +7,8 @@ export const hero = {
   titleStrong: "site e-commerce n'a jamais eu.",
   subtitle:
     'Seeckr est un assistant IA qui pose quelques questions à vos visiteurs, comme le ferait un vendeur en boutique, puis leur recommande les produits de votre catalogue qui correspondent à leur besoin.',
-  videoLabel: 'Démonstration : Seeckr en situation sur le site de Valisol.',
+  videoLabel:
+    'Démonstration : le bandeau Seeckr sur une fiche produit, la conversation avec le visiteur, puis son top 3.',
 }
 
 export const howItWorks = {

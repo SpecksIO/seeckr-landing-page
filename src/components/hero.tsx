@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { HeroVideo } from '@/components/hero-video'
+import { LoopVideo } from '@/components/loop-video'
 import { button } from '@/components/styles'
 import { getDictionary, getLocale } from '@/content/get-dictionary'
 import { showWebinar, webinarTeaser } from '@/content/webinar'
@@ -8,7 +8,7 @@ import { paths } from '@/lib/site'
 
 export async function Hero() {
   const locale = await getLocale()
-  const { hero, site } = await getDictionary()
+  const { hero, site, ui } = await getDictionary()
 
   return (
     <section
@@ -47,7 +47,13 @@ export async function Hero() {
           </div>
         </div>
         <div className="mx-auto w-full max-w-md lg:max-w-none">
-          <HeroVideo id="G9-3wZ1fodY" label={hero.videoLabel} />
+          <LoopVideo
+            src="/media/demo-produit.mp4"
+            poster="/media/demo-produit.jpg"
+            label={hero.videoLabel}
+            toggleLabels={ui.animation}
+            className="aspect-square w-full rounded-3xl bg-paper"
+          />
         </div>
       </div>
     </section>

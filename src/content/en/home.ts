@@ -7,7 +7,8 @@ export const hero = {
   titleStrong: 'online shop never had.',
   subtitle:
     'Seeckr is an AI assistant that asks your visitors a few questions, the way a shop assistant would, then recommends the products from your catalogue that match what they need.',
-  videoLabel: 'Demo: Seeckr at work on the Valisol website.',
+  videoLabel:
+    'Demo: the Seeckr banner on a product page, the conversation with the visitor, then their top 3.',
 }
 
 export const howItWorks = {
