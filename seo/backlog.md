@@ -1,6 +1,6 @@
 # Backlog des guides
 
-Dernières nouvelles de Seeckr : 2026-10-02
+Dernières nouvelles de Seeckr : 2026-10-26
 
 Une ligne par requête ciblée, dans l'ordre de traitement. Statuts : `à faire`, `en cours`, `publié`.
 
@@ -20,6 +20,9 @@ recherche : la commande `guide` s'en charge, et retire du backlog une requête q
 | Comment aider un prospect à choisir sa formation en ligne           | formation            | à faire  |            |                                                 |
 | Quel outil pour conseiller les visiteurs d'un site e-commerce       | toutes               | à faire  |            |                                                 |
 | Quelles questions poser à un client pour le conseiller en ligne     | toutes               | à faire  |            |                                                 |
+| Comment conseiller un client quand on vend sur devis | toutes | à faire |            |                                                 |
+| Comment calculer la quantité de produit selon la surface à couvrir | produits-techniques | à faire |            |                                                 |
+| Comment orienter vers un revendeur quand on n'a pas de vente en ligne | toutes | à faire |            |                                                 |
 
 ## Engagements d'Amandine
 
@@ -35,3 +38,10 @@ skill `seo-geo`). Seule Amandine ajoute une ligne.
 - 2026-10-02, panel : à « Qu'est-ce que Seeckr ? », Gemini décrit Seekr, une société américaine d'IA. Décidé le
   2026-10-02 : le JSON-LD `Organization` porte en `sameAs` les profils de `company.profiles` (`src/content/company.ts`),
   aujourd'hui la seule page LinkedIn. Tout nouveau profil officiel s'ajoute là. Effet à relever au panel de novembre.
+- 2026-10-26, nouvelles de Seeckr : des fonctionnalités ont été livrées dans le code depuis le 2 octobre (ajout au
+  panier WooCommerce avec quantité selon la surface, bouton « Être rappelé » pour la vente sur devis, mesure des ventes
+  par webhook WooCommerce, localisateur de magasins revendeurs, assistant dans la langue de la page, vocabulaire réglable
+  par client, score de compatibilité masquable, prix facultatif). Le projet Seeckr les déclare publiables, mais sa seule
+  source est l'historique du code. Aucune n'est publiée tant qu'Amandine n'a pas dit lesquelles sont livrées aux
+  clients ; celles qu'elle engage rejoignent « Engagements d'Amandine ». Les trois requêtes ajoutées au backlog (devis,
+  surface, revendeurs) en dépendent pour leurs exemples produit. Aucun nouveau chiffre, aucun nouveau client.
