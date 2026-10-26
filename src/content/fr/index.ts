@@ -2,6 +2,7 @@ import { algimouss, algimoussCase } from './algimouss'
 import { doctrine } from './doctrine'
 import {
   benefits,
+  commitments,
   faq,
   finalCta,
   hero,
@@ -25,6 +26,7 @@ export const fr = {
   integrations,
   benefits,
   verticalsIntro,
+  commitments,
   faq,
   finalCta,
   doctrine,

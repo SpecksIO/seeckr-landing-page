@@ -31,7 +31,14 @@ export async function generateMetadata(): Promise<Metadata> {
 export default async function Home() {
   const locale = await getLocale()
   const dict = await getDictionary()
-  const { howItWorks, integrations, benefits, verticalsIntro, verticals } = dict
+  const {
+    howItWorks,
+    integrations,
+    benefits,
+    verticalsIntro,
+    verticals,
+    commitments,
+  } = dict
 
   return (
     <>
@@ -165,6 +172,25 @@ export default async function Home() {
       </Section>
 
       <WebinarBlock />
+
+      <Section
+        id="engagements"
+        tone="light"
+        eyebrow={commitments.eyebrow}
+        title={commitments.title}
+      >
+        <ul className="grid gap-10 sm:grid-cols-2 lg:grid-cols-4 lg:gap-8">
+          {commitments.items.map((item) => (
+            <li key={item.title} className="reveal border-ink/15 border-t pt-6">
+              <h3 className="font-display font-semibold text-xl">
+                {item.title}
+              </h3>
+              <p className="mt-3 text-ink/80 leading-relaxed">{item.text}</p>
+            </li>
+          ))}
+        </ul>
+      </Section>
+
       <Faq faq={dict.faq} leadHref={localePath(locale, paths.lead)} />
       <FinalCta />
     </>

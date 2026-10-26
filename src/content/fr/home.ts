@@ -116,6 +116,30 @@ export const verticalsIntro = {
   title: 'Des fonctionnalités adaptées à votre secteur.',
 }
 
+/** Les objections d'un directeur marketing, levées en une phrase : le détail reste dans la FAQ. */
+export const commitments = {
+  eyebrow: 'Nos engagements',
+  title: 'Ce sur quoi vous pouvez compter.',
+  items: [
+    {
+      title: "L'IA n'invente rien",
+      text: 'Elle ne recommande que vos produits et tire chaque explication de vos fiches. Quand rien ne convient, elle le dit.',
+    },
+    {
+      title: 'Vos ventes mesurées',
+      text: 'Seeckr suit les commandes passées après une recommandation, et nous faisons avec vous le bilan chiffré au bout de trois mois.',
+    },
+    {
+      title: 'Votre catalogue pris en charge',
+      text: 'Envoyez-le au format que vous avez déjà. Nous le préparons, puis le tenons à jour à chaque évolution de votre gamme.',
+    },
+    {
+      title: 'Votre site reste rapide',
+      text: 'Le script pèse 18 Ko compressés, se charge après votre page et ne dépose aucun cookie.',
+    },
+  ],
+}
+
 export const faq = {
   eyebrow: 'Questions fréquentes',
   title: 'Vos questions avant de commencer.',

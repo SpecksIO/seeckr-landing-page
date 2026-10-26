@@ -117,6 +117,30 @@ export const verticalsIntro = {
   title: 'Funzionalità pensate per il tuo settore.',
 }
 
+/** Les objections d'un directeur marketing, levées en une phrase : le détail reste dans la FAQ. */
+export const commitments = {
+  eyebrow: 'I nostri impegni',
+  title: 'Ciò su cui puoi contare.',
+  items: [
+    {
+      title: "L'IA non inventa nulla",
+      text: 'Consiglia solo i tuoi prodotti e ricava ogni spiegazione dalle tue schede. Quando nulla è adatto, lo dice.',
+    },
+    {
+      title: 'Le tue vendite, misurate',
+      text: 'Seeckr segue gli ordini effettuati dopo un consiglio e, dopo tre mesi, facciamo insieme a te il bilancio in cifre.',
+    },
+    {
+      title: 'Al catalogo pensiamo noi',
+      text: 'Invialo nel formato che hai già. Lo prepariamo, poi lo aggiorniamo a ogni cambio della tua gamma.',
+    },
+    {
+      title: 'Il tuo sito resta veloce',
+      text: 'Lo script pesa 18 KB compressi, si carica dopo la pagina e non installa alcun cookie.',
+    },
+  ],
+}
+
 export const faq = {
   eyebrow: 'Domande frequenti',
   title: 'Le tue domande prima di iniziare.',
