@@ -131,6 +131,30 @@ export const faq = {
         'Basta con añadir una línea de script en la cabecera de tu web. El resto se ajusta desde el back office, sin pasar por tu desarrollador: la ubicación del asistente en tus páginas y tus colores.',
     },
     {
+      id: 'performance',
+      question: '¿Seeckr ralentiza mi web?',
+      answer:
+        'No. El script pesa 18 KB comprimido y se carga en diferido: tu página se muestra primero y el asistente llega después. La conversación solo se carga cuando el cliente la abre.',
+    },
+    {
+      id: 'catalogue',
+      question: '¿Cómo conoce Seeckr mi catálogo?',
+      answer:
+        'Nos envías tu catálogo en el formato que ya tienes: una exportación de tu tienda, un archivo, un PDF. Nuestra IA lo lee entero y lo traduce al lenguaje de tus clientes: sus usos, sus limitaciones, en qué están dispuestos a ceder. Una ficha técnica copiada no les dice nada. Cada vez que cambia tu gama, actualizamos el catálogo. Seeckr recomienda el producto que responde a la necesidad y luego lleva al cliente a tu ficha, que muestra el precio y la disponibilidad del momento. En Shopify, WooCommerce, PrestaShop o una web a medida, basta con la misma línea de script. En Shopify y WooCommerce, el cliente incluso se va con los productos recomendados ya en su carrito.',
+    },
+    {
+      id: 'fiabilite',
+      question: '¿Puede la IA inventarse información?',
+      answer:
+        'Es lo primero que blindamos. El asistente solo recomienda productos de tu catálogo y construye cada explicación a partir de la ficha del producto, y de nada más. Cuando nada encaja de verdad, lo dice en lugar de forzar una recomendación. Tu equipo revisa las conversaciones en el back office y señala cualquier respuesta que haya que corregir. Integramos esos comentarios de forma continua, para que el asistente defienda tus argumentos, tus orientaciones y tus decisiones.',
+    },
+    {
+      id: 'roi',
+      question: '¿Cómo mido lo que me aporta Seeckr?',
+      answer:
+        'Seeckr se conecta a tu tienda y sigue los pedidos realizados tras una recomendación. Cada mes, el back office te muestra las conversaciones, los productos más recomendados y las necesidades que expresan tus clientes. A los tres meses, hacemos contigo el balance en cifras del impacto en tus ventas.',
+    },
+    {
       id: 'langues',
       question: '¿En qué idiomas habla el asistente?',
       answer:
@@ -141,6 +165,12 @@ export const faq = {
       question: '¿Qué pasa con las respuestas de mis clientes?',
       answer:
         'Las encuentras en el back office: las estadísticas, cada conversación completa y un informe de actividad generado automáticamente. El cliente puede dejar sus datos para que le contacten, pero nada le obliga.',
+    },
+    {
+      id: 'rgpd',
+      question: '¿Dónde se alojan los datos de mis clientes?',
+      answer:
+        'Las conversaciones se almacenan en Europa, en Irlanda. El script no instala ninguna cookie en tu web. La IA que lleva la conversación se elige según tu sector: para cada tarea, escogemos el modelo más adecuado entre los mejores del mercado.',
     },
     {
       id: 'seeckr-gratuit',

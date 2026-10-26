@@ -132,6 +132,30 @@ export const faq = {
         'You just add one line of code to your site’s <head>. Everything else is set from the dashboard, without going through your developer: where the assistant sits on your pages, and your colours.',
     },
     {
+      id: 'performance',
+      question: 'Will Seeckr slow down my site?',
+      answer:
+        'No. The script weighs 18 KB compressed and loads deferred: your page renders first, the assistant comes after. The conversation itself only loads when the visitor opens it.',
+    },
+    {
+      id: 'catalogue',
+      question: 'How does Seeckr learn my catalogue?',
+      answer:
+        'You send us your catalogue in whatever format you already have: an export from your shop, a file, a PDF. Our AI reads all of it and translates it into your customers’ language: how they use the product, their constraints, where they’re willing to compromise. A copied spec sheet means nothing to them. Whenever your range changes, we update the catalogue. Seeckr recommends the product that meets the need, then sends the visitor to your product page, which shows the current price and availability. On Shopify, WooCommerce, PrestaShop or a custom-built site, the same line of code is all it takes. On Shopify and WooCommerce, visitors even leave with the recommended products already in their basket.',
+    },
+    {
+      id: 'fiabilite',
+      question: 'Can the AI make things up?',
+      answer:
+        'It’s the first thing we lock down. The assistant only recommends products from your catalogue, and builds every explanation from that product’s page alone. When nothing really fits, it says so instead of forcing a recommendation. Your team reviews conversations in the dashboard and flags any answer to rework. We feed that back continuously, so the assistant argues your case, your way, with your choices.',
+    },
+    {
+      id: 'roi',
+      question: 'How do I measure what Seeckr brings in?',
+      answer:
+        'Seeckr connects to your shop and tracks the orders placed after a recommendation. Every month, the dashboard shows you the conversations, the most recommended products and the needs your visitors expressed. After three months, we sit down with you and put figures on the impact on your sales.',
+    },
+    {
       id: 'langues',
       question: 'Which languages does the assistant speak?',
       answer:
@@ -142,6 +166,12 @@ export const faq = {
       question: 'What happens to my visitors’ answers?',
       answer:
         'You’ll find them in the dashboard: the statistics, every conversation in full and an automatically generated usage report. Visitors can leave their details to be contacted, but it’s entirely optional.',
+    },
+    {
+      id: 'rgpd',
+      question: 'Where is my visitors’ data hosted?',
+      answer:
+        'Conversations are stored in Europe, in Ireland. The script sets no cookies on your site. The AI that runs the conversation is chosen for your sector: for each task, we pick the most relevant model among the best on the market.',
     },
     {
       id: 'seeckr-gratuit',

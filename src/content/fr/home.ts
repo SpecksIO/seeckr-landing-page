@@ -132,6 +132,30 @@ export const faq = {
         "Il suffit d'ajouter une ligne de script dans l'en-tête de votre site. Le reste se règle depuis le back office, sans passer par votre développeur : l'emplacement de l'assistant sur vos pages et vos couleurs.",
     },
     {
+      id: 'performance',
+      question: 'Seeckr ralentit-il mon site ?',
+      answer:
+        "Non. Le script pèse 18 Ko compressés et se charge en différé : votre page s'affiche d'abord, l'assistant arrive ensuite. La conversation elle-même ne se charge que quand le visiteur l'ouvre.",
+    },
+    {
+      id: 'catalogue',
+      question: 'Comment Seeckr connaît-il mon catalogue ?',
+      answer:
+        'Vous nous transmettez votre catalogue dans le format que vous avez déjà : un export de votre boutique, un fichier, un PDF. Notre IA le lit en entier et le traduit dans la langue de vos clients : leurs usages, leurs contraintes, ce sur quoi ils transigent. Une fiche technique recopiée ne leur parle pas. À chaque évolution de votre gamme, nous mettons le catalogue à jour. Seeckr conseille le produit qui répond au besoin, puis envoie le visiteur sur votre fiche, qui affiche le prix et la disponibilité du moment. Sur Shopify, WooCommerce, PrestaShop ou un site sur mesure, la même ligne de script suffit. Sur Shopify et WooCommerce, le visiteur repart même avec les produits recommandés déjà dans son panier.',
+    },
+    {
+      id: 'fiabilite',
+      question: "L'IA peut-elle inventer une information ?",
+      answer:
+        "C'est le premier point que nous verrouillons. L'assistant ne recommande que des produits de votre catalogue, et il construit chaque explication à partir de la seule fiche produit. Quand rien ne convient vraiment, il le dit plutôt que de forcer une recommandation. Vos équipes relisent les conversations dans le back office et signalent toute réponse à revoir. Nous intégrons ces retours en continu, pour que l'assistant défende vos arguments, vos orientations et vos choix.",
+    },
+    {
+      id: 'roi',
+      question: 'Comment mesurer ce que Seeckr me rapporte ?',
+      answer:
+        "Seeckr se connecte à votre boutique et suit les commandes passées après une recommandation. Chaque mois, le back office vous montre les conversations, les produits les plus recommandés et les besoins exprimés par vos visiteurs. Au bout de trois mois, nous faisons avec vous le bilan chiffré de l'impact sur vos ventes.",
+    },
+    {
       id: 'langues',
       question: "Dans quelles langues l'assistant parle-t-il ?",
       answer:
@@ -142,6 +166,12 @@ export const faq = {
       question: 'Que deviennent les réponses de mes visiteurs ?',
       answer:
         "Vous les retrouvez dans le back office : les statistiques, chaque conversation en entier et un rapport d'usage généré automatiquement. Le visiteur peut laisser ses coordonnées pour être recontacté, mais rien ne l'y oblige.",
+    },
+    {
+      id: 'rgpd',
+      question: 'Où sont hébergées les données de mes visiteurs ?',
+      answer:
+        "Les conversations sont stockées en Europe, en Irlande. Le script ne dépose aucun cookie sur votre site. L'IA qui mène la conversation est choisie pour votre secteur : nous retenons, pour chaque usage, le modèle le plus pertinent parmi les meilleurs du marché.",
     },
     {
       id: 'seeckr-gratuit',
