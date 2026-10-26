@@ -7,8 +7,7 @@ export const hero = {
   titleStrong: 'tienda online nunca ha tenido.',
   subtitle:
     'Seeckr es un asistente de IA que hace unas pocas preguntas a tus clientes, como lo haría un dependiente en tienda, y después les recomienda los productos de tu catálogo que se ajustan a lo que necesitan.',
-  videoLabel:
-    'Demostración: Seeckr en la ficha de producto, la conversación con el cliente y, después, su top 3.',
+  videoLabel: 'Demostración: Seeckr en acción en el sitio de Valisol.',
 }
 
 export const howItWorks = {

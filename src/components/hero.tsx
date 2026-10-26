@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { HeroVideo } from '@/components/hero-video'
 import { button } from '@/components/styles'
 import { getDictionary, getLocale } from '@/content/get-dictionary'
 import { showWebinar, webinarTeaser } from '@/content/webinar'
@@ -46,17 +47,7 @@ export async function Hero() {
           </div>
         </div>
         <div className="mx-auto w-full max-w-md lg:max-w-none">
-          <video
-            controls
-            muted
-            playsInline
-            preload="none"
-            poster="/media/demo-produit.jpg"
-            aria-label={hero.videoLabel}
-            className="aspect-square w-full rounded-3xl bg-paper"
-          >
-            <source src="/media/demo-produit.mp4" type="video/mp4" />
-          </video>
+          <HeroVideo id="G9-3wZ1fodY" label={hero.videoLabel} />
         </div>
       </div>
     </section>
