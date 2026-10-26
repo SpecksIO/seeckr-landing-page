@@ -6,6 +6,7 @@ import { FinalCta } from '@/components/final-cta'
 import { Hero } from '@/components/hero'
 import { IntegrationsLoop } from '@/components/integrations-loop'
 import { JsonLd } from '@/components/json-ld'
+import { Platforms } from '@/components/platforms'
 import { Section } from '@/components/section'
 import { button } from '@/components/styles'
 import { WebinarBlock } from '@/components/webinar-block'
@@ -60,6 +61,7 @@ export default async function Home() {
             </li>
           ))}
         </ol>
+        <Platforms label={howItWorks.platforms} />
       </Section>
 
       <Section

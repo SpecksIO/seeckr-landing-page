@@ -14,6 +14,8 @@ export const hero = {
 export const howItWorks = {
   eyebrow: 'Cómo funciona',
   title: 'Basta una línea de código para instalarlo.',
+  platforms:
+    'Compatible con todas las plataformas de e-commerce, incluidos los sitios a medida. Con un clic, Seeckr se conecta a tu tienda: tus visitantes añaden al carrito desde el asistente y tú sigues las ventas en tus estadísticas.',
   steps: [
     {
       title: 'Pegas una línea de script',
@@ -140,7 +142,7 @@ export const faq = {
       id: 'catalogue',
       question: '¿Cómo conoce Seeckr mi catálogo?',
       answer:
-        'Nos envías tu catálogo en el formato que ya tienes: una exportación de tu tienda, un archivo, un PDF. Nuestra IA lo lee entero y lo traduce al lenguaje de tus clientes: sus usos, sus limitaciones, en qué están dispuestos a ceder. Una ficha técnica copiada no les dice nada. Cada vez que cambia tu gama, actualizamos el catálogo. Seeckr recomienda el producto que responde a la necesidad y luego lleva al cliente a tu ficha, que muestra el precio y la disponibilidad del momento. En Shopify, WooCommerce, PrestaShop o una web a medida, basta con la misma línea de script. En Shopify y WooCommerce, el cliente incluso se va con los productos recomendados ya en su carrito.',
+        'Nos envías tu catálogo en el formato que ya tienes: una exportación de tu tienda, un archivo, un PDF. Nuestra IA lo lee entero y lo traduce al lenguaje de tus clientes: sus usos, sus limitaciones, en qué están dispuestos a ceder. Una ficha técnica copiada no les dice nada. Cada vez que cambia tu gama, actualizamos el catálogo. Seeckr recomienda el producto que responde a la necesidad y luego lleva al cliente a tu ficha, que muestra el precio y la disponibilidad del momento. En Shopify, WooCommerce, PrestaShop o una web a medida, basta con la misma línea de script. Sea cual sea la plataforma, el cliente también puede añadir los productos recomendados al carrito desde el asistente.',
     },
     {
       id: 'fiabilite',

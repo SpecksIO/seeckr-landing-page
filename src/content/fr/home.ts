@@ -14,6 +14,8 @@ export const hero = {
 export const howItWorks = {
   eyebrow: 'Comment ça marche',
   title: "Une ligne de code suffit pour l'installer.",
+  platforms:
+    "Compatible avec toutes les plateformes e-commerce, y compris les sites sur mesure. En un clic, Seeckr se connecte à votre boutique : vos visiteurs ajoutent au panier depuis l'assistant, et vous suivez les ventes dans vos statistiques.",
   steps: [
     {
       title: 'Vous collez une ligne de script',
@@ -141,7 +143,7 @@ export const faq = {
       id: 'catalogue',
       question: 'Comment Seeckr connaît-il mon catalogue ?',
       answer:
-        'Vous nous transmettez votre catalogue dans le format que vous avez déjà : un export de votre boutique, un fichier, un PDF. Notre IA le lit en entier et le traduit dans la langue de vos clients : leurs usages, leurs contraintes, ce sur quoi ils transigent. Une fiche technique recopiée ne leur parle pas. À chaque évolution de votre gamme, nous mettons le catalogue à jour. Seeckr conseille le produit qui répond au besoin, puis envoie le visiteur sur votre fiche, qui affiche le prix et la disponibilité du moment. Sur Shopify, WooCommerce, PrestaShop ou un site sur mesure, la même ligne de script suffit. Sur Shopify et WooCommerce, le visiteur repart même avec les produits recommandés déjà dans son panier.',
+        "Vous nous transmettez votre catalogue dans le format que vous avez déjà : un export de votre boutique, un fichier, un PDF. Notre IA le lit en entier et le traduit dans la langue de vos clients : leurs usages, leurs contraintes, ce sur quoi ils transigent. Une fiche technique recopiée ne leur parle pas. À chaque évolution de votre gamme, nous mettons le catalogue à jour. Seeckr conseille le produit qui répond au besoin, puis envoie le visiteur sur votre fiche, qui affiche le prix et la disponibilité du moment. Sur Shopify, WooCommerce, PrestaShop ou un site sur mesure, la même ligne de script suffit. Quelle que soit la plateforme, le visiteur peut aussi ajouter les produits recommandés au panier depuis l'assistant.",
     },
     {
       id: 'fiabilite',

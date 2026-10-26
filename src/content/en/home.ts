@@ -14,6 +14,8 @@ export const hero = {
 export const howItWorks = {
   eyebrow: 'How it works',
   title: 'One line of code is all it takes to install.',
+  platforms:
+    'Works with every e-commerce platform, custom-built sites included. One click connects Seeckr to your shop: visitors add to basket straight from the assistant, and you track sales in your statistics.',
   steps: [
     {
       title: 'You paste one line of code',
@@ -141,7 +143,7 @@ export const faq = {
       id: 'catalogue',
       question: 'How does Seeckr learn my catalogue?',
       answer:
-        'You send us your catalogue in whatever format you already have: an export from your shop, a file, a PDF. Our AI reads all of it and translates it into your customers’ language: how they use the product, their constraints, where they’re willing to compromise. A copied spec sheet means nothing to them. Whenever your range changes, we update the catalogue. Seeckr recommends the product that meets the need, then sends the visitor to your product page, which shows the current price and availability. On Shopify, WooCommerce, PrestaShop or a custom-built site, the same line of code is all it takes. On Shopify and WooCommerce, visitors even leave with the recommended products already in their basket.',
+        'You send us your catalogue in whatever format you already have: an export from your shop, a file, a PDF. Our AI reads all of it and translates it into your customers’ language: how they use the product, their constraints, where they’re willing to compromise. A copied spec sheet means nothing to them. Whenever your range changes, we update the catalogue. Seeckr recommends the product that meets the need, then sends the visitor to your product page, which shows the current price and availability. On Shopify, WooCommerce, PrestaShop or a custom-built site, the same line of code is all it takes. Whatever the platform, visitors can also add the recommended products to their basket straight from the assistant.',
     },
     {
       id: 'fiabilite',
