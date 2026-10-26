@@ -32,6 +32,10 @@ skill `seo-geo`). Seule Amandine ajoute une ligne.
 | Fonctionnalité                                       | Déjà livrée sur                | Engagée le |
 | ---------------------------------------------------- | ------------------------------ | ---------- |
 | Ajout au panier en un clic du top 3 ou de la routine | Shopify (depuis le 2026-09-22) | 2026-10-02 |
+| Ajout au panier sur toutes les plateformes e-commerce existantes (WooCommerce : quantité selon la surface) | toutes les plateformes, d'après Amandine | 2026-10-26 |
+| Bouton « Être rappelé » (vente sur devis) | réponse d'Amandine du 2026-10-26 | 2026-10-26 |
+| Mesure des ventes générées (commandes par webhook) | réponse d'Amandine du 2026-10-26 | 2026-10-26 |
+| Assistant dans toutes les langues de la page | réponse d'Amandine du 2026-10-26 | 2026-10-26 |
 
 ## Pour Amandine
 
