@@ -9,7 +9,7 @@ recherche : la commande `guide` s'en charge, et retire du backlog une requête q
 
 | Requête                                                             | Verticale            | Statut   | Date       | URL                                             |
 | ------------------------------------------------------------------- | -------------------- | -------- | ---------- | ----------------------------------------------- |
-| Comment réduire les recherches sans résultat sur un site e-commerce | toutes               | à faire  |            |                                                 |
+| Comment réduire les recherches sans résultat sur un site e-commerce | toutes | publié | 2026-10-26 | https://seeckr.fr/guides/reduire-recherches-sans-resultat |
 | Quiz produit ou assistant conversationnel : que choisir             | toutes               | à faire  |            |                                                 |
 | Chatbot e-commerce ou conseiller produit : quelle différence | toutes | publié | 2026-10-02 | https://seeckr.fr/guides/chatbot-ou-conseiller-produit |
 | Qu'est-ce que la vente guidée en e-commerce                         | toutes               | à faire  |            |                                                 |
@@ -23,6 +23,8 @@ recherche : la commande `guide` s'en charge, et retire du backlog une requête q
 | Comment conseiller un client quand on vend sur devis | toutes | à faire |            |                                                 |
 | Comment calculer la quantité de produit selon la surface à couvrir | produits-techniques | à faire |            |                                                 |
 | Comment orienter vers un revendeur quand on n'a pas de vente en ligne | toutes | à faire |            |                                                 |
+| Comment analyser les recherches internes de son site e-commerce | toutes | à faire |            |                                                 |
+| Comment soigner la page « aucun résultat » d'une boutique en ligne | toutes | à faire |            |                                                 |
 
 ## Engagements d'Amandine
 
