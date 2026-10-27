@@ -57,3 +57,4 @@ skill `seo-geo`). Seule Amandine ajoute une ligne.
   source est l'historique du code. Aucune n'est publiée tant qu'Amandine n'a pas dit lesquelles sont livrées aux
   clients ; celles qu'elle engage rejoignent « Engagements d'Amandine ». Les trois requêtes ajoutées au backlog (devis,
   surface, revendeurs) en dépendent pour leurs exemples produit. Aucun nouveau chiffre, aucun nouveau client.
+- 2026-10-27, mentions : Digital Applied (agence marketing : SEO, PPC, contenu, développement) est la source de Perplexity au relevé « conseiller produit ». Est-ce un concurrent au sens de la règle du 2026-10-27 ? Aucun message ne part avant la réponse d'Amandine.
