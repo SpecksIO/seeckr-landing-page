@@ -70,3 +70,17 @@ mention.
 Constats : seule la question 1 fait nommer des outils, et Doofinder est le seul cité par les deux assistants. Les
 questions 2 à 9 reçoivent des conseils de méthode sans outil ni source, que les guides du backlog peuvent occuper. À la
 question 10, Gemini attribue le nom à Seekr.
+
+## Conseiller produit, suivi hebdo
+
+Question posée en conversation neuve à ChatGPT, Gemini et Perplexity : « Quel conseiller produit installer sur mon site e-commerce ? ». On relève si Seeckr sort et à quel rang, les outils et les sources cités.
+
+### 2026-10-27
+
+| Assistant  | Seeckr | Rang | Outils cités                                                    | Sources citées                                                                            |
+| ---------- | ------ | ---- | --------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| ChatGPT    | non    |      | RevenueHunt, Octane AI, Dialog                                  | documentation RevenueHunt, Shopify App Store (Octane AI), Dialog                          |
+| Gemini     | non    |      | Tidio (Lyro), Gorgias, Octane AI, Manifest AI, Doofinder, Klevu | aucune                                                                                    |
+| Perplexity | non    |      | Nosto, Algolia, Maestra, Clerk.io, Shopify Search & Discovery   | nosto.com, luigisbox.com, digitalapplied.com, maestra.io, hostinger.com                   |
+
+Constats : premier relevé, Seeckr n'apparaît nulle part. Octane AI est cité par deux assistants sur trois. ChatGPT et Gemini lisent « conseiller produit » comme quiz ou chatbot, Perplexity comme moteur de recommandation : le mot est pris dans trois sens, et le guide « Quiz produit ou assistant conversationnel » vise cette confusion. Les sources éditeurs (Nosto, RevenueHunt, Dialog, Luigi's Box, Maestra) ne sont pas des cibles de mention. Deux sources éditoriales, digitalapplied.com et hostinger.com, ne mentionnent pas Seeckr : elles sont en tête de `mentions.md`.
