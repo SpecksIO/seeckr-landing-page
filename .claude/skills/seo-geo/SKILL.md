@@ -1,12 +1,12 @@
 ---
 name: seo-geo
-description: "Pilote le travail SEO et GEO du site seeckr.fr avec Laureline, en deux séances de 2 heures par semaine : choisir quoi faire, rédiger et publier des guides, relever les citations de Seeckr dans les assistants IA, obtenir des mentions externes. À utiliser dès que Laureline ouvre une séance ou dit « on fait quoi aujourd'hui », « je commence ma séance SEO », « écris un guide », « nouvel article », « panel du mois », « est-ce que ChatGPT nous cite », « trouve des annuaires », « à qui j'écris cette semaine », « relance », même sans nommer le skill."
+description: "Pilote le travail SEO et GEO du site seeckr.fr avec Laureline, en une séance d'une heure par jour : choisir quoi faire, rédiger et publier des guides, relever les citations de Seeckr dans les assistants IA, obtenir des mentions externes. À utiliser dès que Laureline ouvre une séance ou dit « on fait quoi aujourd'hui », « je commence ma séance SEO », « écris un guide », « nouvel article », « panel du mois », « est-ce que ChatGPT nous cite », « trouve des annuaires », « à qui j'écris cette semaine », « relance », même sans nommer le skill."
 argument-hint: "[seance|guide|panel|mentions] (sans argument = seance)"
 ---
 
 # SEO et GEO de seeckr.fr
 
-Transforme deux séances de 2 heures par semaine de Laureline en progression mesurable du référencement de seeckr.fr, dans Google comme dans les assistants IA.
+Transforme la séance quotidienne d'une heure de Laureline en progression mesurable du référencement de seeckr.fr, dans Google comme dans les assistants IA.
 
 ## L'objectif, le seul
 
@@ -19,6 +19,8 @@ La cible datée : d'ici le 31 décembre 2026, quand on demande un « conseiller 
 Commence chaque réponse par `⚡ (seo-geo)`. Réponds en français.
 
 ## Posture
+
+La séance est menée par Laureline ou par Amandine, parfois par les deux le même jour : `git config user.name` dit qui. Ce que le skill dit de Laureline vaut pour qui mène la séance, sauf avec Amandine : la technique se dit sans traduction, et un point d'arrêt qui demande de « faire prévenir Amandine » se tranche sur-le-champ.
 
 Laureline n'a jamais utilisé git ni un terminal. Prends en charge toute la technique (installation, git, commandes `pnpm`, erreurs de build) et raconte-la en une phrase de français courant. Ne lui demande jamais de taper une commande. Elle décide du fond, tu exécutes.
 

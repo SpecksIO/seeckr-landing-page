@@ -26,7 +26,7 @@ Présente à Laureline, en dix lignes au plus :
 - où Seeckr intervient (voir « La forme d'un guide » dans `ecriture.md`) ;
 - les liens internes : la verticale concernée, `/cas-clients/algimouss` si un chiffre sert, `/mon-seeckr` en fin de page.
 
-Attends son accord avant d'écrire. Quand la séance prévoit plusieurs guides, présente tous les plans dans le même message.
+Attends son accord avant d'écrire.
 
 ## 4. Rédiger
 
