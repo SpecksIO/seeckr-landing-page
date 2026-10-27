@@ -8,7 +8,7 @@ export const hero = {
   subtitle:
     'Seeckr is an AI assistant that asks your visitors a few questions, the way a shop assistant would, then recommends the products from your catalogue that match what they need.',
   videoLabel:
-    'Demo: the Seeckr banner on a product page, the conversation with the visitor, then their top 3.',
+    'Demo: on a Saturday evening, with customer service closed, a parent lost among the pushchairs leaves the site. With Seeckr, a banner appears on the product page, the assistant asks about their journeys and stairs, offers a top 3 and they add the pushchair to their basket. In their back office, the merchant reads what visitors say, in their own words. At Algimouss, one visitor in three was put on the right product.',
 }
 
 export const howItWorks = {

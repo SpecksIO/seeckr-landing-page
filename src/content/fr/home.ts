@@ -8,7 +8,7 @@ export const hero = {
   subtitle:
     'Seeckr est un assistant IA qui pose quelques questions à vos visiteurs, comme le ferait un vendeur en boutique, puis leur recommande les produits de votre catalogue qui correspondent à leur besoin.',
   videoLabel:
-    'Démonstration : le bandeau Seeckr sur une fiche produit, la conversation avec le visiteur, puis son top 3.',
+    "Démonstration : un samedi soir, service client fermé, un parent perdu parmi les poussettes quitte le site. Avec Seeckr, un bandeau apparaît sur la fiche produit, l'assistant l'interroge sur ses trajets et ses escaliers, lui propose son top 3 et il ajoute la poussette au panier. Dans son back office, le marchand lit ce que disent ses visiteurs, avec leurs mots. Chez Algimouss, un visiteur sur trois a été remis sur le bon produit.",
 }
 
 export const howItWorks = {

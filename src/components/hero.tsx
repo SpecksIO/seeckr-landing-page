@@ -48,8 +48,8 @@ export async function Hero() {
         </div>
         <div className="mx-auto w-full max-w-md lg:max-w-none">
           <LoopVideo
-            src="/media/demo-produit.mp4"
-            poster="/media/demo-produit.jpg"
+            src={`/media/demo-produit-${locale}.mp4`}
+            poster={`/media/demo-produit-${locale}.jpg`}
             label={hero.videoLabel}
             toggleLabels={ui.animation}
             className="aspect-square w-full rounded-3xl bg-paper"

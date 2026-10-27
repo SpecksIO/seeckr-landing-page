@@ -8,7 +8,7 @@ export const hero = {
   subtitle:
     'Seeckr es un asistente de IA que hace unas pocas preguntas a tus clientes, como lo haría un dependiente en tienda, y después les recomienda los productos de tu catálogo que se ajustan a lo que necesitan.',
   videoLabel:
-    'Demostración: Seeckr en la ficha de producto, la conversación con el cliente y, después, su top 3.',
+    'Demostración: un sábado por la noche, con la atención al cliente cerrada, una familia perdida entre los carritos abandona la web. Con Seeckr, aparece un banner en la ficha de producto, el asistente pregunta por sus trayectos y sus escaleras, propone un top 3 y el carrito acaba en la cesta. En su panel de control, el comercio lee lo que dicen sus clientes, con sus propias palabras. En Algimouss, uno de cada tres clientes acabó en el producto adecuado.',
 }
 
 export const howItWorks = {
