@@ -10,7 +10,7 @@ recherche : la commande `guide` s'en charge, et retire du backlog une requête q
 | Requête                                                               | Verticale            | Statut   | Date       | URL                                                                  |
 | --------------------------------------------------------------------- | -------------------- | -------- | ---------- | -------------------------------------------------------------------- |
 | Comment réduire les recherches sans résultat sur un site e-commerce   | toutes               | publié   | 2026-10-26 | <https://seeckr.fr/guides/reduire-recherches-sans-resultat>          |
-| Quiz produit ou assistant conversationnel : que choisir               | toutes               | à faire  |            |                                                                      |
+| Quiz produit ou assistant conversationnel : que choisir               | toutes               | en cours (Laureline) |            |                                                                      |
 | Chatbot e-commerce ou conseiller produit : quelle différence          | toutes               | publié   | 2026-10-02 | <https://seeckr.fr/guides/chatbot-ou-conseiller-produit>             |
 | Quel outil pour augmenter les ventes de son site e-commerce           | toutes               | à faire  |            |                                                                      |
 | Meilleurs outils IA pour augmenter les ventes d'un e-commerce         | toutes               | à faire  |            |                                                                      |
