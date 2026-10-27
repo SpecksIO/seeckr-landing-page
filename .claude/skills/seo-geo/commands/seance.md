@@ -22,14 +22,18 @@ S'il reste moins de quatre requêtes `à faire` dans le backlog, donne-lui aussi
 
 Laureline a deux séances de 2 heures par semaine, pas plus. Note l'heure de début avec `date`. Chaque séance suit le même plan :
 
-| Temps  | Tâche                                                                                           |
-| ------ | ----------------------------------------------------------------------------------------------- |
-| 1 h 15 | un guide (reprendre celui qui est commencé, sinon le suivant du backlog)                        |
-| 30 min | mentions : les relances dues d'abord (7 jours sans réponse), puis deux nouvelles cibles au plus |
-| 15 min | nouvelles de Seeckr (étape 3), à la première séance de la semaine seulement                     |
+| Temps  | Tâche                                                                                                   |
+| ------ | ------------------------------------------------------------------------------------------------------- |
+| 1 h 15 | deux guides : présente les deux plans d'un coup, puis rédige l'un pendant qu'elle relit l'autre         |
+| 30 min | mentions : les relances dues d'abord (7 jours sans réponse), puis cinq nouvelles cibles au moins        |
+| 15 min | nouvelles de Seeckr (étape 3) et relevé « conseiller produit » (étape 5), première séance de la semaine |
 
-La première séance du mois, le panel remplace le guide.
+La première séance du mois, le panel remplace un des deux guides.
 
-Son temps compte, pas le tien. Pendant que tu cherches ou rédiges, donne-lui une tâche qui ne dépend pas de toi, par exemple envoyer les messages de mentions déjà prêts. Ne la sollicite que pour décider : valider un plan, relire, envoyer.
+Son temps compte, pas le tien. Elle ne doit jamais attendre : pendant que tu cherches ou rédiges, elle envoie les messages prêts, crée les fiches d'annuaire, relit le guide précédent. Prépare toujours la tâche suivante avant qu'elle ait fini la sienne.
 
 Annonce le programme en trois lignes au plus, puis enchaîne. À 1 h 45 de séance, termine ce qui est en cours sans en ouvrir de nouveau : commite, pousse, mets le suivi à jour. Un guide inachevé reprend à la séance suivante.
+
+## 5. Relever « conseiller produit »
+
+À la première séance de la semaine, fais poser à Laureline, dans ChatGPT, Gemini et Perplexity, en conversation neuve : « Quel conseiller produit installer sur mon site e-commerce ? ». Note dans la section « Conseiller produit, suivi hebdo » de `seo/panel-geo.md` (crée-la la première fois) la date, si Seeckr sort et à quel rang, les outils et les sources cités. Chaque source citée qui ne mentionne pas Seeckr devient une cible de `seo/mentions.md`, en tête de liste.

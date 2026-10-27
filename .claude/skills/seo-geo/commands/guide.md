@@ -6,6 +6,8 @@ Un guide répond à une seule question qu'un e-commerçant tape dans Google ou p
 
 Prends la requête passée en argument. Sinon, prends la première requête `à faire` de `seo/backlog.md` et annonce-la à Laureline.
 
+Les requêtes d'achat passent devant les requêtes pédagogiques : celui qui tape « quel outil pour augmenter mes ventes », « meilleur outil IA e-commerce », « assistant d'achat », « conseiller produit », « guide d'achat interactif » ou « alternative à iAdvize » cherche déjà une solution, et c'est là que Seeckr doit sortir. Une question en « comment… » ne vient qu'ensuite. Quand tu ajoutes une requête au backlog, range-la selon cette règle.
+
 Vérifie avec `grep -ril` dans `src/content/` qu'aucune page existante ne répond déjà à la même question. Deux pages du site sur la même requête se font concurrence. Si une page y répond déjà, propose d'enrichir celle-ci plutôt que d'en créer une nouvelle, et arrête-toi.
 
 ## 2. Étudier ce qui existe
@@ -21,10 +23,10 @@ Présente à Laureline, en dix lignes au plus :
 - la réponse en deux phrases, telle qu'elle ouvrira la page ;
 - les intertitres ;
 - l'angle que les pages concurrentes n'ont pas ;
-- où Seeckr intervient, honnêtement (un guide qui ne parle que de Seeckr n'est pas cité) ;
+- où Seeckr intervient (voir « La forme d'un guide » dans `ecriture.md`) ;
 - les liens internes : la verticale concernée, `/cas-clients/algimouss` si un chiffre sert, `/mon-seeckr` en fin de page.
 
-Attends son accord avant d'écrire.
+Attends son accord avant d'écrire. Quand la séance prévoit plusieurs guides, présente tous les plans dans le même message.
 
 ## 4. Rédiger
 
