@@ -10,7 +10,7 @@ Les champs à copier dans chaque formulaire d'annuaire. Tout vient de `src/conte
 | Description longue | Seeckr est un assistant IA qui conseille vos visiteurs comme un vendeur en boutique : il leur pose quelques questions, puis leur recommande les produits de votre catalogue qui répondent à leur besoin. Un chatbot attend la question du visiteur ; Seeckr pose les siennes. Le visiteur décrit sa situation, sans connaître le nom du produit. Il reçoit un top 3 : pour chaque produit, un score de compatibilité et ce qui en fait le bon choix pour lui. Le visiteur qui hésitait repart avec le bon produit : vous vendez davantage, avec moins d'erreurs d'achat. Chaque conversation devient une donnée. Un rapport d'usage vous dit ce que cherchent vos clients, avec leurs mots, et ce qui les fait hésiter : de quoi bâtir vos personas et vos accroches de campagne. Vous suivez aussi les ventes dans vos statistiques. Une ligne de script suffit pour l'installer. Seeckr se connecte à toutes les plateformes e-commerce (Shopify, WooCommerce, PrestaShop, sites sur mesure) et parle neuf langues. |
 | Catégorie | la plus proche de « e-commerce » ; sinon « vente », puis « assistant IA » |
 | Tarification | Sur devis, selon la taille du catalogue. Un Seeckr personnalisé gratuit pour l'essayer sur son catalogue |
-| Public | Marchands e-commerce : cosmétique et nutrition, produits techniques, formation |
+| Public | Marchands e-commerce, marketeurs et responsables e-commerce |
 | Plateformes | Shopify, WooCommerce, PrestaShop, sites sur mesure |
 | Langues | neuf |
 | Contact | contact@seeckr.fr |
@@ -39,11 +39,12 @@ Seeckr est un assistant IA qui conseille les visiteurs d'un site e-commerce comm
 
 ### Cas d'usage
 
-- Cosmétique et nutrition : le visiteur décrit ses journées, ses oublis, ses ras-le-bol ; Seeckr les traduit en produits ou en routine du catalogue.
-- Produits techniques : le visiteur décrit un symptôme (la trace noire sur son mur nord) ; Seeckr lui indique le bon produit, même s'il est arrivé sur la mauvaise fiche.
-- Formation : le visiteur décrit ce qui lui pourrit ses semaines, sans connaître l'intitulé de la formation ; Seeckr trouve celle qui y répond.
+- Le visiteur ne connaît pas le nom du produit : il explique qu'il reçoit ses beaux-parents deux fois par an et n'a pas de place pour un matelas, et Seeckr comprend qu'il lui faut un canapé convertible.
+- Le visiteur hésite entre des produits proches : un parent perdu parmi les poussettes, un samedi soir, service client fermé. L'assistant l'interroge sur ses trajets et ses escaliers, lui propose son top 3 et il ajoute la poussette au panier.
+- Le visiteur est sur la mauvaise fiche : Seeckr remet le bon produit en tête et lui explique pourquoi.
+- La recherche ne donne rien : l'assistant prend le relais et propose des produits adaptés au besoin du visiteur.
+- Le visiteur s'apprête à quitter le site : l'assistant lui propose son aide plutôt qu'une remise de dernière minute.
 - Pour qui : les marketeurs et responsables e-commerce qui veulent que chaque visiteur reparte avec le bon produit.
-- Quand : sur la fiche produit, quand la recherche ne donne rien, ou au moment où le visiteur s'apprête à quitter le site.
 
 ### Avantages
 
@@ -63,7 +64,7 @@ Le prix dépend de la taille de votre catalogue, des fonctionnalités que vous c
 
 ### Conclusion
 
-Seeckr convient aux e-commerçants dont les visiteurs hésitent ou ne savent pas traduire leur besoin en caractéristiques : cosmétique, nutrition, produits techniques, formation. Il conseille comme un vendeur : il pose des questions, recommande trois produits expliqués, et dit quand rien ne convient. Pour juger sur pièces, demandez un Seeckr personnalisé gratuit et essayez-le sur votre catalogue : https://seeckr.fr/mon-seeckr
+Seeckr convient aux e-commerçants dont les visiteurs hésitent ou ne savent pas traduire leur besoin en caractéristiques. Il conseille comme un vendeur : il pose des questions, recommande trois produits expliqués, et dit quand rien ne convient. Pour juger sur pièces, demandez un Seeckr personnalisé gratuit et essayez-le sur votre catalogue : https://seeckr.fr/mon-seeckr
 
 ### Fonctionnalités clés (sidebar)
 
