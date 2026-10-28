@@ -19,7 +19,7 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | 2026-11-04              | TrouveMonSaaS : relance suspendue tant qu'Amandine n'a pas dit si Solutio est un concurrent                       |
 | 2026-11-04              | reposer « Qu'est-ce que Seeckr ? » aux trois assistants : seeckr.fr est-il une source citée, ChatGPT identifie-t-il Seeckr ? Référence du 2026-10-28 : Gemini et Perplexity oui, ChatGPT non |
-| 2026-10-29              | reposer à ChatGPT et Gemini « Quel assistant d'achat IA installer sur mon site e-commerce ? » (Perplexity cite Seeckr deux fois le 2026-10-28) ; regarder dans l'onglet des sources de Perplexity d'où vient l'information sur Seeckr (seeckr.fr, LinkedIn ?) ; reposer la même question à Perplexity pour voir si Seeckr y reste |
+| 2026-10-29              | reposer « Quel assistant d'achat IA installer sur mon site e-commerce ? » à Perplexity, ChatGPT et Gemini : Seeckr y reste-t-il ? Relevé du 2026-10-28 : Perplexity le cite deux fois mais sa source est inconnue et la fiche de l'application Shopify Seekr figure parmi ses sources, ChatGPT et Gemini non |
 | 2026-11-04              | relancer BotRank.ai (e-mail envoyé le 2026-10-28 à contact@botrank.ai), une seule relance |
 | réponse d'Amandine      | FranceSaaS (coédité par l'agence web Click & Digital) : concurrent ? Pas de badge sur seeckr.fr avant sa réponse |
 | réponse d'Amandine      | Comparateur IA (NEWP, profil de Digital Applied) : garder la fiche Standard déjà soumise ou la retirer ? Tant qu'elle n'a pas répondu, aucune autre étape |
