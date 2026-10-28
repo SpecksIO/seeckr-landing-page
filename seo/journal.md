@@ -15,12 +15,15 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 
 - 2026-10-28, Laureline : tout relevé auprès des assistants se fait en fenêtre de navigation privée, sans être connectée, parce que les comptes gardent la mémoire des conversations (Perplexity l'a reconnu). Inscrit dans `commands/panel.md` et `commands/seance.md`. Les relevés du 2026-10-28 sont à refaire.
 
+- 2026-10-28, Laureline : le WooCommerce Marketplace est laissé de côté. Être listé demande une extension à développer et l'accord de Woo (jusqu'à 30 jours) : pas de présence facile, donc on ne le poursuit pas. Aucun message n'est envoyé à Woo. À reprendre seulement si Amandine décide de faire une extension. Même principe pour toute place de marché : si la présence n'est pas facile à obtenir, on ne la poursuit pas.
+
 ## Rappels
 
 | Échéance                | Quoi                                                                                                              |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | 2026-11-04              | TrouveMonSaaS : relance suspendue tant qu'Amandine n'a pas dit si Solutio est un concurrent                       |
 | 2026-11-04              | reposer « Qu'est-ce que Seeckr ? » aux trois assistants : seeckr.fr est-il une source citée, ChatGPT identifie-t-il Seeckr ? Référence du 2026-10-28 : Gemini et Perplexity oui, ChatGPT non |
+| dans quelques jours     | refaire la recherche de la fiche Shopify de Seeckr (créée par Amandine le 2026-10-28, pas encore publique) |
 | 2026-10-29              | refaire les relevés du 2026-10-28 **en navigation privée, sans être connectée** (la mémoire des comptes a faussé les citations de Seeckr) : « Quel assistant d'achat IA installer sur mon site e-commerce ? » et « Qu'est-ce que Seeckr ? » aux trois assistants |
 | 2026-11-04              | relancer BotRank.ai (e-mail envoyé le 2026-10-28 à contact@botrank.ai), une seule relance |
 | réponse d'Amandine      | FranceSaaS (coédité par l'agence web Click & Digital) : concurrent ? Pas de badge sur seeckr.fr avant sa réponse |
