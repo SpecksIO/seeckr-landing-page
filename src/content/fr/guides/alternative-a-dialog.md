@@ -6,7 +6,7 @@ date: "2026-10-28"
 
 # Quelle alternative à Dialog pour conseiller ses visiteurs ?
 
-Dialog et Seeckr ont le même but : guider le visiteur vers le bon produit avant l'achat. Seeckr se distingue par l'état d'esprit du visiteur dont il part : la plupart n'ont pas de question à poser, alors l'assistant fait le premier pas, comme un vendeur en boutique, leur parle de leur quotidien, puis leur recommande leur top 3. Nous construisons l'assistant sur votre catalogue et vous le voyez fonctionner sur votre site, sans rien installer.
+Dialog et Seeckr ont le même but : guider le visiteur vers le bon produit avant l'achat. Ce qui change, c'est le point de départ : la plupart des visiteurs n'ont pas de question à poser, alors Seeckr fait le premier pas, comme un vendeur en boutique, leur parle de leur quotidien, puis leur recommande le ou les produits dont ils ont besoin.
 
 ## Qu'ont en commun Dialog et Seeckr ?
 
@@ -29,9 +29,10 @@ C'est la découverte client d'un vendeur, appliquée à chaque visiteur de votre
 
 ## Qu'est-ce que Seeckr apporte à un e-commerce ?
 
-Seeckr apporte trois choses : un conseil qui part de la situation du visiteur, des données précieuses sur vos clients, et un retour sur investissement que vous mesurez.
+Seeckr apporte quatre choses : un conseil qui part de la situation du visiteur, un panier plus large, des données précieuses sur vos clients, et un retour sur investissement que vous mesurez.
 
-- **Un visiteur conseillé comme en boutique.** Un samedi soir, service client fermé, un parent perdu parmi les poussettes s'apprête à quitter le site. L'assistant l'interroge sur ses trajets et ses escaliers, lui propose son top 3 et il ajoute la poussette au panier. Un visiteur qui sait quel produit choisir achète, et se trompe moins : le risque de retour diminue.
+- **Un visiteur conseillé comme en boutique.** Un samedi soir, service client fermé, un parent perdu parmi les poussettes s'apprête à quitter le site. L'assistant l'interroge sur ses trajets et ses escaliers, lui recommande les produits qui lui conviennent, et il ajoute la poussette au panier. Un visiteur qui sait quel produit choisir achète, et se trompe moins : le risque de retour diminue.
+- **Un panier plus large.** Comme l'assistant s'intéresse à la vie et au quotidien du visiteur, il peut lui recommander plusieurs produits de votre site qui répondent à son besoin, et pas un seul : de quoi faire monter votre panier moyen.
 - **Des données que vous n'aviez pas.** Chaque visiteur explique avec ses mots ce qu'il cherche et ce qui le fait hésiter. Vous relisez chaque conversation en entier, et un rapport d'usage en fait la synthèse : les besoins exprimés, les produits les plus recommandés. De quoi bâtir vos personas sur ce que disent vraiment vos clients, et trouver dans leurs phrases les accroches de vos prochaines campagnes.
 - **Un retour sur investissement chiffré.** Seeckr suit les commandes passées après une recommandation, et vous voyez les ventes dans vos statistiques. Au bout de trois mois, nous faisons avec vous le bilan chiffré de l'impact sur vos ventes.
 
@@ -45,7 +46,7 @@ Le tableau donne, pour chaque critère, pourquoi il compte pour un e-commerce et
 | ------- | ------------------ | ------------------ |
 | Qui fait le premier pas | La plupart des visiteurs n'ont pas de question à poser | L'assistant vient vers eux, avec la première question déjà posée, au moment où ils hésitent ou s'apprêtent à partir |
 | Les questions posées au visiteur | Un visiteur qui hésite ne sait pas répondre à des questions sur votre catalogue : il sait ce qu'il vit | Des questions courtes, personnalisées à sa situation, comme un vendeur qui écoute : l'assistant cherche ce à quoi il tient et ce qu'il est prêt à lâcher |
-| Ce que le visiteur reçoit | Un visiteur convaincu passe à l'action | Un top 3 classé, avec pour chaque produit un score de compatibilité et la raison de son classement, et l'ajout au panier depuis l'assistant |
+| Ce que le visiteur reçoit | Un visiteur convaincu passe à l'action | Le ou les produits dont il a besoin, classés quand il y en a plusieurs, avec pour chacun un score de compatibilité et la raison de son classement, et l'ajout au panier depuis l'assistant |
 | Les données sur vos clients | Leurs mots valent plus que des clics | Chaque conversation relisible en entier, un rapport d'usage, les besoins exprimés et les produits les plus recommandés |
 | Les ventes mesurées | Sans mesure, on ne sait pas si l'outil rapporte | Les commandes passées après une recommandation, visibles dans vos statistiques, et un bilan chiffré avec vous au bout de trois mois |
 | Le catalogue | Si l'e-commerçant relie lui-même chaque produit aux réponses, la maintenance retombe sur lui | Pris en charge : vous envoyez le format que vous avez déjà, nous le préparons et le tenons à jour à chaque évolution de votre gamme |
