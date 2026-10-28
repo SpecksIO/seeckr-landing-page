@@ -16,6 +16,7 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 | Échéance                | Quoi                                                                                                              |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | 2026-11-04              | TrouveMonSaaS : relance suspendue tant qu'Amandine n'a pas dit si Solutio est un concurrent                       |
+| réponse d'Amandine      | FranceSaaS (coédité par l'agence web Click & Digital) : concurrent ? Pas de badge sur seeckr.fr avant sa réponse |
 | réponse d'Amandine      | Comparateur IA (NEWP, profil de Digital Applied) : garder la fiche Standard déjà soumise ou la retirer ? Tant qu'elle n'a pas répondu, aucune autre étape |
 | prochaine séance        | relevé « conseiller produit » hebdo (dernier : 2026-10-28) : le guide « Quel conseiller produit installer » sort-il ? |
 | réponse d'Amandine      | message regroupé envoyé le 2026-10-28 : questions de la section « Pour Amandine » de `seo/backlog.md` ; à lire dès que la réponse arrive |
