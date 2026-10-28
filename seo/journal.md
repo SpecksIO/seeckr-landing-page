@@ -24,6 +24,7 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 | 2026-11-04              | TrouveMonSaaS : relance suspendue tant qu'Amandine n'a pas dit si Solutio est un concurrent                       |
 | 2026-11-04              | reposer « Qu'est-ce que Seeckr ? » aux trois assistants : seeckr.fr est-il une source citée, ChatGPT identifie-t-il Seeckr ? Référence du 2026-10-28 : Gemini et Perplexity oui, ChatGPT non |
 | dans quelques jours     | refaire la recherche de la fiche Shopify de Seeckr (créée par Amandine le 2026-10-28, pas encore publique) |
+| 2026-11-07              | AlternativeTo : la fiche Seeckr est-elle validée (« My submissions ») ? Alternatives choisies le 2026-10-28 à noter ici |
 | 2026-10-29              | refaire les relevés du 2026-10-28 **en navigation privée, sans être connectée** (la mémoire des comptes a faussé les citations de Seeckr) : « Quel assistant d'achat IA installer sur mon site e-commerce ? » et « Qu'est-ce que Seeckr ? » aux trois assistants |
 | 2026-11-04              | relancer BotRank.ai (e-mail envoyé le 2026-10-28 à contact@botrank.ai), une seule relance |
 | réponse d'Amandine      | FranceSaaS (coédité par l'agence web Click & Digital) : concurrent ? Pas de badge sur seeckr.fr avant sa réponse |
