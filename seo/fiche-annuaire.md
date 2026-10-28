@@ -83,3 +83,15 @@ Seeckr convient aux e-commerçants dont les visiteurs hésitent ou ne savent pas
 - Que m'apprennent les conversations avec mes visiteurs ? Chaque visiteur explique avec ses propres mots ce qu'il cherche et ce qui le fait hésiter. Vous les retrouvez dans le back office, avec les statistiques et un rapport d'usage généré automatiquement : de quoi bâtir vos personas et vos accroches de campagne.
 - L'IA peut-elle inventer une information ? L'assistant ne recommande que des produits de votre catalogue, et il construit chaque explication à partir de la seule fiche produit. Quand rien ne convient vraiment, il le dit plutôt que de forcer une recommandation.
 - Comment Seeckr s'installe-t-il sur un site ? Il suffit d'ajouter une ligne de script dans l'en-tête du site. Le reste se règle depuis le back office, sans passer par un développeur : l'emplacement de l'assistant et les couleurs.
+
+## Version anglaise (Crunchbase, SaaSworthy)
+
+Traduction fidèle de l'accroche et de la description validées, sans fait nouveau. À reprendre telle quelle pour les annuaires qui demandent de l'anglais. Faits que le dépôt ne donne pas et qu'Amandine fournit : année de création, effectif, nombre de clients, fonds levés.
+
+### Short description
+
+Seeckr is an AI product advisor for e-commerce sites: it asks each visitor questions like a salesperson in a store, then recommends their top 3 products.
+
+### Long description
+
+Seeckr is an AI assistant that advises your visitors like a salesperson in a store: it asks them a few questions, then recommends the products in your catalog that match their needs. A chatbot waits for the visitor's question; Seeckr asks its own. The visitor describes their situation, without knowing the name of the product. They get a top 3: for each product, a compatibility score and what makes it the right choice for them. The visitor who was hesitating leaves with the right product: you sell more, with fewer purchase mistakes. Every conversation becomes data. A usage report tells you what your customers are looking for, in their own words, and what makes them hesitate: material to build your personas and your campaign hooks. You also track sales in your statistics. One line of script is enough to install it. Seeckr connects to all e-commerce platforms (Shopify, WooCommerce, PrestaShop, custom sites) and speaks nine languages.
