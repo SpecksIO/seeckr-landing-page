@@ -24,6 +24,7 @@ function organization(dict: Dictionary): Organization {
     '@type': 'Organization',
     '@id': organizationId,
     name: siteConfig.name,
+    alternateName: 'Seeckr.fr',
     legalName: company.legalName,
     url: absoluteUrl('/'),
     description: dict.site.description,
