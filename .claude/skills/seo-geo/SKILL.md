@@ -35,6 +35,7 @@ Une seule exception : les fonctionnalités de la section « Engagements d'Amandi
   - `seo/backlog.md` : requêtes ciblées et statut de chaque guide.
   - `seo/panel-geo.md` : questions du panel et relevés mensuels.
   - `seo/mentions.md` : sites visés, contacts, réponses.
+  - `seo/fiche-annuaire.md` : les champs validés pour toute fiche d'annuaire (accroche, description longue, tarification). À reprendre tels quels.
   - `seo/README.md` : la fiche de démarrage de Laureline. Ne la restate pas, renvoie-y.
 
 ## Les deux relais de Laureline

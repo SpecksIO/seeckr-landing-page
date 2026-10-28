@@ -32,7 +32,7 @@ Applique [../references/ecriture.md](../references/ecriture.md). Le message part
 - ce qu'on leur apporte (un cas concret, un chiffre Algimouss, un accès de test) ;
 - une seule demande claire.
 
-Pour une fiche d'annuaire, prépare les champs à remplir à partir du contenu de `src/content/fr/`. Pour un champ que le site ne couvre pas, passe par le projet Seeckr (voir les relais dans SKILL.md). C'est Laureline qui envoie les messages et crée les fiches, depuis sa propre messagerie ou ses propres comptes. Tu ne publies rien à l'extérieur.
+Pour une fiche d'annuaire, les champs sont ceux de `seo/fiche-annuaire.md` : la description longue y a été validée par Laureline le 2026-10-28, donne-la telle quelle quand un formulaire demande une description. Ne la réécris pas de ta propre initiative. Adapte-la seulement à une limite de caractères, en coupant par la fin sans rien ajouter. Elle ne porte ni le « +15 % de ventes » ni un chiffre Algimouss : un champ d'annuaire ne peut pas porter la précision qui accompagne ces chiffres. Si Laureline ou Amandine demande une nouvelle version, mets le fichier à jour, commite et pousse. Pour un champ que le fichier et `src/content/fr/` ne couvrent pas, passe par le projet Seeckr (voir les relais dans SKILL.md). C'est Laureline qui envoie les messages et crée les fiches, depuis sa propre messagerie ou ses propres comptes. Tu ne publies rien à l'extérieur.
 
 ## 4. Suivre
 
