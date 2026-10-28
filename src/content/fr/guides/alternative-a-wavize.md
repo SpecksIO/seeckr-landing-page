@@ -1,5 +1,5 @@
 ---
-titre: "Quelle alternative à Wavize pour conseiller ses visiteurs"
+titre: "Alternative à Wavize : un assistant dédié au conseil"
 description: "Wavize et Seeckr conseillent le visiteur avant l'achat. Seeckr s'y consacre : il pose les questions d'un vendeur et mesure ce que le conseil rapporte."
 date: "2026-10-28"
 ---

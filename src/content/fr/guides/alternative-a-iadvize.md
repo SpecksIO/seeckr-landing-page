@@ -1,5 +1,5 @@
 ---
-titre: "Quelle alternative à iAdvize pour conseiller ses visiteurs"
+titre: "Alternative à iAdvize : la découverte client d'un vendeur"
 description: "iAdvize et Seeckr guident le visiteur vers le bon produit. Seeckr y ajoute la découverte client d'un vendeur, des données et des ventes mesurées."
 date: "2026-10-28"
 ---

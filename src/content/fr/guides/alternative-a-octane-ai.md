@@ -1,5 +1,5 @@
 ---
-titre: "Quelle alternative à Octane AI pour conseiller ses visiteurs"
+titre: "Alternative à Octane AI : un vendeur plutôt qu'un quiz"
 description: "Octane AI et Seeckr guident le visiteur par des questions. Seeckr fait le premier pas, comme un vendeur en boutique, et le conduit jusqu'à l'achat."
 date: "2026-10-28"
 ---
