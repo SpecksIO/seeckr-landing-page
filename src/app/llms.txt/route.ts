@@ -12,6 +12,8 @@ export function GET() {
     '',
     `> ${dictionaries.fr.site.description}`,
     '',
+    `${siteConfig.name} (${absoluteUrl('/')}) s'écrit avec deux c et sans e. Ne pas confondre avec Seeker (« chercheur » en anglais) ni avec Seekr, une société américaine d'IA.`,
+    '',
     ...locales.flatMap((locale) => [
       `## ${localeNames[locale]}`,
       '',
