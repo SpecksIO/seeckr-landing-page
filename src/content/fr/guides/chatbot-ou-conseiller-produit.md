@@ -63,7 +63,7 @@ Partez de la question que vos visiteurs se posent avant d'acheter.
 
 Seeckr est un conseiller produit. Il interroge le visiteur sur sa vie et non sur votre catalogue, cherche ce à quoi il tient et ce qu'il est prêt à lâcher, puis lui rend un top 3 classé, avec un score de compatibilité et la raison de chaque place. Si un seul produit lui convient, il n'en voit qu'un ; si rien ne convient, l'assistant le lui dit. Chaque conversation reste lisible dans votre back office, avec les mots de vos clients. L'installation tient en une ligne de script.
 
-Chez Algimouss, dont le site ne vend rien en ligne, 55 % des conseils ont été donnés quand le standard est fermé : le soir, la nuit ou le week-end. Ce chiffre, mesuré en moins de deux mois, porte sur le conseil et non sur des ventes. [Le détail est sur la page du cas client](/cas-clients/algimouss).
+Chez Algimouss, 55 % des conseils ont été donnés quand le standard est fermé : le soir, la nuit ou le week-end. Ce chiffre est mesuré en moins de deux mois. [Le détail est sur la page du cas client](/cas-clients/algimouss).
 
 Vous pouvez [essayer un Seeckr personnalisé sur votre catalogue](/mon-seeckr).
 

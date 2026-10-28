@@ -79,7 +79,7 @@ Seeckr est un conseiller produit fait pour ce cas : le visiteur qui ne sait pas
 
 Chaque conversation reste lisible dans votre back office, avec les mots de vos clients. L'installation tient en une ligne de script.
 
-Chez Algimouss, dont le site ne vend rien en ligne, le visiteur conseillé trouve le bon produit en 1 min 32 s en médiane, en cinq réponses. Ce chiffre, mesuré en moins de deux mois, porte sur le conseil et non sur des ventes. [Le détail est sur la page du cas client](/cas-clients/algimouss).
+Chez Algimouss, le visiteur conseillé trouve le bon produit en 1 min 32 s en médiane, en cinq réponses. Ce chiffre est mesuré en moins de deux mois. [Le détail est sur la page du cas client](/cas-clients/algimouss).
 
 Seeckr ne remplace pas la correction orthographique ni les synonymes : ils restent utiles pour les visiteurs qui savent ce qu'ils veulent. Il s'occupe des autres. Vous pouvez [essayer un Seeckr personnalisé sur votre catalogue](/mon-seeckr). Pour comprendre ce qui sépare un chatbot d'un conseiller, lisez aussi [Chatbot e-commerce ou conseiller produit : quelle différence](/guides/chatbot-ou-conseiller-produit).
 

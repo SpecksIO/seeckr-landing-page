@@ -55,7 +55,7 @@ La recherche de la boutique aide le visiteur qui sait quoi taper. Seeckr aide ce
 
 ## Quels résultats chez un client ?
 
-Chez Algimouss, dont le site ne vend rien en ligne, un visiteur sur trois a été réorienté vers le bon produit en moins de deux mois. Ce chiffre mesure le conseil, pas des ventes. [Le détail est sur la page du cas client](/cas-clients/algimouss).
+Chez Algimouss, un visiteur sur trois a été réorienté vers le bon produit en moins de deux mois. [Le détail est sur la page du cas client](/cas-clients/algimouss).
 
 ## Questions fréquentes
 

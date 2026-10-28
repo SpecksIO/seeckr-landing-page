@@ -42,7 +42,7 @@ Seeckr est le conseiller que le marchand n'a pas à construire. Le visiteur déc
 
 Côté marchand, vous lisez ce que disent vos clients, avec leurs mots : de quoi bâtir vos personas sur ce qu'ils disent vraiment, et trouver dans leurs phrases les accroches de vos prochaines campagnes. L'installation tient en une ligne de script, et vous choisissez depuis le back office où l'assistant apparaît : sur la fiche produit, quand la recherche ne donne rien, ou au moment du départ. Le visiteur peut ajouter les produits recommandés au panier depuis l'assistant, et l'assistant parle neuf langues.
 
-Chez Algimouss, dont le site ne vend rien en ligne, un visiteur sur trois a été réorienté vers le bon produit en moins de deux mois. Ce chiffre mesure le conseil, pas des ventes. [Le détail est sur la page du cas client](/cas-clients/algimouss).
+Chez Algimouss, un visiteur sur trois a été réorienté vers le bon produit en moins de deux mois. [Le détail est sur la page du cas client](/cas-clients/algimouss).
 
 Vous pouvez [essayer un Seeckr personnalisé sur votre catalogue](/mon-seeckr).
 
