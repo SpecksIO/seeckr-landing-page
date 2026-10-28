@@ -22,6 +22,7 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 | réponse d'Amandine      | message regroupé envoyé le 2026-10-28 : questions de la section « Pour Amandine » de `seo/backlog.md` ; à lire dès que la réponse arrive |
 | à lire dans le navigateur | Capterra (espace éditeurs), AlternativeTo : la page d'inscription dit-elle gratuit ou payant ? Les pages d'accueil ne le disent pas |
 | 2026-11-04              | relancer Le Panier (e-mail envoyé le 2026-10-28 à contact@lepanier.io), une seule relance |
+| à faire | Profils gratuits dans le navigateur de Laureline : G2 (en premier), Crunchbase, Capterra et GetApp, AlternativeTo. Champs prêts dans `seo/fiche-annuaire.md`. Une fois en ligne, leurs URLs vont dans `company.profiles` (accord d'Amandine du 2026-10-28) |
 | attendre Amandine | SaaSworthy : portail éditeur ouvert le 2026-10-28, Contact Information remplie, rien d'autre. Ne pas remplir « Business Information » ni « Software Profile » avant sa réponse : cible écartée ou non, et faits à fournir (année de création, salariés, clients, fonds levés). Ensuite, remplir avec `seo/fiche-annuaire.md` |
 | 2026-11-04              | Loyoly Talks : si la connexion LinkedIn de Joseph est acceptée, lui écrire le message ; sinon une seule relance |
 
