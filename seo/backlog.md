@@ -17,7 +17,8 @@ recherche : la commande `guide` s'en charge, et retire du backlog une requête q
 | Quel outil pour conseiller les visiteurs d'un site e-commerce         | toutes               | à faire  |            |                                                                      |
 | Quelle alternative à Dialog pour conseiller ses visiteurs             | toutes               | publié   | 2026-10-28 | <https://seeckr.fr/guides/alternative-a-dialog>                      |
 | Quelle alternative à Octane AI pour conseiller ses visiteurs          | toutes               | publié   | 2026-10-28 | <https://seeckr.fr/guides/alternative-a-octane-ai>                   |
-| Quelle alternative à iAdvize pour conseiller ses visiteurs            | toutes               | à faire  |            |                                                                      |
+| Quelle alternative à iAdvize pour conseiller ses visiteurs            | toutes               | publié   | 2026-10-28 | <https://seeckr.fr/guides/alternative-a-iadvize>                     |
+| Quelle alternative à Wavize pour conseiller ses visiteurs             | toutes               | publié   | 2026-10-28 | <https://seeckr.fr/guides/alternative-a-wavize>                      |
 | Quel assistant d'achat IA installer sur son site e-commerce           | toutes               | à faire  |            |                                                                      |
 | Quel conseiller produit installer sur son site e-commerce             | toutes               | publié   | 2026-10-28 | <https://seeckr.fr/guides/quel-conseiller-produit-installer>         |
 | Qu'est-ce que Seeckr (requête de marque, pour le relevé « Qu'est-ce que Seeckr ? » du panel) | toutes               | publié   | 2026-10-28 | <https://seeckr.fr/guides/qu-est-ce-que-seeckr>                      |
