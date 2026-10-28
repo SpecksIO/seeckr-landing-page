@@ -84,3 +84,15 @@ Question posée en conversation neuve à ChatGPT, Gemini et Perplexity : « Quel
 | Perplexity | non    |      | Nosto, Algolia, Maestra, Clerk.io, Shopify Search & Discovery   | nosto.com, luigisbox.com, digitalapplied.com, maestra.io, hostinger.com                   |
 
 Constats : premier relevé, Seeckr n'apparaît nulle part. Octane AI est cité par deux assistants sur trois. ChatGPT et Gemini lisent « conseiller produit » comme quiz ou chatbot, Perplexity comme moteur de recommandation : le mot est pris dans trois sens, et le guide « Quiz produit ou assistant conversationnel » vise cette confusion. Les sources éditeurs (Nosto, RevenueHunt, Dialog, Luigi's Box, Maestra) ne sont pas des cibles de mention. Deux sources éditoriales, digitalapplied.com et hostinger.com, ne mentionnent pas Seeckr : elles sont en tête de `mentions.md`.
+
+### 2026-10-28
+
+Deuxième relevé, le jour de la publication du guide « Quel conseiller produit installer » (les assistants n'ont pas pu l'indexer). Indexation Search Console : trois guides indexés, « Réduire les recherches sans résultat » en demande d'indexation.
+
+| Assistant  | Seeckr | Rang | Outils cités                                                                              | Sources citées                                                                            |
+| ---------- | ------ | ---- | ----------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------- |
+| ChatGPT    | non    |      | RevenueHunt, Dialog, Shopify Search & Discovery                                           | revenuehunt.com, askdialog.com, apps.shopify.com                                          |
+| Gemini     | non    |      | Heyday, ooGoing, Asklora, Klevu, Octane AI, Manifest AI, RevenueHunt, Gorgias, Klaviyo, Omnisend | aucune                                                                             |
+| Perplexity | non    |      | Wiser AI, Rebuy, Nosto, Algolia, Octane AI, Dialog, Kameleoon, Clerk.io                   | clerk.io, askdialog.com (page « meilleures apps de recommandation produits Shopify », six fois), nosto.com, hostinger.com, kameleoon.com |
+
+Constats : Seeckr n'apparaît toujours nulle part. Les trois assistants terminent en demandant la plateforme, le secteur ou le budget : la question large reçoit une liste générique d'éditeurs établis. Hostinger est cité par Perplexity aux deux relevés : c'est la seule source éditoriale non éditeur récurrente (contact introuvable, voir `mentions.md`). Les autres sources sont des pages d'éditeurs concurrents (Dialog, Clerk.io, Nosto, Kameleoon, RevenueHunt) : pas de cibles.

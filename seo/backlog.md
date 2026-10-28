@@ -58,3 +58,4 @@ skill `seo-geo`). Seule Amandine ajoute une ligne.
   clients ; celles qu'elle engage rejoignent « Engagements d'Amandine ». Les trois requêtes ajoutées au backlog (devis,
   surface, revendeurs) en dépendent pour leurs exemples produit. Aucun nouveau chiffre, aucun nouveau client.
 - 2026-10-27, mentions : Digital Applied (agence marketing : SEO, PPC, contenu, développement) est la source de Perplexity au relevé « conseiller produit ». Est-ce un concurrent au sens de la règle du 2026-10-27 ? Aucun message ne part avant la réponse d'Amandine.
+- 2026-10-28, nom : en plus de Seekr (société américaine), il existe une application Shopify « Seekr: AI Search & Filter » (recherche et filtres par IA), dans le même marché que Seeckr. Elle renforce la confusion de nom au panel (question 10). Besoin de profils officiels pour Seeckr (annuaires, fiches), qui s'ajoutent à `company.profiles`. Question aussi : accès Search Console pour Laureline (donné ou non).
