@@ -98,3 +98,19 @@ Deuxième relevé, le jour de la publication du guide « Quel conseiller produit
 Constats : Seeckr n'apparaît toujours nulle part. Les trois assistants terminent en demandant la plateforme, le secteur ou le budget : la question large reçoit une liste générique d'éditeurs établis. Hostinger est cité par Perplexity aux deux relevés : c'est la seule source éditoriale non éditeur récurrente (contact introuvable, voir `mentions.md`). Les autres sources sont des pages d'éditeurs concurrents (Dialog, Clerk.io, Nosto, Kameleoon, RevenueHunt) : pas de cibles.
 
 Question de test du 2026-10-28 : « Quiz produit ou assistant conversationnel : que choisir pour un site e-commerce ? », celle du guide indexé le plus récent. Seeckr n'est cité par aucun assistant et seeckr.fr n'est source d'aucun. Perplexity cite revenuehunt.com (dont son rapport chiffré « State of product recommendation quizzes 2026 »), tryinteract.com, poper.ai, shopify.com, stripe.com, fin.ai. ChatGPT et Gemini ne citent aucune source. Les trois présentent un choix binaire, quiz ou chatbot, et la combinaison des deux ; aucun ne décrit un conseiller qui pose les questions d'un vendeur. Perplexity s'appuie sur des chiffres d'éditeurs avec source et année : l'angle absent est la conversation courte du conseiller, appuyée sur un chiffre.
+
+## Qu'est-ce que Seeckr ?, suivi
+
+Question 10 du panel, reposée hors panel après la publication du guide « Qu'est-ce que Seeckr ? », en conversation neuve. On relève si l'assistant identifie Seeckr, avec quelle description, et s'il cite seeckr.fr.
+
+### 2026-10-28 (quelques heures après la publication : la page n'est sans doute pas encore indexée)
+
+Référence du 2 octobre : ChatGPT ne connaît pas Seeckr, Gemini le confond avec Seekr (0 sur 2).
+
+| Assistant  | Seeckr identifié | Description et sources |
+| ---------- | ---------------- | ---------------------- |
+| ChatGPT    | non              | Ne trouve pas Seeckr. Propose Seckr (santé), Seekr (application pour malvoyants) et Ceekr (développement personnel), puis demande où l'on en a entendu parler. |
+| Gemini     | oui              | Décrit correctement un assistant IA pour sites e-commerce qui pose des questions comme un vendeur en boutique, par opposition aux chatbots passifs. Ne confond plus avec Seekr, mais signale Zeekr (marque automobile). Aucune source citée. |
+| Perplexity | oui              | Décrit une entreprise française de Nantes qui améliore la recherche produit. Seule source : la page LinkedIn de Seeckr, pas seeckr.fr. Reprend « une amélioration annoncée pouvant atteindre +15 % » depuis cette page. Distingue Seeckr de Seekr (seekr.com). |
+
+Constats : deux assistants sur trois identifient désormais Seeckr, contre zéro le 2 octobre. La cause n'est pas établie : la page du jour est trop récente pour l'expliquer, et la page LinkedIn, la page d'accueil et les guides précédents ont pu suffire. Perplexity reprend le « +15 % » publié sur LinkedIn : un chiffre qui sort d'une page de Seeckr se retrouve dans les assistants (voir `seo/backlog.md`). À reposer dans une semaine : succès si seeckr.fr devient une source citée, et si ChatGPT identifie Seeckr.

@@ -18,6 +18,7 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 | Échéance                | Quoi                                                                                                              |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | 2026-11-04              | TrouveMonSaaS : relance suspendue tant qu'Amandine n'a pas dit si Solutio est un concurrent                       |
+| 2026-11-04              | reposer « Qu'est-ce que Seeckr ? » aux trois assistants : seeckr.fr est-il une source citée, ChatGPT identifie-t-il Seeckr ? Référence du 2026-10-28 : Gemini et Perplexity oui, ChatGPT non |
 | réponse d'Amandine      | FranceSaaS (coédité par l'agence web Click & Digital) : concurrent ? Pas de badge sur seeckr.fr avant sa réponse |
 | réponse d'Amandine      | Comparateur IA (NEWP, profil de Digital Applied) : garder la fiche Standard déjà soumise ou la retirer ? Tant qu'elle n'a pas répondu, aucune autre étape |
 | prochaine séance        | relever « Qu'est-ce que Seeckr ? » (Perplexity d'abord) une fois la page indexée ; relevé « conseiller produit » hebdo (dernier : 2026-10-28) : le guide « Quel conseiller produit installer » sort-il ? |
