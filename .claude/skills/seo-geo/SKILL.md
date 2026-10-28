@@ -35,6 +35,7 @@ Une seule exception : les fonctionnalités de la section « Engagements d'Amandi
   - `seo/backlog.md` : requêtes ciblées et statut de chaque guide.
   - `seo/panel-geo.md` : questions du panel et relevés mensuels.
   - `seo/mentions.md` : sites visés, contacts, réponses.
+  - `seo/journal.md` : les décisions en cours, les rappels datés et la ligne de chaque séance. Lis-le à l'ouverture, écris-y à la fin.
   - `seo/fiche-annuaire.md` : les champs validés pour toute fiche d'annuaire (accroche, description longue, tarification). À reprendre tels quels.
   - `seo/README.md` : la fiche de démarrage de Laureline. Ne la restate pas, renvoie-y.
 
@@ -85,4 +86,5 @@ Avant de déclarer une tâche terminée :
 - [ ] Chaque fait publié a une source lue dans la séance, et chaque URL répond (`curl -o /dev/null -s -w "%{http_code}" -L <url>`).
 - [ ] Le texte livré ne contient aucun tiret long : `grep -o '[—–―‒−]' <fichier> | wc -l` renvoie `0`.
 - [ ] Le fichier de `seo/` concerné est à jour, puis commité et poussé avec le reste.
+- [ ] `seo/journal.md` a la ligne de la séance, et ses décisions et rappels sont à jour.
 - [ ] Laureline a reçu, en trois lignes au plus, ce qui a été fait et ce qui vient ensuite.

@@ -12,6 +12,10 @@ Vérifie en silence, et ne parle à Laureline que de ce qui manque :
 
 `git pull --rebase`, puis `pnpm install` si `pnpm-lock.yaml` a changé. En cas de conflit, applique le point d'arrêt de SKILL.md.
 
+## 2 bis. Relire le journal
+
+Lis `seo/journal.md` : les décisions en cours, les rappels dont l'échéance est passée ou tombe aujourd'hui, la dernière séance. Dis à Laureline en une phrase où on en est. Les décisions en cours passent avant le plan de l'étape 4. Regarde aussi les fiches d'annuaire soumises et sans réponse (statut `envoyé` dans `seo/mentions.md`) : si l'échéance du journal est passée, propose de vérifier qu'elles sont publiées.
+
 ## 3. Prendre les nouvelles de Seeckr
 
 Si la date de la ligne « Dernières nouvelles de Seeckr » n'est pas de cette semaine, donne à Laureline le prompt pour le projet Seeckr (voir les relais dans SKILL.md). Il demande ce qui a changé depuis la date de la ligne « Dernières nouvelles de Seeckr » en tête de `seo/backlog.md` : fonctionnalités, secteurs, statistiques. Chaque nouveauté publiable devient une requête dans le backlog, ou une mise à jour à proposer à Amandine pour une page existante. Remplace ensuite la date de la ligne « Dernières nouvelles de Seeckr » par celle du jour.
@@ -20,7 +24,7 @@ S'il reste moins de quatre requêtes `à faire` dans le backlog, donne-lui aussi
 
 ## 4. Proposer le programme
 
-Une séance dure une heure, pas plus. Note l'heure de début avec `date`. Chaque séance suit le même plan :
+Une séance dure une heure, pas plus. Note l'heure de début avec `date`. Sauf décision contraire du journal, chaque séance suit le même plan :
 
 | Temps  | Tâche                                                                                        |
 | ------ | -------------------------------------------------------------------------------------------- |
@@ -38,3 +42,8 @@ Annonce le programme en trois lignes au plus, puis enchaîne. À 50 minutes de s
 ## 5. Relever « conseiller produit »
 
 Si la section « Conseiller produit, suivi hebdo » de `seo/panel-geo.md` n'a pas de relevé cette semaine, fais poser à Laureline, dans ChatGPT, Gemini et Perplexity, en conversation neuve : « Quel conseiller produit installer sur mon site e-commerce ? ». Note dans cette section (crée-la la première fois) la date, si Seeckr sort et à quel rang, les outils et les sources cités. Chaque source citée qui ne mentionne pas Seeckr devient une cible de `seo/mentions.md`, en tête de liste.
+
+## 6. Clore la séance
+
+Ajoute une ligne à la section « Séances » de `seo/journal.md` : la date, le prénom, ce qui a été fait, le prochain pas. Mets à jour les « Décisions en cours » (une décision prise dans la séance s'y ajoute, une décision dépassée s'en retire) et les « Rappels » (une relance ou une vérification promise y porte sa date). Commite et pousse avec le reste.
+
