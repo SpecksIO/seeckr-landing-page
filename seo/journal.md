@@ -20,7 +20,7 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 | 2026-11-04              | TrouveMonSaaS : relance suspendue tant qu'Amandine n'a pas dit si Solutio est un concurrent                       |
 | réponse d'Amandine      | FranceSaaS (coédité par l'agence web Click & Digital) : concurrent ? Pas de badge sur seeckr.fr avant sa réponse |
 | réponse d'Amandine      | Comparateur IA (NEWP, profil de Digital Applied) : garder la fiche Standard déjà soumise ou la retirer ? Tant qu'elle n'a pas répondu, aucune autre étape |
-| prochaine séance        | relevé « conseiller produit » hebdo (dernier : 2026-10-28) : le guide « Quel conseiller produit installer » sort-il ? |
+| prochaine séance        | relever « Qu'est-ce que Seeckr ? » (Perplexity d'abord) une fois la page indexée ; relevé « conseiller produit » hebdo (dernier : 2026-10-28) : le guide « Quel conseiller produit installer » sort-il ? |
 | réponse d'Amandine      | message regroupé envoyé le 2026-10-28 : questions de la section « Pour Amandine » de `seo/backlog.md` ; à lire dès que la réponse arrive |
 | à lire dans le navigateur | Capterra (espace éditeurs), AlternativeTo : la page d'inscription dit-elle gratuit ou payant ? Les pages d'accueil ne le disent pas |
 | 2026-11-04              | relancer Le Panier (e-mail envoyé le 2026-10-28 à contact@lepanier.io), une seule relance |
@@ -30,5 +30,7 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 | 2026-11-04              | Loyoly Talks : si la connexion LinkedIn de Joseph est acceptée, lui écrire le message ; sinon une seule relance |
 
 ## Séances
+
+- 2026-10-28, Laureline (suite). Exception à la décision sur les guides, validée par Laureline : page « Qu'est-ce que Seeckr ? » publiée, pour corriger l'échec mesuré à la question 10 du panel (ChatGPT ne connaît pas Seeckr, Gemini répond Seekr). Elle ne nomme pas l'éditeur de Seeckr (demande de Laureline). Elle nomme les deux homonymes d'après leurs pages lues le 2026-10-28. Prochain pas : demander l'indexation dans Search Console, puis poser « Qu'est-ce que Seeckr ? » à Perplexity (quelques jours), ChatGPT et Gemini (une à deux semaines). Succès : une réponse qui décrit Seeckr sans le confondre avec Seekr.
 
 - 2026-10-28, Laureline. Diagnostic : trois guides indexés sur quatre (le quatrième en demande d'indexation), robots.txt et sitemap en ordre, Seeckr cité nulle part au relevé du jour. Chiffres Algimouss ajoutés aux trois guides qui n'en avaient pas. E-mail envoyé à TrouveMonSaaS. Fiche Comparateur IA soumise en Standard, en modération. Fiche type et description validée enregistrées dans `seo/fiche-annuaire.md`. Prochain pas : envoyer le message à Amandine, lire Toolpilot.ai et SaaSworthy, relancer TrouveMonSaaS le 2026-11-04. Même séance, plus tard : e-mail envoyé à Le Panier, demande de connexion LinkedIn envoyée à Joseph (Loyoly Talks), message regroupé envoyé à Amandine, Toolpilot.ai écarté (lien retour obligatoire), SaaSworthy qualifié (niveau Standard gratuit).
