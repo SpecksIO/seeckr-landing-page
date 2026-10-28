@@ -16,6 +16,7 @@ recherche : la commande `guide` s'en charge, et retire du backlog une requête q
 | Meilleurs outils IA pour augmenter les ventes d'un e-commerce         | toutes               | à faire  |            |                                                                      |
 | Quel outil pour conseiller les visiteurs d'un site e-commerce         | toutes               | à faire  |            |                                                                      |
 | Quelle alternative à Dialog pour conseiller ses visiteurs             | toutes               | publié   | 2026-10-28 | <https://seeckr.fr/guides/alternative-a-dialog>                      |
+| Quelle alternative à Octane AI pour conseiller ses visiteurs          | toutes               | publié   | 2026-10-28 | <https://seeckr.fr/guides/alternative-a-octane-ai>                   |
 | Quelle alternative à iAdvize pour conseiller ses visiteurs            | toutes               | à faire  |            |                                                                      |
 | Quel assistant d'achat IA installer sur son site e-commerce           | toutes               | à faire  |            |                                                                      |
 | Quel conseiller produit installer sur son site e-commerce             | toutes               | publié   | 2026-10-28 | <https://seeckr.fr/guides/quel-conseiller-produit-installer>         |
