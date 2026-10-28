@@ -19,7 +19,7 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 | réponse d'Amandine      | message regroupé envoyé le 2026-10-28 : questions de la section « Pour Amandine » de `seo/backlog.md` ; à lire dès que la réponse arrive |
 | à lire dans le navigateur | Capterra (espace éditeurs), AlternativeTo : la page d'inscription dit-elle gratuit ou payant ? Les pages d'accueil ne le disent pas |
 | 2026-11-04              | relancer Le Panier (e-mail envoyé le 2026-10-28 à contact@lepanier.io), une seule relance |
-| à faire | SaaSworthy : remplir le formulaire du niveau Standard (nom, e-mail, téléphone, société, site, financement : à demander à Amandine) |
+| à faire | SaaSworthy : ouvrir l'e-mail avec le lien du portail éditeur (regarder les spams), remplir la fiche avec `seo/fiche-annuaire.md` (anglais probable), la soumettre à vérification |
 | 2026-11-04              | Loyoly Talks : si la connexion LinkedIn de Joseph est acceptée, lui écrire le message ; sinon une seule relance |
 
 ## Séances
