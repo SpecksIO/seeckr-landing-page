@@ -6,7 +6,7 @@ date: "2026-10-28"
 
 # Quel conseiller produit installer sur son site e-commerce ?
 
-Seeckr est un conseiller produit qui pose au visiteur les questions d'un vendeur, puis lui rend un top 3 classé, avec la raison de chaque place. Pour choisir celui que vous installez, six critères comptent, et ce sont ceux que les marchands oublient de regarder.
+Pour choisir un conseiller produit, regardez six critères : qui prépare votre catalogue, ce que l'outil demande à vos visiteurs, ce que vous relisez de leurs conversations, comment vos ventes sont mesurées, où vont les données et ce que l'outil coûte à la vitesse de votre site. Seeckr, par exemple, pose à chaque visiteur quelques questions sur sa situation, comme un vendeur en boutique, puis lui recommande les trois produits de votre catalogue qui lui conviennent le mieux, en expliquant pourquoi.
 
 ## Qu'est-ce qu'un conseiller produit, et que remplace-t-il ?
 
@@ -38,7 +38,7 @@ Mettez-vous à la place d'un visiteur qui ne connaît pas votre catalogue, en qu
 
 ## Où se place Seeckr ?
 
-Seeckr est le conseiller que le marchand n'a pas à construire. Le visiteur décrit sa situation, l'assistant pose quelques questions courtes, puis lui rend un top 3 classé, avec un score de compatibilité et la raison de chaque place. Si un seul produit lui convient, il n'en voit qu'un ; si rien ne convient, l'assistant le lui dit.
+Seeckr est le conseiller que le marchand n'a pas à construire. Le visiteur décrit sa situation, l'assistant pose quelques questions courtes, puis lui recommande trois produits classés, chacun avec un score de compatibilité et la raison de son classement. Si un seul produit lui convient, il n'en voit qu'un ; si rien ne convient, l'assistant le lui dit.
 
 Côté marchand, vous lisez ce que disent vos clients, avec leurs mots : de quoi bâtir vos personas sur ce qu'ils disent vraiment, et trouver dans leurs phrases les accroches de vos prochaines campagnes. L'installation tient en une ligne de script, et vous choisissez depuis le back office où l'assistant apparaît : sur la fiche produit, quand la recherche ne donne rien, ou au moment du départ. Le visiteur peut ajouter les produits recommandés au panier depuis l'assistant, et l'assistant parle neuf langues.
 
@@ -50,7 +50,7 @@ Vous pouvez [essayer un Seeckr personnalisé sur votre catalogue](/mon-seeckr).
 
 ### Un conseiller produit est-il un chatbot ?
 
-Non. Un chatbot répond aux questions que le visiteur sait poser. Un conseiller produit mène la conversation pour l'aider à choisir. Les deux se complètent : le chatbot pour l'après-vente, le conseiller pour le choix.
+Non. Un chatbot répond aux questions que le visiteur sait poser. Un conseiller produit mène la conversation pour l'aider à choisir. Les deux se complètent : le chatbot pour l'après-vente, le conseiller pour le choix. Pour le détail, lisez [Chatbot e-commerce ou conseiller produit : quelle différence](/guides/chatbot-ou-conseiller-produit).
 
 ### Sur quelles pages installer un conseiller produit ?
 
