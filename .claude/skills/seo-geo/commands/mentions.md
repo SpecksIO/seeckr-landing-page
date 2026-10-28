@@ -10,7 +10,7 @@ Dans `seo/mentions.md`, repère les contacts `envoyé` depuis 7 jours ou plus. R
 
 Seeckr n'a pas de budget pour être cité : seules les cibles gratuites comptent. Vérifie sur la page même qu'aucun paiement n'est demandé (inscription, fiche mise en avant, article sponsorisé, tribune ou passage en podcast facturés). Une cible payante est notée `payant` et on ne la contacte pas.
 
-Vérifie aussi que la cible n'est pas un concurrent : un éditeur ou une agence qui vend un assistant, un chatbot, un quiz ou un conseiller produit pour l'e-commerce, une agence qui saurait en construire un pour ses clients (agence IA, agence qui développe des chatbots ou des sites sur mesure), ou un comparatif publié par l'un d'eux. Lis sa page d'accueil et son offre, pas seulement l'article. Un concurrent est noté `concurrent` et on ne lui écrit jamais. Dans le doute, Amandine tranche avant tout message.
+Vérifie aussi que la cible n'est pas un concurrent : un éditeur ou une agence qui vend un assistant, un chatbot, un quiz ou un conseiller produit pour l'e-commerce, une agence qui saurait en construire un pour ses clients (agence IA, agence qui développe des chatbots ou des sites sur mesure), ou un comparatif publié par l'un d'eux. Amandine a posé la règle le 2026-10-28 : on ne contacte aucune entreprise ni agence capable de déployer un « Seeckr bis » ou une solution qui ressemble (une agence web qui développe sur mesure en fait partie). Digital Applied est tranché : concurrent. Lis sa page d'accueil et son offre, pas seulement l'article. Un concurrent est noté `concurrent` et on ne lui écrit jamais. Dans le doute, Amandine tranche avant tout message.
 
 Commence par les cibles déjà notées `à contacter`, puis cherche, par ordre de rendement :
 

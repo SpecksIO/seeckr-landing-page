@@ -9,12 +9,14 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 - 2026-10-28, Laureline : pas de nouveaux guides tant qu'on ne sait pas quel effet les guides déjà publiés ont sur les citations de Seeckr. Priorité aux profils et mentions externes (annuaires), au nom Seeckr (il existe deux homonymes : Seekr, société américaine, et l'application Shopify Seekr) et aux ajouts dans les guides existants. Reprise des guides quand le relevé « conseiller produit » ou le panel de novembre montre un effet, ou quand un guide s'appuie sur un chiffre publiable.
 - 2026-10-28, Laureline : le « +15 % de ventes » sert à la communication de Seeckr, mais il n'est pas publiable sur seeckr.fr ni dans un annuaire : il n'a ni source ni mesure, et il peut évoluer avec les premiers clients e-commerce. Il se publie quand une mesure réelle existe, dans une page de données datée.
 
+- 2026-10-28, Amandine : on ne contacte aucune entreprise ni agence capable de déployer un « Seeckr bis » ou une solution qui ressemble. Digital Applied est un concurrent. Les badges d'annuaires sur seeckr.fr sont acceptés (seulement pour des éditeurs non concurrents). Les URLs des fiches d'annuaire en ligne peuvent s'ajouter à `company.profiles`.
+
 ## Rappels
 
 | Échéance                | Quoi                                                                                                              |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
-| 2026-11-04              | relancer TrouveMonSaaS (e-mail envoyé le 2026-10-28), une seule relance                                           |
-| 2026-11-07              | vérifier que la fiche Comparateur IA (niveau Standard, soumise le 2026-10-28) est publiée                         |
+| 2026-11-04              | TrouveMonSaaS : relance suspendue tant qu'Amandine n'a pas dit si Solutio est un concurrent                       |
+| réponse d'Amandine      | Comparateur IA (NEWP, profil de Digital Applied) : garder la fiche Standard déjà soumise ou la retirer ? Tant qu'elle n'a pas répondu, aucune autre étape |
 | prochaine séance        | relevé « conseiller produit » hebdo (dernier : 2026-10-28) : le guide « Quel conseiller produit installer » sort-il ? |
 | réponse d'Amandine      | message regroupé envoyé le 2026-10-28 : questions de la section « Pour Amandine » de `seo/backlog.md` ; à lire dès que la réponse arrive |
 | à lire dans le navigateur | Capterra (espace éditeurs), AlternativeTo : la page d'inscription dit-elle gratuit ou payant ? Les pages d'accueil ne le disent pas |
