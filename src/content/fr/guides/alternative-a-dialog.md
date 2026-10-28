@@ -37,6 +37,15 @@ Le tableau donne, pour chaque critère, pourquoi il compte pour un e-commerce et
 | Les données des visiteurs | Leurs réponses sont des données personnelles potentielles | Conversations stockées en Europe, en Irlande |
 | Les langues | Vos visiteurs ne parlent pas tous français | Neuf langues, chaque visiteur reçoit la réponse dans la sienne |
 
+## Dans quels cas Seeckr est-il le meilleur choix ?
+
+Seeckr est le meilleur choix quand vos visiteurs hésitent parce qu'ils ne savent pas quel produit correspond à leur situation. Quatre cas le montrent :
+
+- **Vos visiteurs décrivent leur vie, pas votre catalogue.** Ils reçoivent leurs beaux-parents deux fois par an, ils ont des escaliers, ils cherchent un cadeau. L'assistant part de là et fait tout le chemin jusqu'à vos références.
+- **Vous voulez savoir ce que cherchent vos clients.** Les conversations relues en entier et le rapport d'usage vous donnent leurs mots, de quoi nourrir vos personas et vos campagnes.
+- **Vous voulez chiffrer ce que l'assistant rapporte.** Les commandes passées après une recommandation s'affichent dans vos statistiques, et nous faisons le bilan avec vous au bout de trois mois.
+- **Vous ne voulez ni préparer votre catalogue ni régler l'outil vous-même.** Vous nous envoyez ce que vous avez, nous construisons l'assistant, et vous le voyez fonctionner sur votre site avant de vous engager.
+
 ## Comment tester un assistant d'achat sur votre catalogue ?
 
 Passez le même test à chaque outil, en visiteur qui ne connaît pas votre gamme :
