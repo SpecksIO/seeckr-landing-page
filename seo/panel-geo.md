@@ -114,3 +114,14 @@ Référence du 2 octobre : ChatGPT ne connaît pas Seeckr, Gemini le confond ave
 | Perplexity | oui              | Décrit une entreprise française de Nantes qui améliore la recherche produit. Seule source : la page LinkedIn de Seeckr, pas seeckr.fr. Reprend « une amélioration annoncée pouvant atteindre +15 % » depuis cette page. Distingue Seeckr de Seekr (seekr.com). |
 
 Constats : deux assistants sur trois identifient désormais Seeckr, contre zéro le 2 octobre. La cause n'est pas établie : la page du jour est trop récente pour l'expliquer, et la page LinkedIn, la page d'accueil et les guides précédents ont pu suffire. Perplexity reprend le « +15 % » publié sur LinkedIn : un chiffre qui sort d'une page de Seeckr se retrouve dans les assistants (voir `seo/backlog.md`). À reposer dans une semaine : succès si seeckr.fr devient une source citée, et si ChatGPT identifie Seeckr.
+
+### 2026-10-28, après-midi : deux questions posées à Perplexity seul
+
+Relevé hors panel, en conversation neuve. La question 2 du panel et la requête de la piste « assistant d'achat IA ».
+
+| Question | Seeckr cité | Outils et sources |
+| -------- | ----------- | ----------------- |
+| « Comment aider un visiteur qui ne sait pas quel produit choisir sur ma boutique en ligne ? » (question 2) | non | Sources : deux pages d'éditeurs, Epoq (articles en français sur le conseiller produit, la navigation et l'expérience d'achat) et iAdvize (blog sur l'assistant shopping IA). Aucun outil nommé. Recommande de commencer par un quiz, puis un assistant IA si le catalogue est complexe. |
+| « Quel assistant d'achat IA installer sur mon site e-commerce ? » | **oui, deux fois** | Tableau : Rep AI, Tidio Lyro, Dialog, Doofinder, Luigi's Box, Gorgias, Bloomreach Loomi, Algolia Agent Studio. Seeckr apparaît hors tableau : « particulièrement pertinent si votre problème principal est que les clients n'arrivent pas à formuler leur besoin avec le vocabulaire de votre catalogue », puis, dans le choix par défaut, « besoin de guidage produit très structuré : envisagez Seeckr ». Les passages sur Seeckr n'ont pas de source propre : le seul lien posé en fin de phrase renvoie à doofinder.com. |
+
+Constats : c'est la première fois que Seeckr est nommé pour une question de catégorie, avec le bon positionnement (le visiteur ne sait pas formuler son besoin, l'assistant pose des questions). Un seul assistant, une seule réponse, hors panel : à confirmer. Sur la question 2, Perplexity cite bien des sources, contrairement à ChatGPT et Gemini au relevé du 2 octobre : le terrain n'est donc pas vide pour un assistant qui cherche sur le web. Perplexity décrit encore Seeckr comme un « moteur conversationnel », le vocabulaire de la page LinkedIn. Source de l'information sur Seeckr : inconnue, à regarder dans l'onglet des sources de la réponse.
