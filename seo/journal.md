@@ -25,6 +25,7 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 | 2026-11-04              | relancer BotRank.ai (e-mail envoyé le 2026-10-28 à contact@botrank.ai), une seule relance |
 | réponse d'Amandine      | FranceSaaS (coédité par l'agence web Click & Digital) : concurrent ? Pas de badge sur seeckr.fr avant sa réponse |
 | réponse d'Amandine      | Comparateur IA (NEWP, profil de Digital Applied) : garder la fiche Standard déjà soumise ou la retirer ? Tant qu'elle n'a pas répondu, aucune autre étape |
+| 2026-11-04              | reposer « Quelle alternative à Dialog pour conseiller les visiteurs de mon site e-commerce ? » aux trois assistants (conversation neuve, sans compte). Référence du 2026-10-28 : Seeckr absent chez ChatGPT et Gemini, Perplexity à relever. Page indexée ? |
 | prochaine séance        | relever « Qu'est-ce que Seeckr ? » (Perplexity d'abord) une fois la page indexée ; relevé « conseiller produit » hebdo (dernier : 2026-10-28) : le guide « Quel conseiller produit installer » sort-il ? |
 | réponse d'Amandine      | message regroupé envoyé le 2026-10-28 : questions de la section « Pour Amandine » de `seo/backlog.md` ; à lire dès que la réponse arrive |
 | à lire dans le navigateur | Capterra (espace éditeurs), AlternativeTo : la page d'inscription dit-elle gratuit ou payant ? Les pages d'accueil ne le disent pas |

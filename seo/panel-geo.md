@@ -139,3 +139,15 @@ Constats : la fiche **apps.shopify.com/seekr** (application Shopify de recherche
 ### 2026-10-28 : mise en garde sur tous les relevés du jour
 
 Interrogée sur la source de ce qu'elle disait de Seeckr, Perplexity a répondu qu'une partie de son contexte « provenait aussi de l'historique de conversation » de Laureline, et pas seulement d'une page web. Les relevés du 28 octobre ont été faits depuis des comptes connectés : les citations de Seeckr de ce jour (Perplexity à « assistant d'achat IA », Gemini et Perplexity à « Qu'est-ce que Seeckr ? ») peuvent donc venir de la mémoire des comptes et ne comptent pas comme mesure. Le relevé du 2026-11-04 se fait en navigation privée, sans être connecté. Pour mémoire, interrogé précisément, Perplexity retrouve seeckr.fr (accueil et mentions légales) et la page LinkedIn de Seeckr.
+
+### 2026-10-28 : relevé « alternative à Dialog » (référence avant indexation)
+
+Question posée en conversation neuve : « Quelle alternative à Dialog pour conseiller les visiteurs de mon site e-commerce ? ». Le guide « Quelle alternative à Dialog » venait d'être publié, sans indexation : c'est le point de départ. ChatGPT a été interrogé sans compte (fenêtre privée). Gemini : connexion non précisée. Perplexity : à poser.
+
+| Assistant  | Seeckr | Rang | Outils cités                                                                                  | Sources citées                                                        |
+| ---------- | ------ | ---- | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- |
+| ChatGPT    | non    |      | Wavize, Klozio, iAdvize, Gorgias, Shopify Inbox                                               | wavize.com, klozio.fr, iadvize.com, gorgias.com, shopify.com/inbox    |
+| Gemini     | non    |      | Heyday, Octane AI, « Repocket » (à vérifier, probablement une erreur), Quiz Kit, involve.me, Algolia, Bloomreach | aucune                                              |
+| Perplexity | à relever |   |                                                                                               |                                                                       |
+
+Constats : Seeckr n'apparaît pas, comme attendu avant indexation. ChatGPT répond avec une liste de cinq éditeurs, chacun appuyé sur le site officiel, et termine par trois questions (plateforme, besoin, budget). Gemini décrit Dialog comme un assistant d'achat IA conversationnel et répond par trois familles (conseillers IA, quiz, moteurs de découverte), sans source. Ni ChatGPT ni Gemini ne citent askdialog.com. À relever au panel du 4 novembre : la page seeckr.fr/guides/alternative-a-dialog est-elle indexée, et Seeckr sort-il ?
