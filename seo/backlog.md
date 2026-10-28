@@ -17,7 +17,7 @@ recherche : la commande `guide` s'en charge, et retire du backlog une requête q
 | Quel outil pour conseiller les visiteurs d'un site e-commerce         | toutes               | à faire  |            |                                                                      |
 | Quelle alternative à iAdvize pour conseiller ses visiteurs            | toutes               | à faire  |            |                                                                      |
 | Quel assistant d'achat IA installer sur son site e-commerce           | toutes               | à faire  |            |                                                                      |
-| Quel conseiller produit installer sur son site e-commerce             | toutes               | en cours (Laureline) |            |                                                                      |
+| Quel conseiller produit installer sur son site e-commerce             | toutes               | publié   | 2026-10-28 | <https://seeckr.fr/guides/quel-conseiller-produit-installer>         |
 | Comment créer un guide d'achat interactif sur son site e-commerce     | toutes               | à faire  |            |                                                                      |
 | Qu'est-ce que la vente guidée en e-commerce                           | toutes               | à faire  |            |                                                                      |
 | Comment conseiller un client en ligne comme en boutique               | toutes               | à faire  |            |                                                                      |
