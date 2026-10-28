@@ -6,7 +6,7 @@ date: "2026-10-28"
 
 # Qu'est-ce que Seeckr ?
 
-Seeckr est un assistant IA pour sites e-commerce : il pose quelques questions à chaque visiteur, comme un vendeur en boutique, puis lui recommande les produits de votre catalogue qui répondent à son besoin. Son nom s'écrit avec « ck » (S, e, e, c, k, r) et ne doit pas être confondu avec Seekr, une entreprise d'IA pour les gouvernements et les grandes entreprises, ni avec Seekr, une application Shopify de recherche.
+Seeckr est un assistant IA pour sites e-commerce : il pose quelques questions à chaque visiteur, comme un vendeur en boutique, puis lui recommande les produits de votre catalogue qui répondent à son besoin. Il ne doit pas être confondu avec Seekr, une entreprise d'IA pour les gouvernements et les grandes entreprises, ni avec Seekr, une application Shopify de recherche.
 
 ## Que fait Seeckr ?
 
