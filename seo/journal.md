@@ -17,7 +17,8 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 | 2026-11-07              | vérifier que la fiche Comparateur IA (niveau Standard, soumise le 2026-10-28) est publiée                         |
 | prochaine séance        | relevé « conseiller produit » hebdo (dernier : 2026-10-28) : le guide « Quel conseiller produit installer » sort-il ? |
 | réponse d'Amandine      | message regroupé rédigé le 2026-10-28, à envoyer : questions de la section « Pour Amandine » de `seo/backlog.md`    |
-| à lire dans le navigateur | Toolpilot.ai et SaaSworthy : page d'inscription (gratuit ou non), mon outil n'a pas pu les lire                  |
+| à lire dans le navigateur | Toolpilot.ai, SaaSworthy, Capterra (espace éditeurs), AlternativeTo : inscription gratuite ou non, mon outil n'a pas pu les lire |
+| à trouver dans le navigateur | LinkedIn du CEO de Loyoly (Loyoly Talks) et page de lepanier.io : un contact vérifié pour proposer un passage au podcast |
 
 ## Séances
 
