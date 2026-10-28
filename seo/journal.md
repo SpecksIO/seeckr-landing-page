@@ -11,6 +11,8 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 
 - 2026-10-28, Amandine : on ne contacte aucune entreprise ni agence capable de déployer un « Seeckr bis » ou une solution qui ressemble. Digital Applied est un concurrent. Les badges d'annuaires sur seeckr.fr sont acceptés (seulement pour des éditeurs non concurrents). Les URLs des fiches d'annuaire en ligne peuvent s'ajouter à `company.profiles`.
 
+- 2026-10-28, Laureline : le temps de Laureline ne se gaspille pas sur une piste qui s'arrête en cours de route. Avant de lui faire ouvrir un site, vérifier qu'il est gratuit, sans badge ni lien retour, non concurrent, sans connexion Google ou LinkedIn personnelle, avec un contact vérifié (contrôle ajouté à `commands/mentions.md`). Cinq pistes ont échoué le 2026-10-28 faute de ces contrôles : Comparateur IA, SaaSworthy, Crunchbase, FranceSaaS, Toolpilot.
+
 ## Rappels
 
 | Échéance                | Quoi                                                                                                              |

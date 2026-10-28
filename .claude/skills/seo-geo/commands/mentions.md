@@ -21,6 +21,8 @@ Commence par les cibles déjà notées `à contacter`, puis cherche, par ordre d
 
 Pour chaque cible, lis la page et note dans `seo/mentions.md` l'URL (testée), le type, le contact trouvé (e-mail ou profil LinkedIn de l'auteur), et pourquoi Seeckr y a sa place. Une cible sans contact vérifiable reste notée, avec `contact introuvable`.
 
+**Avant d'envoyer Laureline sur un site, passe la cible par ces cinq contrôles, et ne lui donne que celle qui les réussit tous :** l'inscription est gratuite, aucun badge ni lien retour n'est exigé, l'éditeur n'est pas un concurrent au sens de la règle d'Amandine (lis ses mentions légales et son offre), aucune connexion Google ou LinkedIn personnelle n'est demandée, et le contact est vérifié. Si un contrôle échoue ou ne peut pas être fait (page illisible), note la cible avec la raison et ne lui fais rien ouvrir. Le temps de Laureline ne se gaspille pas sur une piste qui s'arrête à la troisième page.
+
 ## 3. Rédiger
 
 Ne rédige un message que pour une cible qui a un e-mail ou un profil LinkedIn vérifié, et qui n'est ni `payant` ni `concurrent`. Sans e-mail ni LinkedIn (formulaire de contact seul, auteur anonyme), on ne propose aucun message : la cible reste `contact introuvable`. Une fiche d'annuaire, elle, se crée par son formulaire d'inscription.
