@@ -71,6 +71,8 @@ Il lui rend ensuite un top 3 classé, avec un score de compatibilité et la rais
 
 Chaque conversation reste lisible dans votre back office, avec les mots de vos clients, et le catalogue est préparé et tenu à jour pour vous. Vous collez une ligne de script, et vous choisissez depuis le back office où l'assistant apparaît : sur la fiche produit, quand la recherche ne donne rien, ou au moment du départ.
 
+Chez Algimouss, dont le site ne vend rien en ligne, neuf visiteurs sur dix qui répondent à la première question vont au bout de la conversation. Le bon produit est trouvé en 1 min 32 s en médiane, en cinq réponses du visiteur. Ces chiffres, mesurés en moins de deux mois, portent sur le conseil et non sur des ventes. [Le détail est sur la page du cas client](/cas-clients/algimouss).
+
 Vous pouvez [essayer un Seeckr personnalisé sur votre catalogue](/mon-seeckr). Pour la différence avec un chatbot de service client, lisez aussi [Chatbot e-commerce ou conseiller produit : quelle différence](/guides/chatbot-ou-conseiller-produit).
 
 ## Questions fréquentes
