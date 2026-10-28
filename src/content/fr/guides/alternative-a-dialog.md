@@ -1,5 +1,5 @@
 ---
-titre: "Quelle alternative à Dialog pour conseiller ses visiteurs"
+titre: "Alternative à Dialog : le conseil qui part du quotidien"
 description: "Dialog et Seeckr guident le visiteur vers le bon produit. Seeckr fait le premier pas, comme un vendeur en boutique, et le conduit jusqu'à l'achat."
 date: "2026-10-28"
 ---
