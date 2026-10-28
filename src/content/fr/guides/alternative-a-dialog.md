@@ -38,22 +38,6 @@ Seeckr apporte quatre choses : un conseil qui part de la situation du visiteur,
 
 Vos produits prioritaires passent devant sans fausser le conseil : ils ne devancent un autre produit que si les deux conviennent autant l'un que l'autre à ce visiteur.
 
-## Quels critères pour choisir un assistant d'achat ?
-
-Le tableau donne, pour chaque critère, pourquoi il compte pour un e-commerce et ce que fait Seeckr. Posez les mêmes questions à Dialog, ou à tout autre assistant.
-
-| Critère | Pourquoi il compte | Ce que fait Seeckr |
-| ------- | ------------------ | ------------------ |
-| Qui fait le premier pas | La plupart des visiteurs n'ont pas de question à poser | L'assistant vient vers eux, avec la première question déjà posée, au moment où ils hésitent ou s'apprêtent à partir |
-| Les questions posées au visiteur | Un visiteur qui hésite ne sait pas répondre à des questions sur votre catalogue : il sait ce qu'il vit | Des questions courtes, personnalisées à sa situation, comme un vendeur qui écoute : l'assistant cherche ce à quoi il tient et ce qu'il est prêt à lâcher |
-| Ce que le visiteur reçoit | Un visiteur convaincu passe à l'action | Le ou les produits dont il a besoin, classés quand il y en a plusieurs, avec pour chacun un score de compatibilité et la raison de son classement, et l'ajout au panier depuis l'assistant |
-| Les données sur vos clients | Leurs mots valent plus que des clics | Chaque conversation relisible en entier, un rapport d'usage, les besoins exprimés et les produits les plus recommandés |
-| Les ventes mesurées | Sans mesure, on ne sait pas si l'outil rapporte | Les commandes passées après une recommandation, visibles dans vos statistiques, et un bilan chiffré avec vous au bout de trois mois |
-| Le catalogue | Si l'e-commerçant relie lui-même chaque produit aux réponses, la maintenance retombe sur lui | Pris en charge : vous envoyez le format que vous avez déjà, nous le préparons et le tenons à jour à chaque évolution de votre gamme |
-| L'installation et le site | Un script lourd ralentit toutes les pages | Une ligne de script sur Shopify, WooCommerce, PrestaShop ou un site sur mesure, 18 Ko compressés, chargés après la page, aucun cookie déposé |
-| Les données des visiteurs | Leurs réponses sont des données personnelles potentielles | Conversations stockées en Europe, en Irlande |
-| Les langues | Vos visiteurs ne parlent pas tous français | Neuf langues, chaque visiteur reçoit la réponse dans la sienne |
-
 ## Dans quels cas Seeckr est-il le meilleur choix ?
 
 Seeckr est le meilleur choix quand vos visiteurs hésitent parce qu'ils ne savent pas quel produit correspond à leur situation. Quatre cas le montrent :
@@ -92,6 +76,10 @@ Le prix dépend de la taille de votre catalogue, des fonctionnalités que vous c
 ### Peut-on essayer Seeckr avant de s'engager ?
 
 Oui. Nous construisons votre assistant sur votre catalogue et vous le voyez fonctionner sur votre site. C'est gratuit et il n'y a rien à installer : il nous faut seulement l'adresse de votre site, votre e-mail et votre téléphone professionnels.
+
+### Où sont stockées les conversations, et le script ralentit-il le site ?
+
+Les conversations sont stockées en Europe, en Irlande, et le script ne dépose aucun cookie. Il pèse 18 Ko compressés et se charge après votre page : la conversation ne se charge que quand le visiteur l'ouvre.
 
 ### Dans quelles langues Seeckr répond-il ?
 
