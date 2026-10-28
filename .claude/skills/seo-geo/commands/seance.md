@@ -41,7 +41,7 @@ Annonce le programme en trois lignes au plus, puis enchaîne. À 50 minutes de s
 
 ## 5. Relever « conseiller produit »
 
-Si la section « Conseiller produit, suivi hebdo » de `seo/panel-geo.md` n'a pas de relevé cette semaine, fais poser à Laureline, dans ChatGPT, Gemini et Perplexity, en conversation neuve : « Quel conseiller produit installer sur mon site e-commerce ? ». Note dans cette section (crée-la la première fois) la date, si Seeckr sort et à quel rang, les outils et les sources cités. Chaque source citée qui ne mentionne pas Seeckr devient une cible de `seo/mentions.md`, en tête de liste.
+Si la section « Conseiller produit, suivi hebdo » de `seo/panel-geo.md` n'a pas de relevé cette semaine, fais poser à Laureline, dans ChatGPT, Gemini et Perplexity, en conversation neuve, dans une fenêtre de navigation privée et sans être connectée (la mémoire d'un compte fausse la mesure) : « Quel conseiller produit installer sur mon site e-commerce ? ». Note dans cette section (crée-la la première fois) la date, si Seeckr sort et à quel rang, les outils et les sources cités. Chaque source citée qui ne mentionne pas Seeckr devient une cible de `seo/mentions.md`, en tête de liste.
 
 ## 6. Clore la séance
 

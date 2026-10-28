@@ -7,7 +7,7 @@ Le panel mesure le GEO : sur une liste fixe de questions d'e-commerçant, combie
 Tu n'as pas accès à ces assistants : c'est Laureline qui pose les questions. Donne-lui la consigne en une fois :
 
 - les assistants et les questions sont ceux de `seo/panel-geo.md` ;
-- une conversation neuve par question, sans compte connecté ou mémoire désactivée, pour que l'historique ne biaise pas la réponse ;
+- une conversation neuve par question, **dans une fenêtre de navigation privée et sans être connectée** (ChatGPT, Gemini et Perplexity gardent la mémoire du compte : le 2026-10-28, Perplexity a reconnu qu'une partie de sa réponse sur Seeckr venait de l'historique de Laureline, ce qui a invalidé la mesure) ;
 - elle colle chaque réponse complète, liens compris, précédée de l'assistant et du numéro de la question.
 
 ## 2. Relever

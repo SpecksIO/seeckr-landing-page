@@ -13,13 +13,15 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 
 - 2026-10-28, Laureline : le temps de Laureline ne se gaspille pas sur une piste qui s'arrête en cours de route. Avant de lui faire ouvrir un site, vérifier qu'il est gratuit, sans badge ni lien retour, non concurrent, sans connexion Google ou LinkedIn personnelle, avec un contact vérifié (contrôle ajouté à `commands/mentions.md`). Cinq pistes ont échoué le 2026-10-28 faute de ces contrôles : Comparateur IA, SaaSworthy, Crunchbase, FranceSaaS, Toolpilot.
 
+- 2026-10-28, Laureline : tout relevé auprès des assistants se fait en fenêtre de navigation privée, sans être connectée, parce que les comptes gardent la mémoire des conversations (Perplexity l'a reconnu). Inscrit dans `commands/panel.md` et `commands/seance.md`. Les relevés du 2026-10-28 sont à refaire.
+
 ## Rappels
 
 | Échéance                | Quoi                                                                                                              |
 | ----------------------- | ----------------------------------------------------------------------------------------------------------------- |
 | 2026-11-04              | TrouveMonSaaS : relance suspendue tant qu'Amandine n'a pas dit si Solutio est un concurrent                       |
 | 2026-11-04              | reposer « Qu'est-ce que Seeckr ? » aux trois assistants : seeckr.fr est-il une source citée, ChatGPT identifie-t-il Seeckr ? Référence du 2026-10-28 : Gemini et Perplexity oui, ChatGPT non |
-| 2026-10-29              | reposer « Quel assistant d'achat IA installer sur mon site e-commerce ? » à Perplexity, ChatGPT et Gemini : Seeckr y reste-t-il ? Relevé du 2026-10-28 : Perplexity le cite deux fois mais sa source est inconnue et la fiche de l'application Shopify Seekr figure parmi ses sources, ChatGPT et Gemini non |
+| 2026-10-29              | refaire les relevés du 2026-10-28 **en navigation privée, sans être connectée** (la mémoire des comptes a faussé les citations de Seeckr) : « Quel assistant d'achat IA installer sur mon site e-commerce ? » et « Qu'est-ce que Seeckr ? » aux trois assistants |
 | 2026-11-04              | relancer BotRank.ai (e-mail envoyé le 2026-10-28 à contact@botrank.ai), une seule relance |
 | réponse d'Amandine      | FranceSaaS (coédité par l'agence web Click & Digital) : concurrent ? Pas de badge sur seeckr.fr avant sa réponse |
 | réponse d'Amandine      | Comparateur IA (NEWP, profil de Digital Applied) : garder la fiche Standard déjà soumise ou la retirer ? Tant qu'elle n'a pas répondu, aucune autre étape |
