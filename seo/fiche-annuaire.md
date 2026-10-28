@@ -78,6 +78,8 @@ Seeckr convient aux e-commerçants dont les visiteurs hésitent ou ne savent pas
 
 ### FAQ
 
-- Combien coûte Seeckr ? Ça dépend de la taille de votre catalogue, des fonctionnalités que vous choisissez et des statistiques que vous voulez récupérer. Un Seeckr personnalisé gratuit permet de l'essayer d'abord.
+- Quelle différence entre Seeckr et un chatbot ? Un chatbot attend la question du visiteur et y répond. Seeckr pose les questions d'un vendeur pour comprendre sa situation, puis recommande trois produits de votre catalogue, chacun avec un score de compatibilité et ce qui en fait le bon choix pour lui. Quand rien ne convient, l'assistant le dit.
+- Comment mesurer ce que Seeckr me rapporte ? Seeckr se connecte à votre boutique et suit les commandes passées après une recommandation. Le back office vous montre les conversations, les produits les plus recommandés et les besoins exprimés par vos visiteurs. Au bout de trois mois, nous faisons avec vous le bilan chiffré de l'impact sur vos ventes.
+- Que m'apprennent les conversations avec mes visiteurs ? Chaque visiteur explique avec ses propres mots ce qu'il cherche et ce qui le fait hésiter. Vous les retrouvez dans le back office, avec les statistiques et un rapport d'usage généré automatiquement : de quoi bâtir vos personas et vos accroches de campagne.
+- L'IA peut-elle inventer une information ? L'assistant ne recommande que des produits de votre catalogue, et il construit chaque explication à partir de la seule fiche produit. Quand rien ne convient vraiment, il le dit plutôt que de forcer une recommandation.
 - Comment Seeckr s'installe-t-il sur un site ? Il suffit d'ajouter une ligne de script dans l'en-tête du site. Le reste se règle depuis le back office, sans passer par un développeur : l'emplacement de l'assistant et les couleurs.
-- Où sont hébergées les données des visiteurs ? Les conversations sont stockées en Europe, en Irlande. Le script ne dépose aucun cookie.
