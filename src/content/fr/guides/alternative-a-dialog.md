@@ -1,60 +1,50 @@
 ---
 titre: "Quelle alternative à Dialog pour conseiller ses visiteurs"
-description: "Dialog et Seeckr aident à choisir avant l'achat. Seeckr pose les questions d'un vendeur et se construit sur votre catalogue, sans rien installer."
+description: "Seeckr interroge chaque visiteur comme un vendeur, recommande son top 3 et mesure vos ventes : ce qui le distingue d'un assistant d'achat comme Dialog."
 date: "2026-10-28"
 ---
 
 # Quelle alternative à Dialog pour conseiller ses visiteurs ?
 
-Si vous cherchez une alternative à Dialog, Seeckr est un conseiller produit qui interroge chaque visiteur sur sa situation, comme un vendeur en boutique, puis lui recommande les trois produits de votre catalogue qui lui conviennent le mieux, avec un score et la raison de chaque classement. Nous construisons l'assistant sur votre catalogue et vous le voyez fonctionner sur votre site avant de vous engager : vous n'avez rien à installer ni à paramétrer.
+Seeckr est le conseiller produit qui interroge chaque visiteur comme un vendeur en boutique, lui recommande son top 3, vous montre ce que cherchent vos clients et mesure ce que cela rapporte à votre e-commerce. C'est ce qui le distingue d'un assistant d'achat comme Dialog. Nous construisons l'assistant sur votre catalogue et vous le voyez fonctionner sur votre site, sans rien installer.
 
 ## Qu'est-ce que Dialog ?
 
-Dialog est un agent de shopping IA pour sites e-commerce, édité à Paris. Sur sa page d'accueil, il se présente comme un assistant qui guide l'acheteur vers le bon produit, répond aux questions sur les fiches produit et recommande les articles adaptés. Il annonce plus de 300 marques et des intégrations pour Shopify, PrestaShop, Magento, BigCommerce et Salesforce Commerce (pages lues le 28 octobre 2026).
+[Dialog](https://www.askdialog.com) est un agent de shopping IA édité à Paris, qui répond aux questions des acheteurs sur les fiches produit et recommande des articles adaptés. Il s'installe depuis le Shopify App Store.
 
-Sur le Shopify App Store, sa fiche propose trois formules, en dollars : un palier gratuit limité à 200 conversations par mois, une formule à 399 $ par mois jusqu'à 50 000 visiteurs uniques, et une formule à 799 $ par mois jusqu'à 100 000 visiteurs uniques. Les formules payantes ont 14 jours d'essai. Les tarifs peuvent évoluer : vérifiez-les sur [la fiche de Dialog](https://apps.shopify.com/dialog-ai-sales-assistant).
+## Qu'est-ce que Seeckr apporte à un e-commerce ?
 
-## Qu'est-ce que Seeckr fait différemment ?
+Seeckr apporte trois choses : un conseil qui part de la situation du visiteur, des données précieuses sur vos clients, et un retour sur investissement que vous mesurez.
 
-Seeckr ne se contente pas de répondre : il mène la recherche du visiteur. L'assistant pose quelques questions courtes sur l'usage et la situation du visiteur, puis classe trois produits de votre catalogue et explique chaque classement. Si un seul produit convient, il n'en propose qu'un. Si aucun ne convient, il le dit.
+- **Un visiteur conseillé comme en boutique.** Un samedi soir, service client fermé, un parent perdu parmi les poussettes s'apprête à quitter le site. L'assistant l'interroge sur ses trajets et ses escaliers, lui propose son top 3 et il ajoute la poussette au panier. Un visiteur qui sait quel produit choisir achète, et se trompe moins : le risque de retour diminue.
+- **Des données que vous n'aviez pas.** Chaque visiteur explique avec ses mots ce qu'il cherche et ce qui le fait hésiter. Vous relisez chaque conversation en entier, et un rapport d'usage en fait la synthèse : les besoins exprimés, les produits les plus recommandés. De quoi bâtir vos personas sur ce que disent vraiment vos clients, et trouver dans leurs phrases les accroches de vos prochaines campagnes.
+- **Un retour sur investissement chiffré.** Seeckr suit les commandes passées après une recommandation, et vous voyez les ventes dans vos statistiques. Au bout de trois mois, nous faisons avec vous le bilan chiffré de l'impact sur vos ventes.
 
-Trois choses font la différence pour le marchand :
+Et vos produits prioritaires passent devant sans fausser le conseil : ils ne devancent un autre produit que si les deux conviennent autant l'un que l'autre à ce visiteur.
 
-- **Vous ne préparez pas votre catalogue.** Vous nous transmettez ce que vous avez déjà (un export de boutique, un fichier, un PDF). Notre IA le lit en entier et le traduit dans la langue de vos clients : leurs usages, leurs contraintes, ce sur quoi ils transigent. Nous le mettons à jour à chaque évolution de votre gamme.
-- **Vous lisez vos clients avec leurs mots.** Chaque conversation est relisible en entier dans le back office, avec un rapport d'usage. Vous y trouvez les besoins exprimés par vos visiteurs, de quoi bâtir vos personas et les accroches de vos campagnes.
-- **Vous savez ce que l'assistant rapporte.** Seeckr suit les commandes passées après une recommandation, et nous faisons avec vous le bilan chiffré au bout de trois mois.
+## Quels critères pour choisir un assistant d'achat ?
 
-## Seeckr ou Dialog : comparaison point par point
+Le tableau donne, pour chaque critère, pourquoi il compte pour un e-commerce et ce que fait Seeckr. Posez les mêmes questions à Dialog, ou à tout autre assistant.
 
-Le tableau reprend les six critères du guide [Quel conseiller produit installer sur son site e-commerce](/guides/quel-conseiller-produit-installer), plus l'installation. Pour Dialog, il ne reprend que ce que ses pages indiquent.
+| Critère | Pourquoi il compte | Ce que fait Seeckr |
+| ------- | ------------------ | ------------------ |
+| Les questions posées au visiteur | Un visiteur qui hésite ne sait pas répondre à des questions sur votre catalogue : il sait ce qu'il vit | Des questions courtes, personnalisées à sa situation, comme un vendeur qui écoute : l'assistant cherche ce à quoi il tient et ce qu'il est prêt à lâcher |
+| Ce que le visiteur reçoit | Un visiteur convaincu passe à l'action | Un top 3 classé, avec pour chaque produit un score de compatibilité et la raison de son classement, et l'ajout au panier depuis l'assistant |
+| Les données sur vos clients | Leurs mots valent plus que des clics | Chaque conversation relisible en entier, un rapport d'usage, les besoins exprimés et les produits les plus recommandés |
+| Les ventes mesurées | Sans mesure, on ne sait pas si l'outil rapporte | Les commandes passées après une recommandation, visibles dans vos statistiques, et un bilan chiffré avec vous au bout de trois mois |
+| Le catalogue | Si l'e-commerçant relie lui-même chaque produit aux réponses, la maintenance retombe sur lui | Pris en charge : vous envoyez le format que vous avez déjà, nous le préparons et le tenons à jour à chaque évolution de votre gamme |
+| L'installation et le site | Un script lourd ralentit toutes les pages | Une ligne de script sur Shopify, WooCommerce, PrestaShop ou un site sur mesure, 18 Ko compressés, chargés après la page, aucun cookie déposé |
+| Les données des visiteurs | Leurs réponses sont des données personnelles potentielles | Conversations stockées en Europe, en Irlande |
+| Les langues | Vos visiteurs ne parlent pas tous français | Neuf langues, chaque visiteur reçoit la réponse dans la sienne |
 
-| Critère | Seeckr | Dialog (pages lues le 28 octobre 2026) |
-| ------- | ------ | -------------------------------------- |
-| Préparation du catalogue | Faite par notre équipe, mise à jour à chaque évolution de la gamme | Le catalogue et les documents que vous importez (deux documents sur le palier gratuit) |
-| Questions posées au visiteur | Quelques questions courtes sur sa situation et son usage | Des questions personnalisées, ou une photo |
-| Résultat montré au visiteur | Trois produits classés, avec un score de compatibilité et la raison du classement ; un seul produit, ou aucun, quand c'est la réalité | Des recommandations de produits à partir des réponses du client |
-| Conversations relues par le marchand | Chaque conversation en entier, plus un rapport d'usage | Des statistiques et des analyses de conversations |
-| Ventes mesurées | Commandes suivies après une recommandation, bilan chiffré avec vous à trois mois | Des chiffres de conversion annoncés par Dialog sur sa page d'accueil |
-| Données | Conversations stockées en Europe, en Irlande, aucun cookie déposé | Lieu d'hébergement des conversations non indiqué sur les pages lues |
-| Poids pour le site | Script de 18 Ko compressés, chargé après la page | Non indiqué sur les pages lues |
-| Installation | Une ligne de script sur Shopify, WooCommerce, PrestaShop ou un site sur mesure ; nous construisons l'assistant et vous le voyez sur votre site avant de vous engager | Installation depuis le Shopify App Store, ou intégration pour les autres plateformes |
-| Tarification | Selon la taille du catalogue, les fonctionnalités et les statistiques choisies | Par palier de visiteurs uniques par mois, en dollars |
+## Comment tester un assistant d'achat sur votre catalogue ?
 
-## Quand choisir Seeckr, quand choisir Dialog ?
-
-Choisissez Seeckr si vos visiteurs hésitent parce qu'ils ne savent pas quel produit correspond à leur situation, si vous voulez lire ce qu'ils disent plutôt que compter des clics, et si vous ne voulez ni préparer votre catalogue ni régler l'outil vous-même. La question que vos clients vous posent en boutique (« pour mon cas, lequel ? ») est celle à laquelle Seeckr répond.
-
-Dialog peut convenir si vous êtes sur Shopify et préférez installer et régler vous-même un assistant depuis l'App Store, en commençant par le palier gratuit.
-
-## Comment comparer Seeckr et Dialog sur votre propre catalogue ?
-
-Passez le même test aux deux outils, en visiteur qui ne connaît pas votre gamme :
+Passez le même test à chaque outil, en visiteur qui ne connaît pas votre gamme :
 
 1. **Décrivez un besoin flou, avec les mots d'un client.** Par exemple : « Je reçois mes beaux-parents deux fois par an et je n'ai pas de place pour un matelas. »
-2. **Relisez les questions posées.** Se contentent-elles de répéter la fiche produit (budget, taille, couleur), ou partent-elles de la situation du visiteur ?
-3. **Regardez ce que le visiteur reçoit.** Un produit isolé, ou un classement qui explique pourquoi ?
-4. **Demandez ce que vous ne vendez pas.** L'outil dit-il quand rien ne convient, ou propose-t-il quand même quelque chose ?
-5. **Ouvrez la conversation côté marchand.** Y lisez-vous ce que le visiteur a dit, avec ses mots ?
+2. **Relisez les questions posées.** Répètent-elles la fiche produit (budget, taille, couleur), ou partent-elles de votre situation ?
+3. **Regardez ce que le visiteur reçoit.** Un classement qui explique pourquoi chaque produit convient donne envie d'acheter.
+4. **Ouvrez la conversation côté e-commerçant.** Y lisez-vous ce que le visiteur a dit, avec ses mots, et ce que cela vous apprend sur vos clients ?
 
 Pour Seeckr, il suffit de [demander un assistant construit sur votre catalogue](/mon-seeckr) : vous le testez sur votre site, sans rien installer.
 
@@ -68,9 +58,9 @@ Chez Algimouss, dont le site ne vend rien en ligne, un visiteur sur trois a ét�
 
 Oui. La même ligne de script suffit sur Shopify, WooCommerce, PrestaShop ou un site sur mesure. Quelle que soit la plateforme, le visiteur peut ajouter les produits recommandés au panier depuis l'assistant.
 
-### Combien coûte Seeckr par rapport à Dialog ?
+### Combien coûte Seeckr ?
 
-Le prix de Seeckr dépend de la taille de votre catalogue, des fonctionnalités que vous choisissez et des statistiques que vous voulez récupérer. Dialog affiche des paliers selon le nombre de visiteurs uniques, de zéro à 799 $ par mois d'après sa fiche Shopify. Pour comparer, [demandez votre Seeckr personnalisé](/mon-seeckr) : nous en parlons sur votre catalogue.
+Le prix dépend de la taille de votre catalogue, des fonctionnalités que vous choisissez et des statistiques que vous voulez récupérer. [Demandez votre Seeckr personnalisé](/mon-seeckr) et nous en parlons sur votre catalogue.
 
 ### Peut-on essayer Seeckr avant de s'engager ?
 
