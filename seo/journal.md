@@ -17,9 +17,9 @@ Elles passent avant le plan type de `commands/seance.md`. Retire une décision q
 | 2026-11-07              | vérifier que la fiche Comparateur IA (niveau Standard, soumise le 2026-10-28) est publiée                         |
 | prochaine séance        | relevé « conseiller produit » hebdo (dernier : 2026-10-28) : le guide « Quel conseiller produit installer » sort-il ? |
 | réponse d'Amandine      | message regroupé rédigé le 2026-10-28, à envoyer : questions de la section « Pour Amandine » de `seo/backlog.md`    |
-| à lire dans le navigateur | Toolpilot.ai (menu « Submit AI Tool »), SaaSworthy (menu « SW for Business »), Capterra (espace éditeurs), AlternativeTo : la page d'inscription dit-elle gratuit ou payant ? Les pages d'accueil ne le disent pas |
-| à trouver dans le navigateur | Loyoly Talks : l'adresse du profil LinkedIn du CEO (prénom Joseph d'après la page), pour vérifier que c'est l'animateur |
-| à faire | Le Panier : e-mail à contact@lepanier.io, une fois qu'un cofondateur (Amandine ou Romain) accepte l'idée d'un passage |
+| à lire dans le navigateur | Capterra (espace éditeurs), AlternativeTo : la page d'inscription dit-elle gratuit ou payant ? Les pages d'accueil ne le disent pas |
+| 2026-11-04              | relancer Le Panier (e-mail envoyé le 2026-10-28 à contact@lepanier.io), une seule relance |
+| à faire | Loyoly Talks : demande de connexion LinkedIn à Joseph (note de 300 caractères) ; SaaSworthy : lire le formulaire derrière « Talk to Us » (niveau Standard gratuit) |
 
 ## Séances
 
